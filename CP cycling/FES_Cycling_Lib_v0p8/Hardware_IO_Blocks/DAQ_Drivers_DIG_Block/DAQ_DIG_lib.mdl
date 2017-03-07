@@ -1,0 +1,162 @@
+Library {
+  Name			  "DAQ_DIG_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:49:46 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Jan 29 13:18:09 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:6>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "DAQ_DIG_lib"
+    Location		    [743, 540, 1243, 833]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      "S-Function"
+      Name		      "DAQ DIG I/O"
+      Ports		      [0, 1]
+      Position		      [185, 94, 305, 146]
+      BackgroundColor	      "magenta"
+      FunctionName	      "DAQ_Drivers_DIG_sFcn"
+      Parameters	      "Ts, (h_mode-1), (port_dir-1), (port-1)"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+      MaskType		      "DAQ_AI"
+      MaskDescription	      "This is the DAQ Driver for use with both the DA"
+"Q-1200 and the DAQ-6024E devices.  This block is used to read and write to a "
+"digital port.  The least significat bit is take first and appear on lines 0 o"
+"f the port, excess values on the input are ignored once all the lines in the "
+"port are addressed.  Note: when selecting no-handshaking mode then all ports "
+"and devices should be set to this mode."
+      MaskPromptString	      "Handshake mode|Port direction|Port|Sample time"
+      MaskStyleString	      "popup(no-handshaking (nonlatched)|use handshaki"
+"ng (latched)),popup(Input (read from DIG port)|Output (write to DIG port)|Bid"
+"irectional|Output (wired-OR)),popup(0|1|2),edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVariables	      "h_mode=@1;port_dir=@2;port=@3;Ts=@4;"
+      MaskDisplay	      "text(0.5, 0.85, 'Digital I/O', 'HorizontalAlign"
+"ment', 'center', 'VerticalAlignment', 'middle');\n\nplot([0.10 0.15 0.20 0.25"
+" 0.30 0.35 0.40; 0.15 0.20 0.25 0.30 0.35 0.40 0.45]-0.05, [0.50 0.57 0.60 0."
+"70 0.53 0.60 0.47; 0.50 0.57 0.60 0.70 0.53 0.60 0.47]-0.05);\nplot([0.15 0.2"
+"0 0.25 0.30 0.35 0.40; 0.15 0.20 0.25 0.30 0.35 0.40]-0.05, [0.50 0.57 0.60 0"
+".70 0.53 0.60; 0.57 0.60 0.70 0.53 0.60 0.47]-0.05);\n\nplot([0.45 0.50 0.50;"
+" 0.55 0.55 0.55], [0.50 0.46 0.54; 0.50 0.50 0.50]);\n\ntext(0.75, 0.5, ['0 1"
+" 0 0 1'], 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\n"
+"\ntext(0.5, 0.15, ['Port ', num2str(port-1)], 'HorizontalAlignment', 'center'"
+", 'VerticalAlignment', 'middle');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "no-handshaking (nonlatched)|Input (read from DI"
+"G port)|0|0.05"
+      MaskVariableAliases     ",,,"
+    }
+  }
+}

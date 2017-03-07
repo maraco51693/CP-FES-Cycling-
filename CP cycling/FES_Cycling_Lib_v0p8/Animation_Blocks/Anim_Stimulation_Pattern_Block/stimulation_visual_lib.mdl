@@ -1,0 +1,566 @@
+Library {
+  Name			  "stimulation_visual_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:41:26 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Jun 02 17:48:18 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "stimulation_visual_lib"
+    Location		    [22, 63, 522, 356]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulation Visualisation"
+      Ports		      [6]
+      Position		      [70, 64, 195, 196]
+      BackgroundColor	      "yellow"
+      FontName		      "Comic Sans MS"
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskDescription	      "This block provides a visualisation of the cycl"
+"ing action, stimulation pattern and stimulation activation as well as providi"
+"ng read outs of the angle, angular velocity, throttle value and stimulation v"
+"alue."
+      MaskPromptString	      "Show the animation window|Sample time"
+      MaskStyleString	      "checkbox,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "show=@1;Ts=@2;"
+      MaskDisplay	      "port_label('input', 1, 'Angle');\nport_label('i"
+"nput', 2, 'Vel.');\nport_label('input', 3, 'Throttle');\nport_label('input', "
+"4, 'Pulsewidth');\nport_label('input', 5, 'Stimulation Pattern');\nport_label"
+"('input', 6, 'Stimulation Activation');\n\nplot((0.4.*sin([0:pi/180:2*pi]))+0"
+".5, (0.4.*cos([0:pi/180:2*pi]))+0.5);\n\nplot((0.3.*sin([10*(pi/180):pi/180:1"
+"10*(pi/180)]))+0.5, (0.3.*cos([10*(pi/180):pi/180:110*(pi/180)]))+0.5);\nplot"
+"((0.3.*sin([190*(pi/180):pi/180:290*(pi/180)]))+0.5, (0.3.*cos([190*(pi/180):"
+"pi/180:290*(pi/180)]))+0.5);\n\nplot((0.2.*sin([60*(pi/180):pi/180:160*(pi/18"
+"0)]))+0.5, (0.2.*cos([60*(pi/180):pi/180:160*(pi/180)]))+0.5);\nplot((0.2.*si"
+"n([240*(pi/180):pi/180:340*(pi/180)]))+0.5, (0.2.*cos([240*(pi/180):pi/180:34"
+"0*(pi/180)]))+0.5);\n\nplot((0.1.*sin([-30*(pi/180):pi/180:30*(pi/180)]))+0.5"
+", (0.1.*cos([-30*(pi/180):pi/180:30*(pi/180)]))+0.5);\nplot((0.1.*sin([150*(p"
+"i/180):pi/180:210*(pi/180)]))+0.5, (0.1.*cos([150*(pi/180):pi/180:210*(pi/180"
+")]))+0.5);\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|0.05"
+      MaskVariableAliases     ","
+      System {
+	Name			"Stimulation Visualisation"
+	Location		[660, 387, 1219, 777]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Angle"
+	  Position		  [40, 43, 70, 57]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vel."
+	  Position		  [40, 93, 70, 107]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Throttle"
+	  Position		  [40, 143, 70, 157]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pulsewidth"
+	  Position		  [40, 193, 70, 207]
+	  Port			  "4"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "stim Patern"
+	  Position		  [40, 243, 70, 257]
+	  Port			  "5"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "stim Activation"
+	  Position		  [40, 293, 70, 307]
+	  Port			  "6"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector1"
+	  Ports			  [1, 1]
+	  Position		  [115, 229, 120, 271]
+	  ShowName		  off
+	  OutputSignals		  "R.Quad.start,R.Ham.start,R.Glut.start,R.Cal"
+"f.start,L.Quad.start,L.Ham.start,L.Glut.start,L.Calf.start,R.Quad.stop,R.Ham."
+"stop,R.Glut.stop,R.Calf.stop,L.Quad.stop,L.Ham.stop,L.Glut.stop,L.Calf.stop"
+	  MuxedOutput		  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "<start, start, start, start, start, start"
+", start, start, stop, stop, stop, stop, stop, stop, stop, stop>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector3"
+	  Ports			  [1, 1]
+	  Position		  [115, 279, 120, 321]
+	  ShowName		  off
+	  OutputSignals		  "R.Quad,R.Ham,R.Glut,R.Calf,L.Quad,L.Ham,L.G"
+"lut,L.Calf"
+	  MuxedOutput		  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "<Quad, Ham, Glut, Calf, Quad, Ham, Glut, "
+"Calf>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [6, 1]
+	  Position		  [190, 27, 195, 323]
+	  ShowName		  off
+	  Inputs		  "6"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [1]
+	  Position		  [310, 136, 460, 214]
+	  FunctionName		  "stim_Visual_sfcn"
+	  Parameters		  "Ts, show"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<Quad, Ham, Glut, Calf, Quad, Ham, Glut, Ca"
+"lf>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  6
+	}
+	Line {
+	  Name			  "<start, start, start, start, start, start, "
+"start, start, stop, stop, stop, stop, stop, stop, stop, stop>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Pulsewidth"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Throttle"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Vel."
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Angle"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "stim Activation"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "stim Patern"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulation Visualisation1"
+      Ports		      [6]
+      Position		      [305, 64, 430, 196]
+      BackgroundColor	      "yellow"
+      FontName		      "Comic Sans MS"
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskDescription	      "This block provides a visualisation of the cycl"
+"ing action, stimulation pattern and stimulation activation as well as providi"
+"ng read outs of the angle, angular velocity, throttle value and stimulation v"
+"alue."
+      MaskPromptString	      "Show the animation window|Sample time"
+      MaskStyleString	      "checkbox,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "show=@1;Ts=@2;"
+      MaskDisplay	      "port_label('input', 1, 'Angle');\nport_label('i"
+"nput', 2, 'Vel.');\nport_label('input', 3, 'Throttle');\nport_label('input', "
+"4, 'Pulsewidth');\nport_label('input', 5, 'Stimulation Pattern');\nport_label"
+"('input', 6, 'Stimulation Activation');\n\nplot((0.4.*sin([0:pi/180:2*pi]))+0"
+".5, (0.4.*cos([0:pi/180:2*pi]))+0.5);\n\nplot((0.3.*sin([10*(pi/180):pi/180:1"
+"10*(pi/180)]))+0.5, (0.3.*cos([10*(pi/180):pi/180:110*(pi/180)]))+0.5);\nplot"
+"((0.3.*sin([190*(pi/180):pi/180:290*(pi/180)]))+0.5, (0.3.*cos([190*(pi/180):"
+"pi/180:290*(pi/180)]))+0.5);\n\nplot((0.2.*sin([60*(pi/180):pi/180:160*(pi/18"
+"0)]))+0.5, (0.2.*cos([60*(pi/180):pi/180:160*(pi/180)]))+0.5);\nplot((0.2.*si"
+"n([240*(pi/180):pi/180:340*(pi/180)]))+0.5, (0.2.*cos([240*(pi/180):pi/180:34"
+"0*(pi/180)]))+0.5);\n\nplot((0.1.*sin([-30*(pi/180):pi/180:30*(pi/180)]))+0.5"
+", (0.1.*cos([-30*(pi/180):pi/180:30*(pi/180)]))+0.5);\nplot((0.1.*sin([150*(p"
+"i/180):pi/180:210*(pi/180)]))+0.5, (0.1.*cos([150*(pi/180):pi/180:210*(pi/180"
+")]))+0.5);\n\ntext(0.5, 0.5, 'Movie', 'HorizontalAlignment', 'center')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "on|0.05"
+      MaskVariableAliases     ","
+      System {
+	Name			"Stimulation Visualisation1"
+	Location		[660, 387, 1219, 777]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Angle"
+	  Position		  [40, 43, 70, 57]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Vel."
+	  Position		  [40, 93, 70, 107]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Throttle"
+	  Position		  [40, 143, 70, 157]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pulsewidth"
+	  Position		  [40, 193, 70, 207]
+	  Port			  "4"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "stim Patern"
+	  Position		  [40, 243, 70, 257]
+	  Port			  "5"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "stim Activation"
+	  Position		  [40, 293, 70, 307]
+	  Port			  "6"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector1"
+	  Ports			  [1, 1]
+	  Position		  [115, 229, 120, 271]
+	  ShowName		  off
+	  OutputSignals		  "R.Quad.start,R.Ham.start,R.Glut.start,R.Cal"
+"f.start,L.Quad.start,L.Ham.start,L.Glut.start,L.Calf.start,R.Quad.stop,R.Ham."
+"stop,R.Glut.stop,R.Calf.stop,L.Quad.stop,L.Ham.stop,L.Glut.stop,L.Calf.stop"
+	  MuxedOutput		  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "<start, start, start, start, start, start"
+", start, start, stop, stop, stop, stop, stop, stop, stop, stop>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector3"
+	  Ports			  [1, 1]
+	  Position		  [115, 279, 120, 321]
+	  ShowName		  off
+	  OutputSignals		  "R.Quad,R.Ham,R.Glut,R.Calf,L.Quad,L.Ham,L.G"
+"lut,L.Calf"
+	  MuxedOutput		  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "<Quad, Ham, Glut, Calf, Quad, Ham, Glut, "
+"Calf>"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [6, 1]
+	  Position		  [190, 27, 195, 323]
+	  ShowName		  off
+	  Inputs		  "6"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [1]
+	  Position		  [310, 136, 460, 214]
+	  FunctionName		  "stim_Visual_movie_sfcn"
+	  Parameters		  "Ts, show"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Line {
+	  SrcBlock		  "stim Patern"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "stim Activation"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Angle"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Vel."
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Throttle"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Pulsewidth"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "<start, start, start, start, start, start, "
+"start, start, stop, stop, stop, stop, stop, stop, stop, stop>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  5
+	}
+	Line {
+	  Name			  "<Quad, Ham, Glut, Calf, Quad, Ham, Glut, Ca"
+"lf>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

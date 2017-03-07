@@ -1,0 +1,583 @@
+Library {
+  Name			  "FES_Cycling_Lib"
+  Version		  6.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Aug 10 15:58:40 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Aug 10 17:18:23 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:12>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Reference
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "FES_Cycling_Lib"
+    Location		    [662, 94, 1271, 492]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Animation Blocks"
+      Ports		      []
+      Position		      [239, 195, 365, 306]
+      BackgroundColor	      "yellow"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Animation Blocks"
+	Location		[696, 124, 1180, 373]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Cycle Animation"
+	  Ports			  [2]
+	  Position		  [295, 34, 420, 176]
+	  BackgroundColor	  "yellow"
+	  FontName		  "Comic Sans MS"
+	  FontWeight		  "bold"
+	  SourceBlock		  "pedal_wheel_animation_lib/Cycle Animation"
+	  SourceType		  "Unknown"
+	  ShowPortLabels	  "on"
+	  show			  "on"
+	  Ts			  "0.05"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Stimulation Visualisation"
+	  Ports			  [6]
+	  Position		  [75, 44, 200, 176]
+	  BackgroundColor	  "yellow"
+	  FontName		  "Comic Sans MS"
+	  FontWeight		  "bold"
+	  SourceBlock		  "stimulation_visual_lib/Stimulation Visualis"
+"ation"
+	  SourceType		  "Unknown"
+	  ShowPortLabels	  "on"
+	  show			  "on"
+	  Ts			  "0.05"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Control Blocks"
+      Ports		      []
+      Position		      [239, 50, 365, 161]
+      BackgroundColor	      "orange"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Control Blocks"
+	Location		[209, 109, 693, 621]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Controller_Design_1"
+	  Ports			  [2]
+	  Position		  [180, 58, 325, 142]
+	  BackgroundColor	  "orange"
+	  SourceBlock		  "controller_design_lib/Controller_Design_1"
+	  SourceType		  "Controller Design Block"
+	  ShowPortLabels	  "on"
+	  cntr_orders		  "[4 4 2 3]"
+	  ctrObs_dyn		  "[3 0.9]"
+	  refMdl_dyn		  "[3 0.9]"
+	  Ts			  "0.05"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Fuzzy Controller"
+	  Ports			  [1, 1]
+	  Position		  [185, 363, 330, 447]
+	  BackgroundColor	  "orange"
+	  SourceBlock		  "fuzzy_controller_lib/Fuzzy Controller"
+	  SourceType		  "DAQ_AO"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "RST_AW_Controller_v2"
+	  Ports			  [2, 1]
+	  Position		  [160, 209, 355, 296]
+	  BackgroundColor	  "orange"
+	  SourceBlock		  "rst_controller_lib/RST_AW_Controller_v2"
+	  SourceType		  "RST Controller Design"
+	  ShowPortLabels	  "on"
+	  out_limit		  "[0 100]"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Hardware IO Blocks"
+      Ports		      []
+      Position		      [74, 195, 200, 306]
+      BackgroundColor	      "magenta"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Hardware IO Blocks"
+	Location		[696, 124, 1271, 711]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "DAQ AI"
+	  Ports			  [0, 1]
+	  Position		  [365, 169, 485, 221]
+	  BackgroundColor	  "magenta"
+	  SourceBlock		  "DAQ_read_lib/DAQ AI"
+	  SourceType		  "DAQ_AI"
+	  channels		  "[1 2 3 4]"
+	  gain_chbx		  " 1 (Both) "
+	  polarity		  " bipolar (Both) "
+	  inputmode		  "RSE"
+	  Ts			  "0.05"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "DAQ AO"
+	  Ports			  [1]
+	  Position		  [365, 259, 485, 311]
+	  BackgroundColor	  "magenta"
+	  SourceBlock		  "DAQ_write_lib/DAQ AO"
+	  SourceType		  "DAQ_AO"
+	  channel		  "1"
+	  Ts			  "0.05"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "DAQ DIG I/O"
+	  Ports			  [0, 1]
+	  Position		  [365, 84, 485, 136]
+	  BackgroundColor	  "magenta"
+	  SourceBlock		  "DAQ_DIG_lib/DAQ DIG I//O"
+	  SourceType		  "DAQ_AI"
+	  h_mode		  "no-handshaking (nonlatched)"
+	  port_dir		  "Input (read from DIG port)"
+	  port			  "0"
+	  Ts			  "0.05"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Stanlab"
+	  Ports			  [2]
+	  Position		  [130, 68, 230, 277]
+	  BackgroundColor	  "red"
+	  Priority		  "50"
+	  SourceBlock		  "Stanlab_Stimulator_lib/Stanlab"
+	  SourceType		  "Stanlab"
+	  ShowPortLabels	  "on"
+	  com_port		  "COM1"
+	  chan_stanlab		  "a"
+	  Ts_stanlab		  "st"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Stimulator Interface"
+	  Ports			  [3, 1]
+	  Position		  [75, 329, 290, 491]
+	  FontSize		  12
+	  FontWeight		  "bold"
+	  SourceBlock		  "ScienceStimHasomed_Lib/Stimulator Interface"
+	  SourceType		  "Stimulator Interface (RehaStim - Hasomed Gm"
+"bH)"
+	  ShowPortLabels	  "on"
+	  Ts			  "0.05"
+	  com_port		  "COM2"
+	  channelstim		  "[1 2]"
+	  tsone			  "0"
+	  tstwo			  "5"
+	  channellf		  "[]"
+	  nfactor		  "[]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "rt_sync1"
+	  Ports			  [0, 1]
+	  Position		  [405, 383, 465, 447]
+	  SourceBlock		  "rt_sync_lib/rt_sync1"
+	  SourceType		  "Unknown"
+	  ShowPortLabels	  "on"
+	  Ts			  "0.05"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "LoadSave Blocks"
+      Ports		      []
+      Position		      [405, 49, 533, 161]
+      BackgroundColor	      "green"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"LoadSave Blocks"
+	Location		[358, 198, 811, 483]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Load Parameter File - Save Results"
+	  Ports			  []
+	  Position		  [110, 170, 373, 203]
+	  BackgroundColor	  "green"
+	  SourceBlock		  "LoadSaveCycleControl_lib/Load Parameter Fil"
+"e - Save Results"
+	  SourceType		  "LoadParameterScript_SaveResults_Block"
+	  ShowPortLabels	  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Load Parameters - Save Results"
+	  Ports			  []
+	  Position		  [110, 74, 370, 108]
+	  BackgroundColor	  "green"
+	  Priority		  "0"
+	  SourceBlock		  "LoadSaveScript_Lib/Load Parameters - Save R"
+"esults"
+	  SourceType		  "Parameter_File_Block"
+	  ShowPortLabels	  on
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Simulation Blocks"
+      Ports		      []
+      Position		      [405, 194, 533, 306]
+      BackgroundColor	      "lightBlue"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Simulation Blocks"
+	Location		[743, 420, 1190, 805]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Cycling Simulator\nwith Motor Assistance"
+	  Ports			  [4, 1]
+	  Position		  [195, 50, 325, 290]
+	  ForegroundColor	  "blue"
+	  BackgroundColor	  "lightBlue"
+	  SourceBlock		  "mobile_tricycle_sim_Lib/Cycling Simulator\n"
+"with Motor Assistance"
+	  SourceType		  "Unknown"
+	  ShowPortLabels	  "on"
+	  n			  "2.53"
+	  mu			  "0.96"
+	  r			  "0.28"
+	  J			  "0.405"
+	  crr			  "0.0032"
+	  A			  "0.8"
+	  cw			  "0.77"
+	  p			  "1.05"
+	  vw			  "0"
+	  m_bike		  "200"
+	  theta_c_init		  "0.1"
+	  fatigue		  "on"
+	  It			  "0.24"
+	  Ic			  "0.001"
+	  Is			  "0.076"
+	  mc			  "0.2"
+	  ms			  "3.5"
+	  mt			  "10"
+	  lms			  "0.274"
+	  lmt			  "0.244"
+	  lh			  "0.0"
+	  lc			  "0.12"
+	  ld			  "0.69"
+	  ls			  "0.50"
+	  lt			  "0.45"
+	  freq			  "20"
+	  dt			  "0.001"
+	  Ts			  "0.005"
+	  freeweel		  "on"
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Source Blocks"
+      Ports		      []
+      Position		      [75, 49, 203, 161]
+      BackgroundColor	      "green"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Source Blocks"
+	Location		[35, 93, 475, 451]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Reference
+	  Name			  "Idinput_Block"
+	  Ports			  [0, 1]
+	  Position		  [60, 26, 165, 74]
+	  BackgroundColor	  "green"
+	  SourceBlock		  "IdInput_block_lib/Idinput_Block"
+	  SourceType		  "IdInput_Block"
+	  ShowPortLabels	  "on"
+	  ssT			  "[10 30]"
+	  signal_type		  "PRBS"
+	  band			  "[0 1/16]"
+	  levels		  "[3.2 3.8]"
+	  Ts			  "0.05"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "PRBS_Block_1"
+	  Ports			  [0, 1]
+	  Position		  [60, 101, 165, 149]
+	  BackgroundColor	  "green"
+	  SourceBlock		  "PRBS_block_lib/PRBS_Block_1"
+	  SourceType		  "PRBS_Block"
+	  ShowPortLabels	  "on"
+	  lim_out		  "[1 2]"
+	  mT			  "2"
+	  useMdlTt		  "off"
+	  tT_in			  "60"
+	  use_ramp		  "on"
+	  ramp_slope		  "0.3"
+	  sT			  "-1"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Stimulation_Currents_1"
+	  Ports			  [0, 1]
+	  Position		  [225, 193, 380, 307]
+	  BackgroundColor	  "green"
+	  SourceBlock		  "Stimulation_Currents_lib/Stimulation_Curren"
+"ts_1"
+	  SourceType		  "StimCurrentInput"
+	  ShowPortLabels	  "on"
+	  Quad_R		  "110"
+	  Ham_R			  "80"
+	  Glut_R		  "80"
+	  Calf_R		  "0"
+	  ExactOpp		  "on"
+	  Quad_L		  "[110]"
+	  Ham_L			  "[80]"
+	  Glut_L		  "[80]"
+	  Calf_L		  "[0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Stimulation_Frequencies_1"
+	  Ports			  [0, 1]
+	  Position		  [225, 33, 380, 147]
+	  BackgroundColor	  "green"
+	  SourceBlock		  "Stimulation_Frequency_lib/Stimulation_Frequ"
+"encies_1"
+	  SourceType		  "StimFrequencyInput"
+	  ShowPortLabels	  "on"
+	  Quad_R		  "50"
+	  Ham_R			  "50"
+	  Glut_R		  "20"
+	  Calf_R		  "0"
+	  ExactOpp		  "on"
+	  Quad_L		  "[50]"
+	  Ham_L			  "[50]"
+	  Glut_L		  "[20]"
+	  Calf_L		  "[0]"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Stimulation_Pattern_1"
+	  Ports			  [0, 1]
+	  Position		  [45, 188, 190, 332]
+	  SourceBlock		  "stimulation_staticAngles_lib/Stimulation_Pa"
+"ttern_1"
+	  SourceType		  "StimAnglesInput"
+	  ShowPortLabels	  "on"
+	  Quad_R		  "[55 155]"
+	  Ham_R			  "[188 265]"
+	  Glut_R		  "[90 180]"
+	  Calf_R		  "[180 205]"
+	  ExactOpp		  "on"
+	  Quad_L		  "[235  335]"
+	  Ham_L			  "[8  85]"
+	  Glut_L		  "[270    0]"
+	  Calf_L		  "[0  25]"
+	}
+      }
+    }
+  }
+}

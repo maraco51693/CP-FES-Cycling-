@@ -1,0 +1,149 @@
+<html>
+
+<head>
+<title>ScienceStim Interface Hasomed GmbH</title>
+<link rel=stylesheet href="docstyle1.css" type="text/css">
+</head>
+
+<body bgcolor=#ffffff>
+
+<p>Stimulator communication block.</p>
+
+<!-- H2 --><p><font size=+1 color="#990000"><b>Library</b></font><br class="hdr">
+<p>Hasomed B</p>
+
+<!-- H2 --><p><font size=+1 color="#990000"><b>Description<br><img src="ScienceStimBlock_Hasomed.gif" width=250 alt="Picture of the Stimulator Interface Block" align=bottom></b></font><br class="hdr">
+<p>
+The Stimulator Interface block is used to operate an electrical stimulation device. This block uses the standard communication protocol from <a href="http://sciencestim.sourceforge.net">ScienceStim</a>.  The RehaStim by <a href="http://www.hasomed.de">Hasomed GmbH</a> supports this protocol.
+</p>
+
+<!-- H2 --><p><font size=+1 color="#990000"><b>Connecting the Stimulator to the PC</b></font><br class="hdr">
+<p>
+The ScienceStim protocol expects the stimulator to be connected to a PC over a serial port style connection. 
+</p>
+
+<!-- H3 --><p><font color="#990000"><b>Using a USB Cable</b></font><br class="hdr">
+<p>
+The RehaStim by Hasomed is connected to a PC via a USB cable.  The USB port should be configured as a virtual com port (VCP) using the correct driver.  This driver can be downloaded from <a href="http://www.ftdichip.com/Drivers/VCP.htm">Future Technology Devices International Ltd.</a> selecting the FT232BM driver from the list associated with the correct platform.
+</p>
+<p>
+Once the correct drivers are installed the USB port can be set up as if it was a normal serial port.
+</p>
+
+<!-- H3 --><p><font color="#990000"><b>Serial Port Connection Parameters</b></font><br class="hdr">
+<p>
+The com port should be set up with the following parameters - as defined by the ScienceStim protocol:
+</p>
+<table Border="2" cellpadding=4 cellspacing=0>
+<caption></caption>
+<tr valign=top><td>Baud Rate (Bits per Second)<br></td><td>115200</td>
+<tr valign=top><td>Data Bits<br></td><td>8<br></td>
+<tr valign=top><td>Parity<br></td><td>None<br></td>
+<tr valign=top><td>Stop Bits<br></td><td>1<br></td>
+<tr valign=top><td>Flow Control<br></td><td>None<br></td>
+</table> 
+
+<!-- H2 --><p><font size=+1 color="#990000"><b>Inputs and Outputs</b></font><br class="hdr">
+
+<dl>
+<dt><b>Current</b></dt>
+<dd>
+This input should be an array of values representing the currents desired on the channels specified in the block parameters.  Thus if the specified channels are [1 5 6] then there should be 3 inputs into this port, the first being for the stimulation channel 1 the second for stimulation channel 5 and the last for stimulation channel 6.
+</dd><br>
+<dt><b>Pulsewidth</b></dt>
+<dd>
+Similar to the current this input should also be an array of values, representing the pulsewidths desired on the channels specified in the block parameters.
+</dd><br>
+<dt><b>Mode</b></dt>
+<dd>
+Similar to the current this input should be an array of values representing the mode desired for each channels specified in the block parameters. The value of the mode should be either 0, 1 or 2:
+<ul>
+<li>0 is for singlet stimulation pulses.</li>
+<li>1 is for doublet stimulation pulses.</li>
+<li>2 is for tripplet stimulation pulses.</li>
+</ul>
+</dd><br>
+<dt><b>Mute Period [ms]</b></dt>
+<dd>
+This output is used to let other devices know when the stimulator is sending a pulse and will last for 1.5 ms.  An example of this would be if muscle EMG measurements were being taken, the EMG amplifier may be strongly effected by the stimulation pulses and so should be muted.  It is advisable to take this signal directly from the stimulator (to avoid the processing time of the software) - please consult your stimulator documentation or technical support.  The block output can be used to know when the stimulator is sending this mute signal (thus when other signals being read into simulink maybe being mutted).
+</dd><br>
+</dl>
+
+<!-- H2 --><p><font size=+1 color="#990000"><b>Parameters and Dialog Box</b></font><br class="hdr">
+<p>
+<img src="file:sciencestim_dlbox.png" width=500 alt="Picture of Stimulator Interface Block Dialogue Box" align=bottom>
+</p>
+
+<dl>
+<dt><b>Sample Time:</b></dt>
+<dd>
+This is the sample time of the block itself, which is not necessarily the same as the stimulation frequency.
+</dd><br>
+
+<dt><b>Serial Port:</b></dt>
+<dd>
+This is used to select the com port that is connected to the stimulator.
+</dd><br>
+
+<dt><b>Channels to be Stimulated:</b></dt>
+<dd>
+An array of channel numbers to be stimulated.  A channel number may only appear once in the list but the list can be in any order.  The inputs into the block should also be arrays of the same length with the desired values for the channel in the corresponding element.
+</dd><br>
+
+<dt><b>Main Time in ms (only in steps of 0.5ms):</b></dt>
+<dd>
+This should be set to the stimulation pulse period.  For example, if a stimulation frequency of 50Hz is desired then this value should be set to 20ms.  This parameter can be set to 0ms to activate the external triggering of the stimulation pulse (or pulse group).  In this case the channels listed in the "Channels to be Stimulated" parameter will all be triggered each time this block is evaluated.  There is a minimum limit on this value defined by the Group Time and by the maximum mode input:<br><br>
+Main Time >= 1.5 +[Group Time]* (1 + max(<i>M<sub>in</sub></i>))<br><br>
+Where the 1.5 is to cover the computation time required, and <i>M<sub>in</sub></i> is the mode input list (an array of either 0, 1 or 2 with an element for each channel).  Please see the example below to help understand this limit.
+</dd><br>
+
+<dt><b>Group Time in ms (only in steps of 0.5ms):</b></dt>
+<dd>
+This parameter is the time between pulses in a doublet or triplet group.  There is a minimum limit for this value as defined by:<br><br>
+Group Time >= 1.5*max(<i>nCh<sub>A</sub></i>, <i>nCh<sub>B</sub></i>)<br><br>
+Where <i>nCh<sub>A</sub></i> and <i>nCh<sub>B</sub></i> are the number of channels being used in modules A and B respectivly.  Please see the example below to help understand this limit.
+</dd><br>
+
+<dt><b>Low Frequency Channels:</b></dt>
+<dd>
+It is possible to set some channels to use a much lower frequency than the main frequency dictated by the Main Time parameter.  This is a useful feature when applying a mixed reflex and muscle stimulation pattern. The values listed in this parameter must also be listed in the "Channels to be Stimulated" parameter.
+</dd><br>
+
+<dt><b>Low Frequency Factor:</b></dt>
+<dd>
+Rather than send a pulse (or pulse group) every time a channel is triggered, a pulse could be sent every <i>n</i><sup>th</sup> time it is triggered.  Thus <i>n</i> is the Low Frequency Factor.
+</dd><br>
+
+</dl>
+
+<!-- H2 --><p><font size=+1 color="#990000"><b>Example and Diagram of Stimulation Pulses</b></font><br 
+<p>
+An example of the stimulation pulses can be seen in the following diagram:<br><br>
+<img src="file:Stimulator_Timings.gif" width=900 alt="Picture of Stimulation Pulses" align=bottom><br><br>
+<p>
+The dark grey rectangls show the stimulation pulses.  There are 4 channels being stimulated (<i>Ch<sub>1</sub></i>, <i>Ch<sub>3</sub></i>, <i>Ch<sub>5</sub></i> and <i>Ch<sub>6</sub></i>) so the "Channels to be Stimulated" parameter = [1 3 5 6].  Channels 1 and 3 are on stimulation module A and channels 5 and 6 are on module B.  The processor communication with each module takes 0.6ms (<i>t<sub>c(A)</sub></i> for module A and <i>t<sub>c(B)</sub></i> for module B) and is shown as the light grey areas.  Modules A and B can work concurently except for the communication with the main processor (thus a 0.6ms delay in module B).
+</p>
+<p>
+The stimulation channels within each module are triggered sequencially and each channel is allocated a 1.5ms slot within which the pulse will be completed.  This means that stimulation frequency integrity is maintained even when changing the pulsewidth of one or more channels.  The modules deal with the first pulse of each channel before moving onto the second pulse in pulse groups (doublets and triplets).  In this example only channel 3 is using a pulse group (doublets) the other channels are just using single pulses (the mode input into the block is [0 1 0 0]).  The "Group Time" parameter is the time between pulses in a group and in the diagram is shown as <i>t<sub>2</sub></i> (4ms).  Note that when module A processes the second pulses, the 1.5ms allocation for each channel remains the same (so <i>Ch<sub>1</sub></i> is still allocated the first 1.5ms before <i>Ch<sub>3</sub></i> even though <i>Ch<sub>1</sub></i> is not producing a pulse).
+</p>
+<p>
+This means that there is a minimum limit for the Group Time parameter, based on the number of channels being stimulated in each module:<br><br>
+<i>t<sub>2</sub></i> >= 1.5*max(<i>nCh<sub>A</sub></i>, <i>nCh<sub>B</sub></i>) <br><br>
+Where <i>nCh<sub>A</sub></i> and <i>nCh<sub>B</sub></i> are the number of channels being used in modules A and B respectivly.  In this example the lowest limit for Group Time is 1.5*max(2, 2) = 3ms.
+</p>
+<p>
+The overall frequency of the stimulation is input using the Main Time parameter.  In the example this has been set at 15ms (66.67Hz) and shown in the diagram as <i>t<sub>1</sub></i>.  This is also subject to a minimum value:<br><br>
+<i>t<sub>1</sub></i> >= 1.5 +<i>t<sub>2</sub></i>* (1 + max(<i>M<sub>in</sub></i>)<br><br>
+Where the 1.5 is to cover the computation time required, and <i>M<sub>in</sub></i> is the mode input list (an array of either 0, 1 or 2 with an element for each channel).  In this example the lowest value for Main Time is 1.5+4*(1+max([0 1 0 0])) = 9.5ms (= 105.3Hz).
+</p>
+<br>
+
+<p><table bgcolor="#e7ebf7" border=0 width="100%" cellpadding=0 cellspacing=0>
+<tr valign=top>
+<td>Documentation by <strong>Benjamin Saunders</strong> (July 2006): Hasomed GmbH</td>
+</tr>
+</table>
+<!-- <p class="copy">&copy; 2006 Hasomed GmbH.</p> -->
+
+</body>
+</html>

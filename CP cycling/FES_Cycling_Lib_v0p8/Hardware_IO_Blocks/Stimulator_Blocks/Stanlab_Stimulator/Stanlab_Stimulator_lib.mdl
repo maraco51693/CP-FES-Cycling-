@@ -1,0 +1,210 @@
+Library {
+  Name			  "Stanlab_Stimulator_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Mon Jan 12 14:02:35 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Jan 12 17:30:19 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:3>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Stanlab_Stimulator_lib"
+    Location		    [22, 158, 522, 451]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stanlab"
+      Ports		      [2]
+      Position		      [205, 28, 305, 237]
+      BackgroundColor	      "red"
+      Priority		      "50"
+      DeleteFcn		      "sl_openclosestimulator(-1,eval(get_param(gcb,'c"
+"han_stanlab')))"
+      LoadFcn		      "set_param(gcb,'BackgroundColor','red')"
+      InitFcn		      "sl_openclosestimulator(0,eval(get_param(gcb,'ch"
+"an_stanlab')))"
+      OpenFcn		      "sl_openclosestimulator(1,eval(get_param(gcb,'ch"
+"an_stanlab')))"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Stanlab"
+      MaskDescription	      "Communication to the Stanmore Stimulator throug"
+"h the serial port.\n\nGeneralised version for 1-8 channels."
+      MaskHelp		      "Double click to open / close the stimulator.\n"
+"\nSee openstimulator, closestimulator, sendpulse"
+      MaskPromptString	      "Serial port|Channel(s)|Sample time"
+      MaskStyleString	      "popup(COM1|COM2|COM3|COM4|COM4|COM5|COM6),edit,"
+"edit"
+      MaskTunableValueString  "off,on,off"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "com_port=&1;chan_stanlab=@2;Ts_stanlab=@3;"
+      MaskDisplay	      "text(.5,0.12,'Stanmore');\ntext(.45,.05,'Stimul"
+"ator');\nplot([0.4 .3 .33 0.3 .55 .35 .7],[.2 .1 .22 .1 .52 .47 .9]);"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "COM1|a|st"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"Stanlab"
+	Location		[310, 370, 796, 550]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "current"
+	  Position		  [15, 38, 45, 52]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pulsewidth"
+	  Position		  [15, 83, 45, 97]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [2]
+	  Position		  [310, 23, 370, 112]
+	  FunctionName		  "stanlab_sl"
+	  Parameters		  "get_param(get_param(gcb,'Parent'),'UserData"
+"'),chan_stanlab"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Line {
+	  SrcBlock		  "pulsewidth"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "current"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

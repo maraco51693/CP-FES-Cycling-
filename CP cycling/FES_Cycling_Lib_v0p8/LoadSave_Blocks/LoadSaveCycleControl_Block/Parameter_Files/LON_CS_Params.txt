@@ -1,0 +1,61 @@
+Parameter File: D:\Ben\Matlab_Files\...ycleControl_Block\Parameter_Files\LON_CS_Params.prm
+------------------------------ 
+
+parameters.test_subject.center = LON
+parameters.test_subject.id = CS
+parameters.sample_time = 0.05
+parameters.model.sample_time = 0.01
+parameters.motor_tirke_system.angle_shift = 150
+parameters.motor_tirke_system.frequency_to_voltage.zero_frequency = 300
+parameters.motor_tirke_system.frequency_to_voltage.frequency_range = 700
+parameters.motor_tirke_system.SRM_conversion.ZOPM = 353
+parameters.motor_tirke_system.SRM_conversion.slope = 20.12
+parameters.stimulation.current.R.quad = 110
+parameters.stimulation.current.R.hams = 100
+parameters.stimulation.current.R.glut = 90
+parameters.stimulation.current.R.calf = 90
+parameters.stimulation.current.L.quad = 100
+parameters.stimulation.current.L.hams = 90
+parameters.stimulation.current.L.glut = 90
+parameters.stimulation.current.L.calf = 100
+parameters.stimulation.pulsewidth_activation.R.quad = 0  510
+parameters.stimulation.pulsewidth_activation.R.hams = 0  510
+parameters.stimulation.pulsewidth_activation.R.glut = 0  510
+parameters.stimulation.pulsewidth_activation.R.calf = 0  510
+parameters.stimulation.pulsewidth_activation.L.quad = 0  510
+parameters.stimulation.pulsewidth_activation.L.hams = 0  510
+parameters.stimulation.pulsewidth_activation.L.glut = 0  510
+parameters.stimulation.pulsewidth_activation.L.calf = 0  510
+parameters.stimulation.staticAngles.R.quad = 186  282
+parameters.stimulation.staticAngles.R.hams = 294   31
+parameters.stimulation.staticAngles.R.glut = 212  305
+parameters.stimulation.staticAngles.R.calf = 322   45
+parameters.stimulation.staticAngles.L.quad = 6  102
+parameters.stimulation.staticAngles.L.hams = 113  212
+parameters.stimulation.staticAngles.L.glut = 31  124
+parameters.stimulation.staticAngles.L.calf = 141  226
+parameters.stimulation.vel_modifyer = 0.15
+parameters.stimulation.sample_time = 0.02
+parameters.stimulation.stim_chan = 1  2  3  4  5  6  7  8
+parameters.stimulation.model_con = 1  2  3  4  5  6  7  8
+parameters.motor_identification.total_time = 100
+parameters.motor_PRBS.output_limits = 50  70
+parameters.motor_PRBS.min_same_time = 55
+parameters.motor_PRBS.total_time = 100
+parameters.motor_control_design.orders = 2  2  1  1
+parameters.motor_control_design.control_observer_dynamics = 3        0.99
+parameters.motor_control_design.reference_model_dynamics = 3        0.99
+parameters.motor_controller.input_ref = 50
+parameters.motor_controller.saturation_limit = 0  100
+parameters.motor_controller.sample_time = 0.3
+parameters.power_identification.total_time = 100
+parameters.power_PRBS.output_limits = 100  250
+parameters.power_PRBS.min_same_time = 60
+parameters.power_PRBS.total_time = 100
+parameters.power_control_design.orders = 2  2  1  1
+parameters.power_control_design.control_observer_dynamics = 10         0.99
+parameters.power_control_design.reference_model_dynamics = 10         0.99
+parameters.power_controller.saturation_limit = 0  498
+parameters.power_controller.sample_time = 0.5
+
+

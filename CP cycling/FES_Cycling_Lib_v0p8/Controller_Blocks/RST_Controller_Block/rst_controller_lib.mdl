@@ -1,0 +1,668 @@
+Library {
+  Name			  "rst_controller_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:44:27 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Nick Donaldson"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Aug 31 19:04:32 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:12>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "rst_controller_lib"
+    Location		    [473, 180, 973, 552]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "RST_AW_Controller"
+      Ports		      [2, 1]
+      Position		      [190, 48, 335, 132]
+      BackgroundColor	      "orange"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "RST Controller Design"
+      MaskDescription	      "Design of a controller that takes the form R*u "
+"= T*ref - S*output"
+      MaskPromptString	      "Get Controller from File|Controller file name|R"
+"|S|T|Aaw|Aaw - R|Output limitations|Sample time"
+      MaskStyleString	      "checkbox,edit,edit,edit,edit,edit,edit,edit,edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      " mv = get_param(gcb, 'MaskValues'); \n if strcm"
+"p(mv{1}, 'on') a = 'on'; b = 'off'; \n else a = 'off'; b = 'on'; \n end; \n m"
+"e = get_param(gcb, 'MaskEnables'); \n me{2} = a; \n me{3} = b; \n me{4} = b; "
+"\n me{5} = b; \n me{6} = b; \n me{7} = b; \n set_param(gcb, 'MaskEnables', me"
+"); \n||||||||"
+      MaskEnableString	      "on,on,off,off,off,off,off,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskVariables	      "Get_Controller_file=@1;controll_fname=@2;R=@3;S"
+"=@4;T=@5;Aaw=@6;Aaw_R=@7;out_limit=@8;sT=@9;"
+      MaskInitialization      "if Get_Controller_file\n   ctr_data = load(['Co"
+"ntrollers\\', controll_fname]);\n   R = ctr_data.controllerData.rst.rst_ctrl."
+"R;\n   S = ctr_data.controllerData.rst.rst_ctrl.S;\n   T = ctr_data.controlle"
+"rData.rst.rst_ctrl.T;\n   Aaw = ctr_data.controllerData.rst.rst_ctrl.Aaw;\n  "
+" Aaw_R = ctr_data.controllerData.rst.rst_ctrl.Aaw_R;\nend\n\n"
+      MaskDisplay	      "port_label('input', 1, 'Ref');\nport_label('inp"
+"ut', 2, 'Feedbk');\n\nplot([0.01 0.05 0.01].*0.6+0.3, [0.82 0.8 0.78]);\nplot"
+"([0.95 0.99 0.95].*0.6+0.3, [0.82 0.8 0.78]);\nplot([0.52 0.48 0.52].*0.6+0.3"
+", [0.22 0.2 0.18]);\n\nplot([0.05 0.15 0.25; 0.25 0.15 0.35].*0.6+0.3, [0.8 0"
+".2 0.6; 0.8 0.8 0.3]);\nplot((0.25+0.1.*sin([0:pi/90:pi])).*0.6+0.3,0.7+0.1.*"
+"cos([0:pi/90:pi]));\nplot([0.18 0.18; 0.18 0.25].*0.6+0.3, [0.3 0.75; 0.75 0."
+"75]);\n\nplot([0.35 0.5; 0.5 0.99].*0.6+0.3, [0.3 0.8; 0.3 0.8]);\nplot((0.5+"
+"0.1.*sin([-pi:pi/90:0])).*0.6+0.3,0.7+0.1.*cos([0:pi/90:pi]));\nplot((0.5+0.1"
+".*sin([0:pi/90:pi])).*0.6+0.3,0.45+0.15.*cos([0:pi/90:pi]));\nplot((0.5+0.07."
+"*sin([-pi:pi/90:0])).*0.6+0.3,0.7+0.05.*cos([0:pi/90:pi]));\nplot([0.5 0.6].*"
+"0.6+0.3, [0.75 0.75]);\n\nplot([0.75 0.75; 0.75 0.15].*0.6+0.3, [0.8 0.2; 0.2"
+" 0.2]);\nplot([0.85 0.78; 0.78 0.78].*0.6+0.3, [0.75 0.75; 0.75 0.3]);\n\ntex"
+"t(0.5, 0.1, 'Anti-reset Control', 'VerticalAlignment', 'middle', 'HorizontalA"
+"lignment', 'center');\n"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "on|'GLA_BEN_04_02_23_motorSim_1'|motor_1.Contro"
+"ller_Design_1.rst_ctrl.R|motor_1.Controller_Design_1.rst_ctrl.S|motor_1.Contr"
+"oller_Design_1.rst_ctrl.T|motor_1.Controller_Design_1.rst_ctrl.Aaw|motor_1.Co"
+"ntroller_Design_1.rst_ctrl.Aaw_R|parameters.motor_controller.saturation_limit"
+"|parameters.motor_controller.sample_time"
+      MaskVariableAliases     ",,,,,,,,"
+      System {
+	Name			"RST_AW_Controller"
+	Location		[378, 249, 1113, 514]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Reference"
+	  Position		  [15, 68, 45, 82]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Feedback"
+	  Position		  [665, 203, 695, 217]
+	  Orientation		  "left"
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "C Control"
+	  Position		  [410, 55, 530, 95]
+	  Numerator		  "1"
+	  Denominator		  "Aaw"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "Filter1"
+	  Position		  [145, 54, 250, 96]
+	  Numerator		  "T"
+	  Denominator		  "1"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "Filter4"
+	  Position		  [410, 190, 530, 230]
+	  Orientation		  "left"
+	  Numerator		  "S"
+	  Denominator		  "1"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Saturate
+	  Name			  "Sat"
+	  Position		  [570, 57, 600, 93]
+	  UpperLimit		  "out_limit(2)"
+	  LowerLimit		  "out_limit(1)"
+	  LinearizeAsGain	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [295, 65, 315, 85]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [345, 65, 365, 85]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "shape 1"
+	  Position		  [410, 125, 530, 165]
+	  Orientation		  "left"
+	  Numerator		  "Aaw_R"
+	  Denominator		  "1"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Control Signal"
+	  Position		  [665, 68, 695, 82]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Filter4"
+	  SrcPort		  1
+	  Points		  [-100, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Filter1"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Feedback"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Filter4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "shape 1"
+	  SrcPort		  1
+	  Points		  [-50, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "C Control"
+	  SrcPort		  1
+	  DstBlock		  "Sat"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "C Control"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sat"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "shape 1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Control Signal"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Reference"
+	  SrcPort		  1
+	  DstBlock		  "Filter1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RST_AW_Controller_v2"
+      Ports		      [2, 1]
+      Position		      [160, 199, 355, 286]
+      BackgroundColor	      "orange"
+      InitFcn		      "rst_controller_sysCallback(gcb, 2);"
+      OpenFcn		      "rst_controller_sysCallback(gcb, 11);"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "RST Controller Design"
+      MaskDescription	      "Design of a controller that takes the form R*u "
+"= T*ref - S*output"
+      MaskPromptString	      "Output limitations"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "out_limit=@1;"
+      MaskInitialization      "ctr_filename = get_param(gcb, 'UserData');\nif "
+"isempty(ctr_filename)\n   ctr_filename_disp = '? ? ? ? ?';\nelse\n   [p n e v"
+"] = fileparts(ctr_filename);\n   ctr_filename_disp = [n, e];\n   ctr_data = l"
+"oad(ctr_filename, '-mat');\n   R = ctr_data.controllerData.rst.rst_ctrl.R;\n "
+"  S = ctr_data.controllerData.rst.rst_ctrl.S;\n   T = ctr_data.controllerData"
+".rst.rst_ctrl.T;\n   Aaw = ctr_data.controllerData.rst.rst_ctrl.Aaw;\n   Aaw_"
+"R = ctr_data.controllerData.rst.rst_ctrl.Aaw_R;\n   sT = ctr_data.controllerD"
+"ata.rst.rst_ctrl.Ts;\nend\n\n"
+      MaskDisplay	      "port_label('input', 1, 'Ref');\nport_label('inp"
+"ut', 2, 'Feedbk');\n\nplot([0.01 0.05 0.01].*0.6+0.3, [0.82 0.8 0.78]);\nplot"
+"([0.95 0.99 0.95].*0.6+0.3, [0.82 0.8 0.78]);\nplot([0.52 0.48 0.52].*0.6+0.3"
+", [0.22 0.2 0.18]);\n\nplot([0.05 0.15 0.25; 0.25 0.15 0.35].*0.6+0.3, [0.8 0"
+".2 0.6; 0.8 0.8 0.3]);\nplot((0.25+0.1.*sin([0:pi/90:pi])).*0.6+0.3,0.7+0.1.*"
+"cos([0:pi/90:pi]));\nplot([0.18 0.18; 0.18 0.25].*0.6+0.3, [0.3 0.75; 0.75 0."
+"75]);\n\nplot([0.35 0.5; 0.5 0.99].*0.6+0.3, [0.3 0.8; 0.3 0.8]);\nplot((0.5+"
+"0.1.*sin([-pi:pi/90:0])).*0.6+0.3,0.7+0.1.*cos([0:pi/90:pi]));\nplot((0.5+0.1"
+".*sin([0:pi/90:pi])).*0.6+0.3,0.45+0.15.*cos([0:pi/90:pi]));\nplot((0.5+0.07."
+"*sin([-pi:pi/90:0])).*0.6+0.3,0.7+0.05.*cos([0:pi/90:pi]));\nplot([0.5 0.6].*"
+"0.6+0.3, [0.75 0.75]);\n\nplot([0.75 0.75; 0.75 0.15].*0.6+0.3, [0.8 0.2; 0.2"
+" 0.2]);\nplot([0.85 0.78; 0.78 0.78].*0.6+0.3, [0.75 0.75; 0.75 0.3]);\n\ntex"
+"t(0.5, 0.9, ctr_filename_disp, 'VerticalAlignment', 'middle', 'HorizontalAlig"
+"nment', 'center');\ntext(0.5, 0.1, 'Anti-reset Control', 'VerticalAlignment',"
+" 'middle', 'HorizontalAlignment', 'center');\n"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "[0 100]"
+      System {
+	Name			"RST_AW_Controller_v2"
+	Location		[542, 484, 1098, 843]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Reference"
+	  Position		  [60, 168, 90, 182]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Feedback"
+	  Position		  [60, 238, 90, 252]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator"
+	  Position		  [150, 78, 195, 112]
+	  PulseType		  "Time-based"
+	  Amplitude		  "1"
+	  Period		  "2*sT"
+	  PulseWidth		  "50"
+	  PhaseDelay		  "0"
+	  SampleTime		  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Triggered\nSubsystem"
+	  Ports			  [2, 1, 0, 1]
+	  Position		  [225, 141, 365, 279]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  on
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Triggered\nSubsystem"
+	    Location		    [134, 231, 1072, 564]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Reference"
+	      Position		      [55, 108, 85, 122]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Feedback"
+	      Position		      [820, 243, 850, 257]
+	      Orientation	      "left"
+	      Port		      "2"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      TriggerPort
+	      Name		      "Trigger"
+	      Ports		      []
+	      Position		      [450, 30, 470, 50]
+	      TriggerType	      "either"
+	      ShowOutputPort	      off
+	      OutputDataType	      "auto"
+	    }
+	    Block {
+	      BlockType		      DiscreteFilter
+	      Name		      "C Control"
+	      Position		      [495, 95, 615, 135]
+	      Numerator		      "1"
+	      Denominator	      "Aaw"
+	      SampleTime	      "-1"
+	      Realization	      "auto"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      DiscreteFilter
+	      Name		      "Filter1"
+	      Position		      [230, 94, 335, 136]
+	      Numerator		      "T"
+	      Denominator	      "1"
+	      SampleTime	      "-1"
+	      Realization	      "auto"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      DiscreteFilter
+	      Name		      "Filter4"
+	      Position		      [495, 230, 615, 270]
+	      Orientation	      "left"
+	      Numerator		      "S"
+	      Denominator	      "1"
+	      SampleTime	      "-1"
+	      Realization	      "auto"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Saturate
+	      Name		      "Sat"
+	      Position		      [655, 97, 685, 133]
+	      UpperLimit	      "out_limit(2)"
+	      LowerLimit	      "out_limit(1)"
+	      LinearizeAsGain	      on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      Ports		      [2, 1]
+	      Position		      [380, 105, 400, 125]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      Ports		      [2, 1]
+	      Position		      [430, 105, 450, 125]
+	      ShowName		      off
+	      IconShape		      "round"
+	      Inputs		      "|++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      DiscreteFilter
+	      Name		      "shape 1"
+	      Position		      [495, 165, 615, 205]
+	      Orientation	      "left"
+	      Numerator		      "Aaw_R"
+	      Denominator	      "1"
+	      SampleTime	      "-1"
+	      Realization	      "auto"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Control Signal"
+	      Position		      [820, 108, 850, 122]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Reference"
+	      SrcPort		      1
+	      DstBlock		      "Filter1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sat"
+	      SrcPort		      1
+	      Points		      [0, 0; 25, 0]
+	      Branch {
+		Points			[0, 70]
+		DstBlock		"shape 1"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Control Signal"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "C Control"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "C Control"
+	      SrcPort		      1
+	      DstBlock		      "Sat"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "shape 1"
+	      SrcPort		      1
+	      Points		      [-50, 0]
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Feedback"
+	      SrcPort		      1
+	      DstBlock		      "Filter4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Filter1"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Filter4"
+	      SrcPort		      1
+	      Points		      [-100, 0]
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Control Signal"
+	  Position		  [485, 203, 515, 217]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator"
+	  SrcPort		  1
+	  Points		  [95, 0]
+	  DstBlock		  "Triggered\nSubsystem"
+	  DstPort		  trigger
+	}
+	Line {
+	  SrcBlock		  "Triggered\nSubsystem"
+	  SrcPort		  1
+	  DstBlock		  "Control Signal"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Feedback"
+	  SrcPort		  1
+	  DstBlock		  "Triggered\nSubsystem"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Reference"
+	  SrcPort		  1
+	  DstBlock		  "Triggered\nSubsystem"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

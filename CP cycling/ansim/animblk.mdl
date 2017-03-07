@@ -1,0 +1,124 @@
+Model {
+  Name			  "animblk"
+  Version		  2.00
+  SimParamPage		  Solver
+  SampleTimeColors	  off
+  WideVectorLines	  off
+  PaperOrientation	  landscape
+  StartTime		  "0.0"
+  StopTime		  "999999"
+  Solver		  ode45
+  RelTol		  "1e-3"
+  AbsTol		  "1e-6"
+  Refine		  "1"
+  MaxStep		  "10"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  RefineOutputTimes
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  off
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  off
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  LimitMaxRows		  off
+  MaxRows		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  warning
+  MinStepSizeMsg	  warning
+  UnconnectedInputMsg	  warning
+  UnconnectedOutputMsg	  warning
+  UnconnectedLineMsg	  warning
+  ConsistencyChecking	  off
+  ZeroCross		  on
+  BlockDefaults {
+    Orientation		    right
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    NamePlacement	    normal
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    center
+    VerticalAlignment	    middle
+    ForegroundColor	    black
+    BackgroundColor	    white
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    normal
+    FontAngle		    normal
+  }
+  System {
+    Name		    "animblk"
+    Location		    [112, 78, 320, 176]
+    Open		    on
+    ScreenColor		    white
+    Block {
+      BlockType		      SubSystem
+      Name		      "SimAnim"
+      Position		      [60, 13, 140, 57]
+      OpenFcn		      "ansimini #Initialize"
+      ShowPortLabels	      off
+      MaskType		      "Simulation Animation"
+      MaskDisplay	      "disp('Simulation\\nAnimation')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      off
+      MaskIconUnits	      autoscale
+      System {
+	Name			"SimAnim"
+	Location		[217, 186, 414, 267]
+	Open			off
+	ScreenColor		white
+	Block {
+	  BlockType		  Inport
+	  Name			  "in_1"
+	  Position		  [30, 25, 50, 45]
+	  DropShadow		  on
+	  Port			  "1"
+	  PortWidth		  "-1"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  Position		  [145, 25, 165, 45]
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  "ansim"
+	  Position		  [70, 25, 120, 45]
+	  ShowName		  off
+	  FunctionName		  "ansim"
+	  Parameters		  "1"
+	}
+	Line {
+	  SrcBlock		  "ansim"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "in_1"
+	  SrcPort		  1
+	  DstBlock		  "ansim"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

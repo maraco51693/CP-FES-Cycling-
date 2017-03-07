@@ -1,0 +1,224 @@
+Library {
+  Name			  "pedal_wheel_animation_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:39:14 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jan 11 14:40:59 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:1>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "pedal_wheel_animation_lib"
+    Location		    [328, 57, 828, 350]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Cycle Animation"
+      Ports		      [2]
+      Position		      [195, 59, 320, 201]
+      BackgroundColor	      "yellow"
+      FontName		      "Comic Sans MS"
+      FontWeight	      "bold"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskDescription	      "This block provides a visualisation of the cycl"
+"ing action, stimulation pattern and stimulation activation as well as providi"
+"ng read outs of the angle, angular velocity, throttle value and stimulation v"
+"alue."
+      MaskPromptString	      "Show the animation window|Sample time"
+      MaskStyleString	      "checkbox,edit"
+      MaskTunableValueString  "on,on"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVariables	      "show=@1;Ts=@2;"
+      MaskDisplay	      "port_label('input', 1, 'Wheel Ang. Vel.');\npor"
+"t_label('input', 2, 'Pedal Ang. Vel.');\n\nplot([0.2.*sin([0:(pi/10):2*pi])]+"
+"0.3, [0.2.*cos([0:(pi/10):2*pi])]+0.5);\nplot([0.03.*sin([0:(pi/10):2*pi])]+0"
+".3, [0.03.*cos([0:(pi/10):2*pi])]+0.5);\nplot([0.07.*sin([0:(pi/10):2*pi])]+0"
+".8, [0.07.*cos([0:(pi/10):2*pi])]+0.5);\n\nplot([0.3 0.3; 0.8 0.8], [0.53 0.4"
+"7; 0.57 0.43])\n\nplot([0.15.*sin(-pi/4)+0.8 0.15.*sin(3*pi/4)+0.8], [0.15.*c"
+"os(-pi/4)+0.5 0.15.*cos(3*pi/4)+0.5]);\nplot([0.15.*sin([-pi/4:(pi/16):0])]+0"
+".8, [0.15.*cos([-pi/4:(pi/16):0])]+0.5);\nplot([0.15.*sin([3*pi/4:(pi/16):pi]"
+")]+0.8, [0.15.*cos([3*pi/4:(pi/16):pi])]+0.5);\n\nplot([0.77 0.8 0.77], [0.67"
+" 0.65 0.62]);\nplot([0.83 0.8 0.83], [0.38 0.35 0.33]);\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "on|0.05"
+      MaskVariableAliases     ","
+      System {
+	Name			"Cycle Animation"
+	Location		[354, 675, 913, 858]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Wheel Angle"
+	  Position		  [40, 63, 70, 77]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pedal Angle"
+	  Position		  [40, 93, 70, 107]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [185, 53, 190, 117]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [1]
+	  Position		  [310, 46, 460, 124]
+	  FunctionName		  "cycleAnim_sfcn"
+	  Parameters		  "Ts, show"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Wheel Angle"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pedal Angle"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+  }
+}

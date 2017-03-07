@@ -1,0 +1,1735 @@
+Library {
+  Name			  "stimulation_staticAngles_lib"
+  Version		  6.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 15:00:39 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Aug 10 10:48:16 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "stimulation_staticAngles_lib"
+    Location		    [59, 128, 577, 440]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulation_Pattern_1"
+      Ports		      [0, 1]
+      Position		      [80, 83, 225, 227]
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "StimAnglesInput"
+      MaskDescription	      "Use this block to input the stimulation angles."
+"  Angles should be in degrees and be between 0 and 360. The format should be "
+"a 2 element vector to indicate the start and stop angles e.g. [start stop].  "
+"Output is a bus signal."
+      MaskPromptString	      "Quad. Right|Ham. Right|Glut. Right|Calf Right|F"
+"orce left leg to be 180 degrees opposite from right leg|Quad. Left|Ham. Left|"
+"Glut. Left|Calf Left"
+      MaskStyleString	      "edit,edit,edit,edit,checkbox,edit,edit,edit,edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||if strcmp(get_param(gcb,'ExactOpp'),'on') "
+"\nset_param(gcb,'MaskVisibilities', {'on', 'on', 'on', 'on', 'on', 'off', 'of"
+"f', 'off', 'off'});\nelse \nset_param(gcb,'MaskVisibilities', {'on', 'on', 'o"
+"n', 'on', 'on', 'on', 'on', 'on', 'on'});\nend \n||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,,"
+      MaskVariables	      "Quad_R=@1;Ham_R=@2;Glut_R=@3;Calf_R=@4;ExactOpp"
+"=@5;Quad_L=@6;Ham_L=@7;Glut_L=@8;Calf_L=@9;"
+      MaskInitialization      "if ExactOpp\n  Quad_L = Quad_R+180;\n  Quad_L ="
+" Quad_L - 360*floor(Quad_L/360);\n  set_param(gcb, 'Quad_L', ['[',num2str(Qua"
+"d_L),']']);\n\n  Ham_L = Ham_R+180;\n  Ham_L = Ham_L - 360*floor(Ham_L/360);"
+"\n  set_param(gcb, 'Ham_L', ['[',num2str(Ham_L),']']);\n\n  Glut_L = Glut_R+1"
+"80;\n  Glut_L = Glut_L - 360*floor(Glut_L/360);\n  set_param(gcb, 'Glut_L', ["
+"'[',num2str(Glut_L),']']);\n\n  Calf_L = Calf_R+180;\n  Calf_L = Calf_L - 360"
+"*floor(Calf_L/360);\n  set_param(gcb, 'Calf_L', ['[',num2str(Calf_L),']']);\n"
+"end\n\ncircle_center = [0.4, 0.4]; circle_radius = 0.35;\nicon_circle_x = cir"
+"cle_radius.*sin([0:pi/18:2*pi]) + circle_center(1);\nicon_circle_y = circle_r"
+"adius.*cos([0:pi/18:2*pi]) + circle_center(2);\n\npatch_width = 0.04;\nip_par"
+"ams = [...\n    Quad_R(1), Quad_R(2), 0.34; ...\n    Quad_L(1), Quad_L(2), 0."
+"34; ...\n    Ham_R(1),  Ham_R(2),  0.29; ...\n    Ham_L(1),  Ham_L(2),  0.29;"
+" ...\n    Glut_R(1), Glut_R(2), 0.24; ...\n    Glut_L(1), Glut_L(2), 0.24; .."
+".\n    Calf_R(1), Calf_R(2), 0.19; ...\n    Calf_L(1), Calf_L(2), 0.19; ...\n"
+"    ];\n\nip_params(:,1) = ip_params(:,1)+90;\nip_params(:,2) = ip_params(:,2"
+")+90;\n\nfor i = 1 : length(ip_params(:,1))\n    if ip_params(i,2) < ip_param"
+"s(i,1) ip_params(i,2) = ip_params(i,2) + 360; end\n    x_outer = ip_params(i,"
+"3).*sin([(ip_params(i,1)/180)*pi:pi/18:(ip_params(i,2)/180)*pi]) + circle_cen"
+"ter(1);\n    y_outer = ip_params(i,3).*cos([(ip_params(i,1)/180)*pi:pi/18:(ip"
+"_params(i,2)/180)*pi]) + circle_center(1);\n    x_inner = (ip_params(i,3)-pat"
+"ch_width).*sin([(ip_params(i,2)/180)*pi:-pi/18:(ip_params(i,1)/180)*pi]) + ci"
+"rcle_center(1);\n    y_inner = (ip_params(i,3)-patch_width).*cos([(ip_params("
+"i,2)/180)*pi:-pi/18:(ip_params(i,1)/180)*pi]) + circle_center(1);\n    patch_"
+"coord_x{i} = [x_outer x_inner];\n    patch_coord_y{i} = [y_outer y_inner];\ne"
+"nd\n\n"
+      MaskDisplay	      "text(0.5, 0.9, 'Static Stimulation Angles', 'Ho"
+"rizontalAlignment', 'center', 'VerticalAlignment', 'middle');\n\nplot(icon_ci"
+"rcle_x, icon_circle_y);\npatch(patch_coord_x{1}, patch_coord_y{1}, [1 0 0]);"
+"\npatch(patch_coord_x{2}, patch_coord_y{2}, [1 0 0]);\npatch(patch_coord_x{3}"
+", patch_coord_y{3}, [0 0 1]);\npatch(patch_coord_x{4}, patch_coord_y{4}, [0 0"
+" 1]);\npatch(patch_coord_x{5}, patch_coord_y{5}, [0 1 0]);\npatch(patch_coord"
+"_x{6}, patch_coord_y{6}, [0 1 0]);\npatch(patch_coord_x{7}, patch_coord_y{7},"
+" [0.8 0.8 0]);\npatch(patch_coord_x{8}, patch_coord_y{8}, [0.8 0.8 0]);\n\npl"
+"ot(circle_center(1)+[0 circle_radius+0.05], [circle_center(2) circle_center(2"
+")]);\n\npatch([0 -0.05 -0.05 0]+0.9, [-0.025 -0.025 0.025 0.025]+0.55, [1 0 0"
+"]);\ntext(0.92, 0.55, 'Q', 'HorizontalAlignment', 'left', 'VerticalAlignment'"
+", 'middle');\n\npatch([0 -0.05 -0.05 0]+0.9, [-0.025 -0.025 0.025 0.025]+0.45"
+", [0 0 1]);\ntext(0.92, 0.45, 'H', 'HorizontalAlignment', 'left', 'VerticalAl"
+"ignment', 'middle');\n\npatch([0 -0.05 -0.05 0]+0.9, [-0.025 -0.025 0.025 0.0"
+"25]+0.35, [0 1 0]);\ntext(0.92, 0.35, 'G', 'HorizontalAlignment', 'left', 'Ve"
+"rticalAlignment', 'middle');\n\npatch([0 -0.05 -0.05 0]+0.9, [-0.025 -0.025 0"
+".025 0.025]+0.25, [0.8 0.8 0]);\ntext(0.92, 0.25, 'C', 'HorizontalAlignment',"
+" 'left', 'VerticalAlignment', 'middle');\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "[55 155]|[188 265]|[90 180]|[180 205]|on|[235  "
+"335]|[8  85]|[270    0]|[0  25]"
+      MaskTabNameString	      ",,,,,,,,"
+      System {
+	Name			"Stimulation_Pattern_1"
+	Location		[254, 402, 870, 874]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  Ports			  [2, 1]
+	  Position		  [250, 26, 255, 64]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Quad"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator1"
+	  Ports			  [4, 1]
+	  Position		  [330, 23, 335, 217]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "R"
+	    PropagatedSignals	    "Quad, Ham, Glut, Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator10"
+	  Ports			  [2, 1]
+	  Position		  [250, 376, 255, 414]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Calf"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator2"
+	  Ports			  [2, 1]
+	  Position		  [400, 20, 405, 420]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "StimAngles"
+	    PropagatedSignals	    "R, L"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator3"
+	  Ports			  [2, 1]
+	  Position		  [250, 76, 255, 114]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Ham"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator4"
+	  Ports			  [2, 1]
+	  Position		  [250, 126, 255, 164]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Glut"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator5"
+	  Ports			  [2, 1]
+	  Position		  [250, 176, 255, 214]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Calf"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator6"
+	  Ports			  [2, 1]
+	  Position		  [250, 226, 255, 264]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Quad"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator7"
+	  Ports			  [4, 1]
+	  Position		  [330, 223, 335, 417]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "L"
+	    PropagatedSignals	    "Quad, Ham, Glut, Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator8"
+	  Ports			  [2, 1]
+	  Position		  [250, 276, 255, 314]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Ham"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator9"
+	  Ports			  [2, 1]
+	  Position		  [250, 326, 255, 364]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Glut"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [50, 30, 105, 60]
+	  ShowName		  off
+	  Value			  "Quad_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [50, 80, 105, 110]
+	  ShowName		  off
+	  Value			  "Ham_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [50, 130, 105, 160]
+	  ShowName		  off
+	  Value			  "Glut_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  Position		  [50, 180, 105, 210]
+	  ShowName		  off
+	  Value			  "Calf_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  Position		  [50, 230, 105, 260]
+	  ShowName		  off
+	  Value			  "Quad_L"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  Position		  [50, 280, 105, 310]
+	  ShowName		  off
+	  Value			  "Ham_L"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant6"
+	  Position		  [50, 330, 105, 360]
+	  ShowName		  off
+	  Value			  "Glut_L"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  Position		  [50, 380, 105, 410]
+	  ShowName		  off
+	  Value			  "Calf_L"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 2]
+	  Position		  [190, 23, 195, 67]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux2"
+	  Ports			  [1, 2]
+	  Position		  [190, 73, 195, 117]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux3"
+	  Ports			  [1, 2]
+	  Position		  [190, 123, 195, 167]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux4"
+	  Ports			  [1, 2]
+	  Position		  [190, 173, 195, 217]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux5"
+	  Ports			  [1, 2]
+	  Position		  [190, 223, 195, 267]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux6"
+	  Ports			  [1, 2]
+	  Position		  [190, 273, 195, 317]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux7"
+	  Ports			  [1, 2]
+	  Position		  [190, 323, 195, 367]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux8"
+	  Ports			  [1, 2]
+	  Position		  [190, 373, 195, 417]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Stimulation Angles"
+	  Position		  [525, 213, 555, 227]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Name			  "L"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator7"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "Demux8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant6"
+	  SrcPort		  1
+	  DstBlock		  "Demux7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  DstBlock		  "Demux6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  DstBlock		  "Demux5"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Calf"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator10"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "Glut"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator9"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Ham"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator8"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux8"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator10"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux8"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator10"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux7"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator9"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux7"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator9"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux6"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator8"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux6"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator8"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Quad"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator6"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux5"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator6"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux5"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "Demux4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  DstBlock		  "Demux3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Demux2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Calf"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator5"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "Glut"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator4"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Ham"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator3"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux4"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux4"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux3"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator4"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux3"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux2"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator3"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux2"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "StimAngles"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator2"
+	  SrcPort		  1
+	  DstBlock		  "Stimulation Angles"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "R"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Quad"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulation_Pattern_2"
+      Ports		      [0, 1]
+      Position		      [300, 98, 455, 212]
+      BackgroundColor	      "green"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "StimAnglesInput"
+      MaskDescription	      "Use this block to input the stimulation angles."
+"  Angles should be in degrees and be between 0 and 360. The format should be "
+"a 2 element vector to indicate the start and stop angles e.g. [start stop].  "
+"Output is a bus signal."
+      MaskPromptString	      "Quad. Right|Ham. Right|Glut. Right|Calf Right|F"
+"orce left leg to be 180 degrees opposite from right leg|Quad. Left|Ham. Left|"
+"Glut. Left|Calf Left"
+      MaskStyleString	      "edit,edit,edit,edit,checkbox,edit,edit,edit,edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||if strcmp(get_param(gcb,'ExactOpp'),'on') "
+"\nset_param(gcb,'MaskVisibilities', {'on', 'on', 'on', 'on', 'on', 'off', 'of"
+"f', 'off', 'off'});\nelse \nset_param(gcb,'MaskVisibilities', {'on', 'on', 'o"
+"n', 'on', 'on', 'on', 'on', 'on', 'on'});\nend \n||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,,"
+      MaskVariables	      "Quad_R=@1;Ham_R=@2;Glut_R=@3;Calf_R=@4;ExactOpp"
+"=@5;Quad_L=@6;Ham_L=@7;Glut_L=@8;Calf_L=@9;"
+      MaskInitialization      "if ExactOpp\n  Quad_L = Quad_R+180;\n  Quad_L ="
+" Quad_L - 360*floor(Quad_L/360);\n  set_param(gcb, 'Quad_L', ['[',num2str(Qua"
+"d_L),']']);\n\n  Ham_L = Ham_R+180;\n  Ham_L = Ham_L - 360*floor(Ham_L/360);"
+"\n  set_param(gcb, 'Ham_L', ['[',num2str(Ham_L),']']);\n\n  Glut_L = Glut_R+1"
+"80;\n  Glut_L = Glut_L - 360*floor(Glut_L/360);\n  set_param(gcb, 'Glut_L', ["
+"'[',num2str(Glut_L),']']);\n\n  Calf_L = Calf_R+180;\n  Calf_L = Calf_L - 360"
+"*floor(Calf_L/360);\n  set_param(gcb, 'Calf_L', ['[',num2str(Calf_L),']']);\n"
+"end\n"
+      MaskDisplay	      "text(0.5, 0.9, 'Static Stimulation Angles', 'Ho"
+"rizontalAlignment', 'center', 'VerticalAlignment', 'middle');\n\nplot([0.05 0"
+".95], [0.65 0.65]);\nplot([0.2 0.2], [0.8 0.2]);\nplot([0.6 0.6], [0.8 0.2]);"
+"\n\ntext(0.1, 0.7, 'M', 'HorizontalAlignment', 'center', 'VerticalAlignment',"
+" 'middle');\ntext(0.4, 0.7, 'Right', 'HorizontalAlignment', 'center', 'Vertic"
+"alAlignment', 'middle');\ntext(0.8, 0.7, 'Left', 'HorizontalAlignment', 'cent"
+"er', 'VerticalAlignment', 'middle');\n\ntext(0.1, 0.55, 'Q', 'HorizontalAlign"
+"ment', 'center', 'VerticalAlignment', 'middle');\ntext(0.4, 0.55, num2str(Qua"
+"d_R), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\ntext("
+"0.8, 0.55, num2str(Quad_L), 'HorizontalAlignment', 'center', 'VerticalAlignme"
+"nt', 'middle');\n\ntext(0.1, 0.45, 'H', 'HorizontalAlignment', 'center', 'Ver"
+"ticalAlignment', 'middle');\ntext(0.4, 0.45, num2str(Ham_R), 'HorizontalAlign"
+"ment', 'center', 'VerticalAlignment', 'middle');\ntext(0.8, 0.45, num2str(Ham"
+"_L), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\n\ntext"
+"(0.1, 0.35, 'G', 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middl"
+"e');\ntext(0.4, 0.35, num2str(Glut_R), 'HorizontalAlignment', 'center', 'Vert"
+"icalAlignment', 'middle');\ntext(0.8, 0.35, num2str(Glut_L), 'HorizontalAlign"
+"ment', 'center', 'VerticalAlignment', 'middle');\n\ntext(0.1, 0.25, 'C', 'Hor"
+"izontalAlignment', 'center', 'VerticalAlignment', 'middle');\ntext(0.4, 0.25,"
+" num2str(Calf_R), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'midd"
+"le');\ntext(0.8, 0.25, num2str(Calf_L), 'HorizontalAlignment', 'center', 'Ver"
+"ticalAlignment', 'middle');\n\n\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "[55 155]|[188 265]|[90 180]|[0 1]|on|[235  335]"
+"|[8  85]|[270    0]|[180  181]"
+      MaskTabNameString	      ",,,,,,,,"
+      System {
+	Name			"Stimulation_Pattern_2"
+	Location		[254, 402, 870, 874]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  Ports			  [2, 1]
+	  Position		  [250, 26, 255, 64]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Quad"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator1"
+	  Ports			  [4, 1]
+	  Position		  [330, 23, 335, 217]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "R"
+	    PropagatedSignals	    "Quad, Ham, Glut, Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator10"
+	  Ports			  [2, 1]
+	  Position		  [250, 376, 255, 414]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Calf"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator2"
+	  Ports			  [2, 1]
+	  Position		  [400, 20, 405, 420]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "StimAngles"
+	    PropagatedSignals	    "R, L"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator3"
+	  Ports			  [2, 1]
+	  Position		  [250, 76, 255, 114]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Ham"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator4"
+	  Ports			  [2, 1]
+	  Position		  [250, 126, 255, 164]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Glut"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator5"
+	  Ports			  [2, 1]
+	  Position		  [250, 176, 255, 214]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Calf"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator6"
+	  Ports			  [2, 1]
+	  Position		  [250, 226, 255, 264]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Quad"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator7"
+	  Ports			  [4, 1]
+	  Position		  [330, 223, 335, 417]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "L"
+	    PropagatedSignals	    "Quad, Ham, Glut, Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator8"
+	  Ports			  [2, 1]
+	  Position		  [250, 276, 255, 314]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Ham"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator9"
+	  Ports			  [2, 1]
+	  Position		  [250, 326, 255, 364]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Glut"
+	    PropagatedSignals	    "start, stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [50, 30, 105, 60]
+	  ShowName		  off
+	  Value			  "Quad_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [50, 80, 105, 110]
+	  ShowName		  off
+	  Value			  "Ham_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [50, 130, 105, 160]
+	  ShowName		  off
+	  Value			  "Glut_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  Position		  [50, 180, 105, 210]
+	  ShowName		  off
+	  Value			  "Calf_R"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  Position		  [50, 230, 105, 260]
+	  ShowName		  off
+	  Value			  "Quad_L"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  Position		  [50, 280, 105, 310]
+	  ShowName		  off
+	  Value			  "Ham_L"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant6"
+	  Position		  [50, 330, 105, 360]
+	  ShowName		  off
+	  Value			  "Glut_L"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  Position		  [50, 380, 105, 410]
+	  ShowName		  off
+	  Value			  "Calf_L"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux1"
+	  Ports			  [1, 2]
+	  Position		  [190, 23, 195, 67]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux2"
+	  Ports			  [1, 2]
+	  Position		  [190, 73, 195, 117]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux3"
+	  Ports			  [1, 2]
+	  Position		  [190, 123, 195, 167]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux4"
+	  Ports			  [1, 2]
+	  Position		  [190, 173, 195, 217]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux5"
+	  Ports			  [1, 2]
+	  Position		  [190, 223, 195, 267]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux6"
+	  Ports			  [1, 2]
+	  Position		  [190, 273, 195, 317]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux7"
+	  Ports			  [1, 2]
+	  Position		  [190, 323, 195, 367]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux8"
+	  Ports			  [1, 2]
+	  Position		  [190, 373, 195, 417]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "2"
+	  Port {
+	    PortNumber		    1
+	    Name		    "start"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "stop"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Stimulation Angles"
+	  Position		  [525, 213, 555, 227]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Demux1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux1"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Quad"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "R"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "StimAngles"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator2"
+	  SrcPort		  1
+	  DstBlock		  "Stimulation Angles"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux2"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux2"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator3"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux3"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux3"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator4"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux4"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux4"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator5"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Ham"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator3"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Glut"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator4"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Calf"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator5"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Demux2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  DstBlock		  "Demux3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "Demux4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux5"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator6"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux5"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator6"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Quad"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator6"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux6"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator8"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux6"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator8"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux7"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator9"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux7"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator9"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "start"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux8"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator10"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "stop"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Demux8"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator10"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Ham"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator8"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Glut"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator9"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Calf"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator10"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  DstBlock		  "Demux5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  DstBlock		  "Demux6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant6"
+	  SrcPort		  1
+	  DstBlock		  "Demux7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "Demux8"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "L"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator7"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  2
+	}
+      }
+    }
+  }
+}

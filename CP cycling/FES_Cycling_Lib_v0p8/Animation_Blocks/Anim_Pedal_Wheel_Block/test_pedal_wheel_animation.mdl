@@ -1,0 +1,983 @@
+Model {
+  Name			  "test_pedal_wheel_animation"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Jul 24 18:17:38 2003"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jan 11 14:40:43 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:22>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "60"
+  SolverMode		  "Auto"
+  Solver		  "ode1"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.05"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWOptions		  "-aEnforceIntegerDowncast=1 -aExtMode=0 -aFoldNonRol"
+"ledExpr=1 -aForceParamTrailComments=0 -aGenerateComments=1 -aIgnoreCustomStor"
+"ageClasses=0 -aIncHierarchyInIds=0 -aInlineInvariantSignals=0 -aLocalBlockOut"
+"puts=1 -aLogVarNameModifier=\"rt_\" -aRTWVerbose=1 -aRollThreshold=5 -aShowEl"
+"iminatedStatements=1"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "test_pedal_wheel_animation"
+    Location		    [582, 635, 1274, 964]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Angle Conversion"
+      Ports		      [1, 2]
+      Position		      [165, 30, 265, 190]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Angle Conversion"
+	Location		[345, 331, 1129, 795]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Angle (0 to 1 volts)"
+	  Position		  [60, 248, 90, 262]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "0 < u < 360"
+	  Position		  [510, 243, 630, 267]
+	  Expr			  " u - 360*floor(u/360)"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Angle Derivative"
+	  Ports			  [1, 1]
+	  Position		  [510, 313, 630, 337]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  MaskType		  "AngleDer"
+	  MaskDescription	  "This block calculates the angular velocity "
+"from the angle measuremet.  If the input angle is in degrees then the output "
+"velocity is in deg/s.  The block takes account of the transition from 359 deg"
+" to 0 deg or vice versa and computes the derivative based on the sample time "
+"given  The output is passed through a low pass filter based on the fliter con"
+"stant also given.\n\nImplemented by Nils-Otto Negaard\nDocumented by Ben Saun"
+"ders (17/06/2003)"
+	  MaskPromptString	  "Filter constant|Sampling Time"
+	  MaskStyleString	  "edit,edit"
+	  MaskTunableValueString  "on,on"
+	  MaskCallbackString	  "|"
+	  MaskEnableString	  "on,on"
+	  MaskVisibilityString	  "on,on"
+	  MaskToolTipString	  "on,on"
+	  MaskVariables		  "Tdf=@1;Ts=@2;"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  MaskValueString	  "0.5|0.05"
+	  MaskVariableAliases	  ","
+	  System {
+	    Name		    "Angle Derivative"
+	    Location		    [7, 127, 1147, 589]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Angle"
+	      Position		      [35, 168, 65, 182]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [120, 359, 150, 381]
+	      ShowName		      off
+	      Value		      "180"
+	      VectorParams1D	      off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      Position		      [120, 279, 150, 301]
+	      ShowName		      off
+	      Value		      "180"
+	      VectorParams1D	      off
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion"
+	      Position		      [680, 301, 735, 329]
+	      ShowName		      off
+	      DataType		      "double"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      "Demux"
+	      Ports		      [1, 3]
+	      Position		      [865, 276, 870, 334]
+	      BackgroundColor	      "black"
+	      ShowName		      off
+	      Outputs		      "3"
+	      BusSelectionMode	      off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn"
+	      Position		      [435, 136, 550, 164]
+	      ShowName		      off
+	      Expr		      "1/Ts*(u(1)+360-u(2))"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn1"
+	      Position		      [435, 216, 550, 244]
+	      ShowName		      off
+	      Expr		      "1/Ts*(u(1)-360-u(2))"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn2"
+	      Position		      [435, 176, 550, 204]
+	      ShowName		      off
+	      Expr		      "1/Ts*(u(1)-u(2))"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn4"
+	      Position		      [1035, 321, 1185, 349]
+	      Expr		      "(1-Ts/Tdf)*u(2)+Ts/Tdf*u(1)"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      Ports		      [2, 1]
+	      Position		      [435, 303, 465, 327]
+	      Operator		      "NOR"
+	      Inputs		      "2"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux"
+	      Ports		      [3, 1]
+	      Position		      [625, 256, 630, 374]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux1"
+	      Ports		      [2, 1]
+	      Position		      [345, 162, 350, 218]
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux2"
+	      Ports		      [3, 1]
+	      Position		      [625, 131, 630, 249]
+	      ShowName		      off
+	      Inputs		      "3"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Mux
+	      Name		      "Mux3"
+	      Ports		      [2, 1]
+	      Position		      [1005, 275, 1010, 395]
+	      ShowName		      off
+	      Inputs		      "2"
+	      DisplayOption	      "bar"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [790, 278, 815, 327]
+	      Inputs		      "2"
+	      Multiplication	      "Element-wise(.*)"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator"
+	      Position		      [320, 257, 350, 288]
+	      Operator		      ">"
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator1"
+	      Position		      [320, 337, 350, 368]
+	      Operator		      "<"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum"
+	      Ports		      [2, 1]
+	      Position		      [205, 258, 230, 302]
+	      ShowName		      off
+	      IconShape		      "rectangular"
+	      Inputs		      "++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum2"
+	      Ports		      [3, 1]
+	      Position		      [925, 275, 950, 335]
+	      ShowName		      off
+	      IconShape		      "rectangular"
+	      Inputs		      "+++"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Sum3"
+	      Ports		      [2, 1]
+	      Position		      [205, 338, 230, 382]
+	      ShowName		      off
+	      IconShape		      "rectangular"
+	      Inputs		      "+-"
+	      SaturateOnIntegerOverflow	on
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "Unit Delay"
+	      Position		      [205, 185, 230, 225]
+	      X0		      "0"
+	      SampleTime	      "0.05"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "Unit Delay1"
+	      Position		      [925, 345, 950, 385]
+	      X0		      "0"
+	      SampleTime	      "Ts"
+	      RTWStateStorageClass    "Auto"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Vel (deg/s)"
+	      Position		      [1240, 328, 1270, 342]
+	      Port		      "1"
+	      OutputWhenDisabled      "held"
+	      InitialOutput	      "[]"
+	    }
+	    Line {
+	      SrcBlock		      "Fcn1"
+	      SrcPort		      1
+	      DstBlock		      "Mux2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Fcn2"
+	      SrcPort		      1
+	      DstBlock		      "Mux2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Mux"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum3"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      DstBlock		      "Sum"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Angle"
+	      SrcPort		      1
+	      Points		      [0, 0; 30, 0]
+	      Branch {
+		Points			[20, 0]
+		Branch {
+		  Points		  [20, 0]
+		  Branch {
+		    Points		    [0, 30]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Mux1"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  Points		  [0, 95]
+		  DstBlock		  "Sum"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 175]
+		DstBlock		"Sum3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Sum2"
+	      SrcPort		      1
+	      DstBlock		      "Mux3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      3
+	      DstBlock		      "Sum2"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      2
+	      DstBlock		      "Sum2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Demux"
+	      SrcPort		      1
+	      DstBlock		      "Sum2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      DstBlock		      "Demux"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Unit Delay1"
+	      SrcPort		      1
+	      DstBlock		      "Mux3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Mux3"
+	      SrcPort		      1
+	      DstBlock		      "Fcn4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn4"
+	      SrcPort		      1
+	      Points		      [0, 0; 15, 0]
+	      Branch {
+		DstBlock		"Vel (deg/s)"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 0; 0, 85; -325, 0; 0, -55]
+		DstBlock		"Unit Delay1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Mux2"
+	      SrcPort		      1
+	      Points		      [140, 0]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn"
+	      SrcPort		      1
+	      DstBlock		      "Mux2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Mux1"
+	      SrcPort		      1
+	      Points		      [0, 0; 40, 0]
+	      Branch {
+		DstBlock		"Fcn2"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[1, 0]
+		Points			[0, 40]
+		DstBlock		"Fcn1"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -40]
+		DstBlock		"Fcn"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Mux"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator"
+	      SrcPort		      1
+	      Points		      [0, 0; 40, 0]
+	      Branch {
+		DstBlock		"Mux"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 35]
+		DstBlock		"Logical\nOperator"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator1"
+	      SrcPort		      1
+	      Points		      [0, 0; 40, 0]
+	      Branch {
+		DstBlock		"Mux"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, -35]
+		DstBlock		"Logical\nOperator"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Sum3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Sum"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Unit Delay"
+	      SrcPort		      1
+	      Points		      [0, 0; 50, 0]
+	      Branch {
+		Points			[0, 60]
+		Branch {
+		  DstBlock		  "Relational\nOperator"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 80]
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		DstBlock		"Mux1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Data Type Conversion"
+	      SrcPort		      1
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Annotation {
+	      Position		      [28, 25]
+	      HorizontalAlignment     "left"
+	      Text		      "Angle Derivative"
+	      FontSize		      36
+	    }
+	    Annotation {
+	      Position		      [1042, 298]
+	      HorizontalAlignment     "left"
+	      Text		      "Filtering the final rate of\nchange of "
+"angle."
+	    }
+	    Annotation {
+	      Position		      [794, 238]
+	      HorizontalAlignment     "left"
+	      Text		      "Multiplication of each case\nby it's lo"
+"gical condition thus\nonly one value will not be zero.\nSo the three lines ca"
+"n be\ncombined by adding."
+	    }
+	    Annotation {
+	      Position		      [439, 108]
+	      HorizontalAlignment     "left"
+	      Text		      "The three calculations for each\npossib"
+"le case of the shaft encoder"
+	    }
+	    Annotation {
+	      Position		      [434, 398]
+	      HorizontalAlignment     "left"
+	      Text		      "Each line above is a logical value\nrep"
+"resenting the condition of the\nshaft encoder angle.  Only one line\nshould b"
+"e not eaqual to zero."
+	    }
+	    Annotation {
+	      Position		      [24, 83]
+	      HorizontalAlignment     "left"
+	      Text		      "Calculation of the rate of change of an"
+"gle\nfor the 3 cases:\nSeperated by break in shaft encoder with old > new (ol"
+"d > new + 180)\nNot seperated by break in the shaft encoder\nSeperated by bre"
+"ak in shaft encoder with new > old (old < new - 180)"
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Angle Shift"
+	  Position		  [325, 140, 355, 170]
+	  Value			  "0"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [410, 240, 440, 270]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "++|"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "angle into degrees"
+	  Position		  [165, 242, 280, 268]
+	  Expr			  " u*360"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Angle (deg)"
+	  Position		  [705, 248, 735, 262]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Vel (deg/s)"
+	  Position		  [705, 318, 735, 332]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Angle Derivative"
+	  SrcPort		  1
+	  DstBlock		  "Vel (deg/s)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Angle (0 to 1 volts)"
+	  SrcPort		  1
+	  DstBlock		  "angle into degrees"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "0 < u < 360"
+	  SrcPort		  1
+	  DstBlock		  "Angle (deg)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "0 < u < 360"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "angle into degrees"
+	  SrcPort		  1
+	  Points		  [0, 0; 25, 0]
+	  Branch {
+	    DstBlock		    "Sum"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "Angle Derivative"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Angle Shift"
+	  SrcPort		  1
+	  Points		  [65, 0]
+	  DstBlock		  "Sum"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [517, 217]
+	  HorizontalAlignment	  "left"
+	  Text			  "Ensure that the final angle\nvalue is betwe"
+"en 0 and 360"
+	}
+	Annotation {
+	  Position		  [13, 104]
+	  HorizontalAlignment	  "left"
+	  Text			  "This system converts an\nangle described as"
+" a voltage\nbetween 0 and 1 and turns it\ninto an angle in degrees.\nThe rate"
+" of change of angle\nis also calculated."
+	  FontName		  "Arial"
+	  FontSize		  12
+	}
+	Annotation {
+	  Position		  [327, 87]
+	  HorizontalAlignment	  "left"
+	  Text			  "Use this constant input\nwhen the 0 point o"
+"f the\ninput angle is not the same\nas the 0 point needed by\nthe rest of the"
+" simulaink\nmodel.\n(left leg horizontally forward)"
+	}
+	Annotation {
+	  Position		  [13, 30]
+	  HorizontalAlignment	  "left"
+	  Text			  "Angle Conversion"
+	  FontSize		  36
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Cycle Animation"
+      Ports		      [2]
+      Position		      [485, 44, 610, 186]
+      BackgroundColor	      "yellow"
+      FontName		      "Comic Sans MS"
+      FontWeight	      "bold"
+      SourceBlock	      "pedal_wheel_animation_lib/Cycle Animation"
+      SourceType	      ""
+      show		      on
+      Ts		      "0.05"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      Position		      [405, 65, 455, 95]
+      Gain		      "2"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Repeating\nSequence"
+      Ports		      [0, 1]
+      Position		      [85, 95, 115, 125]
+      SourceBlock	      "simulink3/Sources/Repeating\nSequence"
+      SourceType	      "Repeating table"
+      rep_seq_t		      "[0 20 40 60]"
+      rep_seq_y		      "[0.0 0.2 0.5 1.0]"
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator"
+      Position		      [320, 60, 340, 80]
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "rt_sync1"
+      Ports		      [0, 1]
+      Position		      [235, 213, 295, 277]
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskPromptString	      "Sample Time"
+      MaskStyleString	      "edit"
+      MaskTunableValueString  "on"
+      MaskEnableString	      "on"
+      MaskVisibilityString    "on"
+      MaskToolTipString	      "on"
+      MaskVariables	      "Ts=@1;"
+      MaskDisplay	      "fprintf('Real\\n Time\\n sync')"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "0.05"
+      System {
+	Name			"rt_sync1"
+	Location		[340, 165, 637, 249]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [0, 1]
+	  Position		  [25, 30, 85, 60]
+	  FunctionName		  "sf_rtsync"
+	  Parameters		  "Ts"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "time"
+	  Position		  [145, 38, 175, 52]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  DstBlock		  "time"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Display
+      Name		      "time_sync"
+      Ports		      [1]
+      Position		      [410, 230, 500, 260]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "time_sync1"
+      Ports		      [1]
+      Position		      [360, 175, 450, 205]
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Line {
+      SrcBlock		      "rt_sync1"
+      SrcPort		      1
+      DstBlock		      "time_sync"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Repeating\nSequence"
+      SrcPort		      1
+      DstBlock		      "Angle Conversion"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Angle Conversion"
+      SrcPort		      2
+      Points		      [55, 0]
+      Branch {
+	Points			[50, 0]
+	Branch {
+	  Points		  [0, -70]
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Cycle Animation"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	Points			[0, 40]
+	DstBlock		"time_sync1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      DstBlock		      "Cycle Animation"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Angle Conversion"
+      SrcPort		      1
+      DstBlock		      "Terminator"
+      DstPort		      1
+    }
+  }
+}

@@ -1,0 +1,714 @@
+
+ ----------General Information  ----------
+
+Current Time & Date: 
+14-Sep-2011 10:50:17
+
+Operating System: 
+Microsoft Windows XP [Version 5.1.2600] 
+
+
+MATLAB version: 
+7.4.0.287 (R2007a)
+
+Data Acquisition Toolbox version: 
+       Name: 'Data Acquisition Toolbox'
+    Version: '2.10'
+    Release: '(R2007a)'
+       Date: '01-Feb-2007'
+
+
+MATLAB License Number:
+137391
+
+ ----------Memory Information:  ----------
+       MemoryLoad: 95
+        TotalPhys: 536203264
+        AvailPhys: 26386432
+    TotalPageFile: 949612544
+    AvailPageFile: 314888192
+     TotalVirtual: 2.1474e+009
+     AvailVirtual: 1.2905e+009
+          UsedDaq: 0
+
+
+ ----------MATLAB root directory:  ----------
+C:\Program Files\MATLAB\R2007a
+
+ ----------Data Acquisition Toolbox directory:  ----------
+c:\program files\matlab\r2007a\toolbox\daq
+
+ ----------MATLAB path:  ----------
+
+		MATLABPATH
+
+	C:\Documents and Settings\research\My Documents\MATLAB
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\ni
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\CDM 2.00.00
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\Muscle_Profiling
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\Subject_5\controller_design
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\Subject_5\controller_design\sub4
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\sciencemode
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\sfprj
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\sfprj\build
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\sfprj\build\mathworks_DAQ_Test
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\sfprj\build\mathworks_DAQ_Test\sfun
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\sfprj\build\mathworks_DAQ_Test\sfun\src
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\subject_3_data
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\subject_3_data\Constand_load_f2
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\subject_3_data\Constant_load_PID
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\subject_3_data\Constant_load_f1
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\subject_3_data\Copy_of_Constant_load_PID
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\subject_3_data\Seating_Session_010708
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\LicenseAgreements
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\CVIRTE
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_Broker
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_Broker\LVBroker.msi
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_BrokerAux80
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_BrokerAux80\LVBrokerAux800
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_RT_Error_Dialog
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_RT_Error_Dialog\LVRealTimeErrorDialog
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_Runtime_Engine_70
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_Runtime_Engine_70\LV70RTE
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_Runtime_Engine_80
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\LabVIEW_Runtime_Engine_80\lv80rte
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MAX
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MAX\BaselineProviders
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MAX\MStudio2003
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MAX\MStudio2005
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MAX\MXCVISupport
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MAX\MXLVSupport
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MDFSupport
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MDFSupport\MDF
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MKL
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MKL\MKL700
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MStudioCommon
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MStudioCommon2005
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MStudioVS2003Patches
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MXS
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MetaUninstaller
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\MetaUninstaller\MU
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-APAL_Error_Files
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-DAQmx_Base
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-DIM
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-ORB
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-ORB_RTX
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-PAL
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-PAL_RTX
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-RPC
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-RPC_RT
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-RPC_RTX
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-Spy
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-VISA
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-VISA_Provider
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-VISA_RTX
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI-VISA_Runtime
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NIVcppCommon
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NIVcppCommon2005
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI_Logos
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI_Logos\logos100
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI_PXI_Platform_Services
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI_PXI_Platform_Services_Provider
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\NI_Registration_Wizard
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\Portable_Configuration
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\RemPXI_Provider
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\Remote_Provider
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\Service_Locator
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\Service_Locator\svcloc
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\Products\Software_Provider
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\temp_ni\NIDAQmxBase210\supportfiles
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\win32-cont
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\win32-cont\win32-cont
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\win32-cont_1st
+	C:\Documents and Settings\research\My Documents\VFT SCI Cycling\win32-cont_1st\win32-cont
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Animation_Blocks
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Animation_Blocks\Anim_Pedal_Wheel_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Animation_Blocks\Anim_Stimulation_Pattern_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks\Controller_Design_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks\Controller_Design_Block\Controllers
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks\Controller_Design_Block\Parameter_Files
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks\Controller_Design_Block\Results
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks\Fuzzy_Controller_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks\RST_Controller_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Controller_Blocks\RST_Controller_Block\Controllers
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\DAQ_DB_Drivers_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\DAQ_Drivers_DIG_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\DAQ_Drivers_Read_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\DAQ_Drivers_Write_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\MetaMax_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\Stimulator_Blocks
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\Stimulator_Blocks\RehaStim_Stimulator
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\Stimulator_Blocks\Stanlab_Stimulator
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\Syncronise_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Hardware_IO_Blocks\USB_miniLAB_Fcns
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\LoadSave_Blocks
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\LoadSave_Blocks\LoadSaveCycleControl_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\LoadSave_Blocks\LoadSaveCycleControl_Block\Parameter_Files
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\LoadSave_Blocks\LoadSaveCycleControl_Block\Results
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\LoadSave_Blocks\LoadSaveScrip_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\LoadSave_Blocks\LoadSaveScrip_Block\Parameter_Files
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\LoadSave_Blocks\LoadSaveScrip_Block\Results
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Source_Blocks
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Source_Blocks\IdInput_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Source_Blocks\PRBS_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Source_Blocks\SET_IET_blocks
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Source_Blocks\Stimulation_Currents_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Source_Blocks\Stimulation_Frequency_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling\FES_Cycling_Lib_v0p8\Source_Blocks\Stimulation_StaticAngles_Block
+	C:\Documents and Settings\research\My Documents\CP Cycling
+	C:\Documents and Settings\research\My Documents\CP Cycling\ansim
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\general
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\ops
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\lang
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\elmat
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\elfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\specfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\matfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\datafun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\polyfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\funfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\sparfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\scribe
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\graph2d
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\graph3d
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\specgraph
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\graphics
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\uitools
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\strfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\imagesci
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\iofun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\audiovideo
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\timefun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\datatypes
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\verctrl
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\codetools
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\helptools
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\winfun
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\demos
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\timeseries
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\hds
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\guide
+	C:\Program Files\MATLAB\R2007a\toolbox\matlab\plottools
+	C:\Program Files\MATLAB\R2007a\toolbox\local
+	C:\Program Files\MATLAB\R2007a\toolbox\shared\controllib
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simulink
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\blocks
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\components
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\fixedandfloat
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\fixedandfloat\fxpdemos
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\fixedandfloat\obsolete
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simdemos
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simdemos\aerospace
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simdemos\automotive
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simdemos\simfeatures
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simdemos\simgeneral
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\dee
+	C:\Program Files\MATLAB\R2007a\toolbox\shared\dastudio
+	C:\Program Files\MATLAB\R2007a\toolbox\shared\glue
+	C:\Program Files\MATLAB\R2007a\toolbox\stateflow\stateflow
+	C:\Program Files\MATLAB\R2007a\toolbox\rtw\rtw
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simulink\modeladvisor
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simulink\modeladvisor\fixpt
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simulink\mplayio
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\simulink\dataobjectwizard
+	C:\Program Files\MATLAB\R2007a\toolbox\shared\fixedpointlib
+	C:\Program Files\MATLAB\R2007a\toolbox\simulink\dataimportexport
+	C:\Program Files\MATLAB\R2007a\toolbox\shared\hdlshared
+	C:\Program Files\MATLAB\R2007a\toolbox\stateflow\sfdemos
+	C:\Program Files\MATLAB\R2007a\toolbox\stateflow\coder
+	C:\Program Files\MATLAB\R2007a\toolbox\compiler
+	C:\Program Files\MATLAB\R2007a\toolbox\daq\daq
+	C:\Program Files\MATLAB\R2007a\toolbox\daq\daqguis
+	C:\Program Files\MATLAB\R2007a\toolbox\daq\daqdemos
+	C:\Program Files\MATLAB\R2007a\toolbox\daq\daqblks\daqblks
+	C:\Program Files\MATLAB\R2007a\toolbox\daq\daqblks\daqmasks
+	C:\Program Files\MATLAB\R2007a\toolbox\daq\daqblks\daqmex
+	C:\Program Files\MATLAB\R2007a\toolbox\eml\eml
+	C:\Program Files\MATLAB\R2007a\toolbox\emlcoder\emlcoder
+	C:\Program Files\MATLAB\R2007a\toolbox\emlcoder\emlcodermex
+	C:\Program Files\MATLAB\R2007a\toolbox\fixedpoint\fixedpoint
+	C:\Program Files\MATLAB\R2007a\toolbox\fixedpoint\fidemos
+	C:\Program Files\MATLAB\R2007a\toolbox\fuzzy\fuzzy
+	C:\Program Files\MATLAB\R2007a\toolbox\fuzzy\fuzdemos
+	C:\Program Files\MATLAB\R2007a\toolbox\slvnv\simcoverage
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nncontrol
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nndemos
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnanalyze
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nncustom
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nndistance
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnformat
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nninit
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnlearn
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnnetinput
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnnetwork
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnperformance
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnplot
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnprocess
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnsearch
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nntopology
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nntrain
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nntransfer
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnet\nnweight
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnguis
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnguis\nftool
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnguis\nntool
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnobsolete
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnresource
+	C:\Program Files\MATLAB\R2007a\toolbox\nnet\nnutils
+	C:\Program Files\MATLAB\R2007a\toolbox\signal\signal
+	C:\Program Files\MATLAB\R2007a\toolbox\signal\sigtools
+	C:\Program Files\MATLAB\R2007a\toolbox\signal\sptoolgui
+	C:\Program Files\MATLAB\R2007a\toolbox\signal\sigdemos
+	C:\Program Files\MATLAB\R2007a\toolbox\shared\spcuilib
+	C:\Program Files\MATLAB\R2007a\toolbox\stats
+	C:\Program Files\MATLAB\R2007a\toolbox\shared\optimlib
+	C:\Program Files\MATLAB\R2007a\toolbox\vr\vr
+	C:\Program Files\MATLAB\R2007a\toolbox\vr\vrdemos
+	C:\Program Files\MATLAB\R2007a\toolbox\wavelet\wavelet
+	C:\Program Files\MATLAB\R2007a\toolbox\wavelet\wmultisig1d
+	C:\Program Files\MATLAB\R2007a\toolbox\wavelet\wavedemo
+	C:\Program Files\MATLAB\R2007a\work
+
+ ----------Available hardware:  ----------
+
+          ToolboxName: 'Data Acquisition Toolbox'
+       ToolboxVersion: '2.10 (R2007a)'
+        MATLABVersion: '7.4 (R2007a)'
+    InstalledAdaptors: {3x1 cell}
+
+
+ ----------Adaptor List ----------
+
+    'nidaq'
+    'parallel'
+    'winsound'
+
+
+ ----------nidaq adaptor: ----------
+
+ ----------Registering adaptor: nidaq ----------
+
+Successfully registered nidaq adaptor
+
+ ----------Adaptor Information for adaptor nidaq ----------
+
+
+adaptorInfo = 
+
+           AdaptorDllName: [1x68 char]
+        AdaptorDllVersion: '2.10 (R2007a)'
+              AdaptorName: 'nidaq'
+               BoardNames: {'DAQCard-6062E'  'USB-6009'}
+        InstalledBoardIds: {'Dev1'  'Dev2'}
+    ObjectConstructorName: {2x3 cell}
+
+
+ ----------Adaptor DLL Name ----------
+
+C:\Program Files\MATLAB\R2007a\toolbox\daq\daq\private\mwnidaqmx.dll
+
+ ----------Adaptor Name ----------
+
+nidaq
+
+ ----------Object Constructor Names  ----------
+
+analoginput('nidaq','Dev1')
+analoginput('nidaq','Dev2')
+analogoutput('nidaq','Dev1')
+analogoutput('nidaq','Dev2')
+digitalio('nidaq','Dev1')
+digitalio('nidaq','Dev2')
+
+ ----------Additional Adaptor Information for adaptor nidaq ----------
+
+NIDAQ Traditional is not installed.
+
+ ----------Creating analoginput('nidaq','Dev1') object for adaptor nidaq ----------
+
+Display Summary of Analog Input (AI) Object Using 'DAQCard-6062E'.
+
+  Acquisition Parameters:  1000 samples per second on each channel.
+                           1000 samples per trigger on each channel.
+                           1 sec. of data to be logged upon START.
+                           Log data to 'Memory' on trigger.
+
+      Trigger Parameters:  1 'Immediate' trigger(s) on START.
+
+           Engine status:  Waiting for START.
+                           0 samples acquired since starting.
+                           0 samples available for GETDATA.
+
+AI object contains no channels.
+
+
+
+ans = 
+
+                AdaptorName: 'nidaqmx'
+                       Bits: 12
+                   Coupling: {'DC'}
+                 DeviceName: 'DAQCard-6062E'
+            DifferentialIDs: [0 1 2 3 4 5 6 7]
+                      Gains: [1 2 5 10 20 50 100 1 2 4 10 20 40 100 200]
+                         ID: 'Dev1'
+                InputRanges: [15x2 double]
+              MaxSampleRate: 500000
+              MinSampleRate: 0.6000
+             NativeDataType: 'double'
+                   Polarity: {'Bipolar,Unipolar'}
+                 SampleType: 'Scanning'
+             SingleEndedIDs: [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]
+              SubsystemType: 'AnalogInput'
+              TotalChannels: 16
+    VendorDriverDescription: 'National Instruments NIDAQmx driver'
+        VendorDriverVersion: '8.8'
+
+
+ ----------Creating analogoutput('nidaq','Dev1') object for adaptor nidaq ----------
+
+Display Summary of Analog Output (AO) Object Using 'DAQCard-6062E'.
+
+       Output Parameters:  1000 samples per second on each channel.
+
+      Trigger Parameters:  1 'Immediate' trigger on START.
+
+           Engine status:  Waiting for START.
+                           0 total sec. of data currently queued for START.
+                           0 samples currently queued by PUTDATA.
+                           0 samples sent to output device since START.
+
+AO object contains no channels.
+
+
+
+ans = 
+
+                AdaptorName: 'nidaqmx'
+                       Bits: 12
+                 ChannelIDs: [0 1]
+                   Coupling: {'DC'}
+                 DeviceName: 'DAQCard-6062E'
+                         ID: 'Dev1'
+              MaxSampleRate: 850000
+              MinSampleRate: 0.6000
+             NativeDataType: 'double'
+               OutputRanges: [-10 10]
+                   Polarity: {'Bipolar'}
+                 SampleType: 'SimultaneousSample'
+              SubsystemType: 'AnalogOutput'
+              TotalChannels: 2
+    VendorDriverDescription: 'National Instruments NIDAQmx driver'
+        VendorDriverVersion: '8.8'
+
+
+ ----------Creating digitalio('nidaq','Dev1') object for adaptor nidaq ----------
+
+Display Summary of DigitalIO (DIO) Object Using 'DAQCard-6062E'.
+
+         Port Parameters:  Port 0 is port configurable for reading and writing.
+                           
+           Engine status:  Engine not required.
+
+DIO object contains no lines.
+
+
+
+ans = 
+
+                AdaptorName: 'nidaqmx'
+                 DeviceName: 'DAQCard-6062E'
+                         ID: 'Dev1'
+                       Port: [1x1 struct]
+              SubsystemType: 'DigitalIO'
+                 TotalLines: 8
+    VendorDriverDescription: 'National Instruments NIDAQmx driver'
+        VendorDriverVersion: '8.8'
+
+
+ ----------Creating analoginput('nidaq','Dev2') object for adaptor nidaq ----------
+
+Display Summary of Analog Input (AI) Object Using 'USB-6009'.
+
+  Acquisition Parameters:  1000 samples per second on each channel.
+                           1000 samples per trigger on each channel.
+                           1 sec. of data to be logged upon START.
+                           Log data to 'Memory' on trigger.
+
+      Trigger Parameters:  1 'Immediate' trigger(s) on START.
+
+           Engine status:  Waiting for START.
+                           0 samples acquired since starting.
+                           0 samples available for GETDATA.
+
+AI object contains no channels.
+
+
+
+ans = 
+
+                AdaptorName: 'nidaqmx'
+                       Bits: 14
+                   Coupling: {'DC'}
+                 DeviceName: 'USB-6009'
+            DifferentialIDs: [0 1 2 3]
+                      Gains: [1 2 4 5 8 10 16 20]
+                         ID: 'Dev2'
+                InputRanges: [8x2 double]
+              MaxSampleRate: 48000
+              MinSampleRate: 0.6000
+             NativeDataType: 'double'
+                   Polarity: {'Bipolar'}
+                 SampleType: 'Scanning'
+             SingleEndedIDs: [0 1 2 3 4 5 6 7]
+              SubsystemType: 'AnalogInput'
+              TotalChannels: 8
+    VendorDriverDescription: 'National Instruments NIDAQmx driver'
+        VendorDriverVersion: '8.8'
+
+
+ ----------Creating analogoutput('nidaq','Dev2') object for adaptor nidaq ----------
+
+Display Summary of Analog Output (AO) Object Using 'USB-6009'.
+
+       Output Parameters:  150 samples per second on each channel.
+
+      Trigger Parameters:  1 'Immediate' trigger on START.
+
+           Engine status:  Waiting for START.
+                           0 total sec. of data currently queued for START.
+                           0 samples currently queued by PUTDATA.
+                           0 samples sent to output device since START.
+
+AO object contains no channels.
+
+
+
+ans = 
+
+                AdaptorName: 'nidaqmx'
+                       Bits: 12
+                 ChannelIDs: [0 1]
+                   Coupling: {'DC'}
+                 DeviceName: 'USB-6009'
+                         ID: 'Dev2'
+              MaxSampleRate: 150
+              MinSampleRate: 0.6000
+             NativeDataType: 'double'
+               OutputRanges: [2x2 double]
+                   Polarity: {'Bipolar,Unipolar'}
+                 SampleType: 'SimultaneousSample'
+              SubsystemType: 'AnalogOutput'
+              TotalChannels: 2
+    VendorDriverDescription: 'National Instruments NIDAQmx driver'
+        VendorDriverVersion: '8.8'
+
+
+ ----------Creating digitalio('nidaq','Dev2') object for adaptor nidaq ----------
+
+Display Summary of DigitalIO (DIO) Object Using 'USB-6009'.
+
+         Port Parameters:  Port 0 is port configurable for reading and writing.
+                           Port 1 is port configurable for reading and writing.
+                           
+           Engine status:  Engine not required.
+
+DIO object contains no lines.
+
+
+
+ans = 
+
+                AdaptorName: 'nidaqmx'
+                 DeviceName: 'USB-6009'
+                         ID: 'Dev2'
+                       Port: [1x2 struct]
+              SubsystemType: 'DigitalIO'
+                 TotalLines: 12
+    VendorDriverDescription: 'National Instruments NIDAQmx driver'
+        VendorDriverVersion: '8.8'
+
+
+ ----------parallel adaptor: ----------
+
+ ----------Registering adaptor: parallel ----------
+
+Successfully registered parallel adaptor
+
+ ----------Adaptor Information for adaptor parallel ----------
+
+
+adaptorInfo = 
+
+           AdaptorDllName: [1x69 char]
+        AdaptorDllVersion: '2.10 (R2007a)'
+              AdaptorName: 'parallel'
+               BoardNames: {'PC Parallel Port Hardware'}
+        InstalledBoardIds: {'LPT1'}
+    ObjectConstructorName: {''  ''  'digitalio('parallel','LPT1')'}
+
+
+ ----------Adaptor DLL Name ----------
+
+C:\Program Files\MATLAB\R2007a\toolbox\daq\daq\private\mwparallel.dll
+
+ ----------Adaptor Name ----------
+
+parallel
+
+ ----------Object Constructor Names  ----------
+
+digitalio('parallel','LPT1')
+
+ ----------Creating digitalio('parallel','LPT1') object for adaptor parallel ----------
+
+Display Summary of DigitalIO (DIO) Object Using 'PC Parallel Port Hardware'.
+
+         Port Parameters:  Port 0 is port configurable for reading and writing.
+                           Port 1 is port configurable for reading.
+                           Port 2 is port configurable for reading and writing.
+                           
+           Engine status:  Engine not required.
+
+DIO object contains no lines.
+
+
+
+ans = 
+
+                AdaptorName: 'parallel'
+                 DeviceName: 'PC Parallel Port Hardware'
+                         ID: 'LPT1'
+                       Port: [1x3 struct]
+              SubsystemType: 'DigitalIO'
+                 TotalLines: 17
+    VendorDriverDescription: 'Win I/O'
+        VendorDriverVersion: '1.3'
+
+
+ ----------winsound adaptor: ----------
+
+ ----------Registering adaptor: winsound ----------
+
+Successfully registered winsound adaptor
+
+ ----------Adaptor Information for adaptor winsound ----------
+
+
+adaptorInfo = 
+
+           AdaptorDllName: [1x69 char]
+        AdaptorDllVersion: '2.10 (R2007a)'
+              AdaptorName: 'winsound'
+               BoardNames: {'SigmaTel C-Major Audio'}
+        InstalledBoardIds: {'0'}
+    ObjectConstructorName: {'analoginput('winsound',0)'  [1x26 char]  ''}
+
+
+ ----------Adaptor DLL Name ----------
+
+C:\Program Files\MATLAB\R2007a\toolbox\daq\daq\private\mwwinsound.dll
+
+ ----------Adaptor Name ----------
+
+winsound
+
+ ----------Object Constructor Names  ----------
+
+analoginput('winsound',0)
+analogoutput('winsound',0)
+
+ ----------Creating analoginput('winsound',0) object for adaptor winsound ----------
+
+Display Summary of Analog Input (AI) Object Using 'SigmaTel C-Major Audio'.
+
+  Acquisition Parameters:  8000 samples per second on each channel.
+                           8000 samples per trigger on each channel.
+                           1 sec. of data to be logged upon START.
+                           Log data to 'Memory' on trigger.
+
+      Trigger Parameters:  1 'Immediate' trigger(s) on START.
+
+           Engine status:  Waiting for START.
+                           0 samples acquired since starting.
+                           0 samples available for GETDATA.
+
+AI object contains no channels.
+
+
+
+ans = 
+
+                AdaptorName: 'winsound'
+                       Bits: 16
+                   Coupling: {'AC Coupled'}
+                 DeviceName: 'SigmaTel C-Major Audio'
+            DifferentialIDs: []
+                      Gains: []
+                         ID: '0'
+                InputRanges: [-1 1]
+              MaxSampleRate: 44100
+              MinSampleRate: 8000
+             NativeDataType: 'int16'
+                   Polarity: {'Bipolar'}
+                 SampleType: 'SimultaneousSample'
+             SingleEndedIDs: [1 2]
+              SubsystemType: 'AnalogInput'
+              TotalChannels: 2
+    VendorDriverDescription: 'Windows Multimedia Driver'
+        VendorDriverVersion: '5.10'
+
+
+ ----------Creating analogoutput('winsound',0) object for adaptor winsound ----------
+
+Display Summary of Analog Output (AO) Object Using 'SigmaTel C-Major Audio'.
+
+       Output Parameters:  8000 samples per second on each channel.
+
+      Trigger Parameters:  1 'Immediate' trigger on START.
+
+           Engine status:  Waiting for START.
+                           0 total sec. of data currently queued for START.
+                           0 samples currently queued by PUTDATA.
+                           0 samples sent to output device since START.
+
+AO object contains no channels.
+
+
+
+ans = 
+
+                AdaptorName: 'winsound'
+                       Bits: 16
+                 ChannelIDs: [1 2]
+                   Coupling: {'AC Coupled'}
+                 DeviceName: 'SigmaTel C-Major Audio'
+                         ID: '0'
+              MaxSampleRate: 44100
+              MinSampleRate: 8000
+             NativeDataType: 'int16'
+               OutputRanges: [-1 1]
+                   Polarity: {'Bipolar'}
+                 SampleType: 'SimultaneousSample'
+              SubsystemType: 'AnalogOutput'
+              TotalChannels: 2
+    VendorDriverDescription: 'Windows Multimedia Driver'
+        VendorDriverVersion: '5.10'
+
+
+ ---------- ----------End test ---------- ----------
+
+This information has been saved in the text file:
+daqtest.txt
+
+If any errors occurred, please e-mail this information to:
+support@mathworks.com

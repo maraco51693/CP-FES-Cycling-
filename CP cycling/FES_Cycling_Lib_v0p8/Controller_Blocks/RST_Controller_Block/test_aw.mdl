@@ -1,0 +1,1020 @@
+Model {
+  Name			  "test_aw"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed Nov 26 21:36:38 2003"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Mar 09 15:21:48 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:10>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "60"
+  SolverMode		  "Auto"
+  Solver		  "FixedStepDiscrete"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "0.05"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "test_aw"
+    Location		    [15, 103, 759, 822]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [60, 219, 115, 241]
+      ShowName		      off
+      Value		      "-10"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [60, 79, 115, 101]
+      ShowName		      off
+      Value		      "-10"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      Position		      [60, 604, 115, 626]
+      ShowName		      off
+      Value		      "-10"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant4"
+      Position		      [55, 364, 110, 386]
+      ShowName		      off
+      Value		      "-10"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      DiscreteFilter
+      Name		      "Motor Sim Model"
+      Position		      [430, 88, 560, 132]
+      Numerator		      "[0 0 0 0.006813]"
+      Denominator	      "[1 -1.901 0.9073]"
+      SampleTime	      "0.05"
+      Realization	      "auto"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      DiscreteFilter
+      Name		      "Motor Sim Model1"
+      Position		      [430, 228, 560, 272]
+      Numerator		      "[0 0 0 0.006813]"
+      Denominator	      "[1 -1.901 0.9073]"
+      SampleTime	      "0.05"
+      Realization	      "auto"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      DiscreteFilter
+      Name		      "Motor Sim Model2"
+      Position		      [440, 613, 570, 657]
+      Numerator		      "[0 0 0 0.006813]"
+      Denominator	      "[1 -1.901 0.9073]"
+      SampleTime	      "0.05"
+      Realization	      "auto"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      DiscreteFilter
+      Name		      "Motor Sim Model3"
+      Position		      [425, 373, 555, 417]
+      Numerator		      "[0 0 0 0.006813]"
+      Denominator	      "[1 -1.901 0.9073]"
+      SampleTime	      "0.05"
+      Realization	      "auto"
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      Ports		      [2, 1]
+      Position		      [625, 95, 630, 150]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [625, 235, 630, 290]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      Ports		      [2, 1]
+      Position		      [625, 620, 630, 675]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux3"
+      Ports		      [2, 1]
+      Position		      [620, 380, 625, 435]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Pulse\nGenerator"
+      Position		      [60, 112, 115, 138]
+      PulseType		      "Time-based"
+      Amplitude		      "20"
+      Period		      "20"
+      PulseWidth	      "50"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Pulse\nGenerator1"
+      Position		      [60, 252, 115, 278]
+      PulseType		      "Time-based"
+      Amplitude		      "20"
+      Period		      "20"
+      PulseWidth	      "50"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Pulse\nGenerator2"
+      Position		      [60, 637, 115, 663]
+      PulseType		      "Time-based"
+      Amplitude		      "20"
+      Period		      "20"
+      PulseWidth	      "50"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      DiscretePulseGenerator
+      Name		      "Pulse\nGenerator3"
+      Position		      [55, 397, 110, 423]
+      PulseType		      "Time-based"
+      Amplitude		      "20"
+      Period		      "20"
+      PulseWidth	      "50"
+      PhaseDelay	      "0"
+      SampleTime	      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "RST_AW_Controller"
+      Ports		      [2, 1]
+      Position		      [230, 68, 375, 152]
+      BackgroundColor	      "orange"
+      SourceBlock	      "rst_controller_lib/RST_AW_Controller"
+      SourceType	      "RST Controller Design"
+      Get_Controller_file     on
+      controll_fname	      "'GLA_BEN_04_01_12_motor_1'"
+      R			      "motor_1.Controller_Design_1.rst_ctrl.R"
+      S			      "motor_1.Controller_Design_1.rst_ctrl.S"
+      T			      "motor_1.Controller_Design_1.rst_ctrl.T"
+      Aaw		      "motor_1.Controller_Design_1.rst_ctrl.Aaw"
+      Aaw_R		      "motor_1.Controller_Design_1.rst_ctrl.Aaw_R"
+      out_limit		      "[0 100]"
+      sT		      "0.05"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RST_AW_Controller1"
+      Ports		      [2, 1]
+      Position		      [220, 593, 365, 677]
+      BackgroundColor	      "orange"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "RST Controller Design"
+      MaskDescription	      "Design of a controller that takes the form R*u "
+"= T*ref - S*output"
+      MaskPromptString	      "Get Controller from File|Controller file name|R"
+"|S|T|Aaw|Aaw - R|Output limitations|Sample time"
+      MaskStyleString	      "checkbox,edit,edit,edit,edit,edit,edit,edit,edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      " mv = get_param(gcb, 'MaskValues'); \n if strcm"
+"p(mv{1}, 'on') a = 'on'; b = 'off'; \n else a = 'off'; b = 'on'; \n end; \n m"
+"e = get_param(gcb, 'MaskEnables'); \n me{2} = a; \n me{3} = b; \n me{4} = b; "
+"\n me{5} = b; \n me{6} = b; \n me{7} = b; \n set_param(gcb, 'MaskEnables', me"
+"); \n||||||||"
+      MaskEnableString	      "on,on,off,off,off,off,off,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskVariables	      "Get_Controller_file=@1;controll_fname=@2;R=@3;S"
+"=@4;T=@5;Aaw=@6;Aaw_R=@7;out_limit=@8;sT=@9;"
+      MaskInitialization      "if Get_Controller_file\n   ctr_data = load(['Co"
+"ntrollers\\', controll_fname]);\n   R = ctr_data.controllerData.rst.rst_ctrl."
+"R;\n   S = ctr_data.controllerData.rst.rst_ctrl.S;\n   T = ctr_data.controlle"
+"rData.rst.rst_ctrl.T;\n   Aaw = ctr_data.controllerData.rst.rst_ctrl.Aaw;\n  "
+" Aaw_R = ctr_data.controllerData.rst.rst_ctrl.Aaw_R;\nend\n\n"
+      MaskDisplay	      "port_label('input', 1, 'Ref');\nport_label('inp"
+"ut', 2, 'Feedbk');\n\nplot([0.01 0.05 0.01].*0.6+0.3, [0.82 0.8 0.78]);\nplot"
+"([0.95 0.99 0.95].*0.6+0.3, [0.82 0.8 0.78]);\nplot([0.52 0.48 0.52].*0.6+0.3"
+", [0.22 0.2 0.18]);\n\nplot([0.05 0.15 0.25; 0.25 0.15 0.35].*0.6+0.3, [0.8 0"
+".2 0.6; 0.8 0.8 0.3]);\nplot((0.25+0.1.*sin([0:pi/90:pi])).*0.6+0.3,0.7+0.1.*"
+"cos([0:pi/90:pi]));\nplot([0.18 0.18; 0.18 0.25].*0.6+0.3, [0.3 0.75; 0.75 0."
+"75]);\n\nplot([0.35 0.5; 0.5 0.99].*0.6+0.3, [0.3 0.8; 0.3 0.8]);\nplot((0.5+"
+"0.1.*sin([-pi:pi/90:0])).*0.6+0.3,0.7+0.1.*cos([0:pi/90:pi]));\nplot((0.5+0.1"
+".*sin([0:pi/90:pi])).*0.6+0.3,0.45+0.15.*cos([0:pi/90:pi]));\nplot((0.5+0.07."
+"*sin([-pi:pi/90:0])).*0.6+0.3,0.7+0.05.*cos([0:pi/90:pi]));\nplot([0.5 0.6].*"
+"0.6+0.3, [0.75 0.75]);\n\nplot([0.75 0.75; 0.75 0.15].*0.6+0.3, [0.8 0.2; 0.2"
+" 0.2]);\nplot([0.85 0.78; 0.78 0.78].*0.6+0.3, [0.75 0.75; 0.75 0.3]);\n\ntex"
+"t(0.5, 0.1, 'Anti-reset Control', 'VerticalAlignment', 'middle', 'HorizontalA"
+"lignment', 'center');\n"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "on|'GLA_BEN_04_01_12_motor_3'|motor_1.Controlle"
+"r_Design_1.rst_ctrl.R|motor_1.Controller_Design_1.rst_ctrl.S|motor_1.Controll"
+"er_Design_1.rst_ctrl.T|motor_1.Controller_Design_1.rst_ctrl.Aaw|motor_1.Contr"
+"oller_Design_1.rst_ctrl.Aaw_R|[0 100]|0.05"
+      MaskVariableAliases     ",,,,,,,,"
+      System {
+	Name			"RST_AW_Controller1"
+	Location		[77, 401, 865, 728]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Reference"
+	  Position		  [15, 68, 45, 82]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Feedback"
+	  Position		  [715, 203, 745, 217]
+	  Orientation		  "left"
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "C Control"
+	  Position		  [410, 55, 530, 95]
+	  Numerator		  "1"
+	  Denominator		  "Aaw"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "Filter1"
+	  Position		  [145, 54, 250, 96]
+	  Numerator		  "T"
+	  Denominator		  "1"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "Filter4"
+	  Position		  [410, 190, 530, 230]
+	  Orientation		  "left"
+	  Numerator		  "S"
+	  Denominator		  "1"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum2"
+	  Ports			  [2, 1]
+	  Position		  [295, 65, 315, 85]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|+-"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum3"
+	  Ports			  [2, 1]
+	  Position		  [345, 65, 365, 85]
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  DiscreteFilter
+	  Name			  "shape 1"
+	  Position		  [410, 125, 530, 165]
+	  Orientation		  "left"
+	  Numerator		  "Aaw_R"
+	  Denominator		  "1"
+	  SampleTime		  "sT"
+	  Realization		  "auto"
+	  RTWStateStorageClass	  "Auto"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Control Signal"
+	  Position		  [715, 68, 745, 82]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Filter4"
+	  SrcPort		  1
+	  Points		  [-100, 0]
+	  DstBlock		  "Sum2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Sum2"
+	  SrcPort		  1
+	  DstBlock		  "Sum3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Filter1"
+	  SrcPort		  1
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Feedback"
+	  SrcPort		  1
+	  DstBlock		  "Filter4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "shape 1"
+	  SrcPort		  1
+	  Points		  [-50, 0]
+	  DstBlock		  "Sum3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "C Control"
+	  SrcPort		  1
+	  Points		  [145, 0]
+	  Branch {
+	    DstBlock		    "Control Signal"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 70]
+	    DstBlock		    "shape 1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum3"
+	  SrcPort		  1
+	  DstBlock		  "C Control"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Reference"
+	  SrcPort		  1
+	  DstBlock		  "Filter1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "RST_AW_Controller2"
+      Ports		      [2, 1]
+      Position		      [230, 208, 375, 292]
+      BackgroundColor	      "orange"
+      SourceBlock	      "rst_controller_lib/RST_AW_Controller"
+      SourceType	      "RST Controller Design"
+      Get_Controller_file     on
+      controll_fname	      "'GLA_BEN_04_01_12_motor_2'"
+      R			      "motor_1.Controller_Design_1.rst_ctrl.R"
+      S			      "motor_1.Controller_Design_1.rst_ctrl.S"
+      T			      "motor_1.Controller_Design_1.rst_ctrl.T"
+      Aaw		      "motor_1.Controller_Design_1.rst_ctrl.Aaw"
+      Aaw_R		      "motor_1.Controller_Design_1.rst_ctrl.Aaw_R"
+      out_limit		      "[0 100]"
+      sT		      "0.05"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "RST_AW_Controller3"
+      Ports		      [2, 1]
+      Position		      [225, 353, 370, 437]
+      BackgroundColor	      "orange"
+      SourceBlock	      "rst_controller_lib/RST_AW_Controller"
+      SourceType	      "RST Controller Design"
+      Get_Controller_file     on
+      controll_fname	      "'GLA_BEN_04_01_12_motor_3'"
+      R			      "motor_1.Controller_Design_1.rst_ctrl.R"
+      S			      "motor_1.Controller_Design_1.rst_ctrl.S"
+      T			      "motor_1.Controller_Design_1.rst_ctrl.T"
+      Aaw		      "motor_1.Controller_Design_1.rst_ctrl.Aaw"
+      Aaw_R		      "motor_1.Controller_Design_1.rst_ctrl.Aaw_R"
+      out_limit		      "[0 100]"
+      sT		      "0.05"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      Ports		      [2]
+      Position		      [660, 58, 705, 147]
+      Floating		      off
+      Location		      [381, 426, 884, 981]
+      Open		      on
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+      }
+      Grid		      "on"
+      TimeRange		      "60"
+      YMin		      "15~0"
+      YMax		      "65~80"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [2]
+      Position		      [660, 198, 705, 287]
+      Floating		      off
+      Location		      [770, 426, 1273, 981]
+      Open		      on
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+      }
+      Grid		      "on"
+      TimeRange		      "60"
+      YMin		      "15~0"
+      YMax		      "65~80"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      Ports		      [2]
+      Position		      [660, 583, 705, 672]
+      Floating		      off
+      Location		      [195, 152, 698, 707]
+      Open		      on
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+      }
+      Grid		      "on"
+      TimeRange		      "60"
+      YMin		      "15~0"
+      YMax		      "65~80"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData2"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope3"
+      Ports		      [2]
+      Position		      [655, 343, 700, 432]
+      Floating		      off
+      Location		      [12, 424, 515, 979]
+      Open		      on
+      NumInputPorts	      "2"
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+	axes2			"%<SignalLabel>"
+      }
+      List {
+	ListType		SelectedSignals
+	axes1			""
+	axes2			""
+      }
+      Grid		      "on"
+      TimeRange		      "60"
+      YMin		      "15~0"
+      YMax		      "65~80"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData6"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [145, 220, 165, 240]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [145, 80, 165, 100]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum3"
+      Ports		      [2, 1]
+      Position		      [145, 605, 165, 625]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum4"
+      Ports		      [2, 1]
+      Position		      [140, 365, 160, 385]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Line {
+      Labels		      [2, 0]
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	Points			[0, 95; 400, 0; 0, -50]
+	DstBlock		"Mux"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"RST_AW_Controller"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pulse\nGenerator"
+      SrcPort		      1
+      Points		      [35, 0]
+      DstBlock		      "Sum2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "RST_AW_Controller"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Scope"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Motor Sim Model"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Motor Sim Model"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	DstBlock		"Mux"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 65; -380, 0; 0, -45]
+	DstBlock		"RST_AW_Controller"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [2, 0]
+      SrcBlock		      "Sum3"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	Points			[0, 95; 400, 0; 0, -50]
+	DstBlock		"Mux2"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"RST_AW_Controller1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "Sum3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pulse\nGenerator2"
+      SrcPort		      1
+      Points		      [35, 0]
+      DstBlock		      "Sum3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "RST_AW_Controller1"
+      SrcPort		      1
+      Points		      [0, 0; 50, 0]
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Scope2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Motor Sim Model2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Motor Sim Model2"
+      SrcPort		      1
+      Points		      [-10, 0; 20, 0]
+      Branch {
+	DstBlock		"Mux2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 65; -380, 0]
+	DstBlock		"RST_AW_Controller1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      DstBlock		      "Scope2"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [2, 0]
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	DstBlock		"RST_AW_Controller2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 95; 400, 0; 0, -50]
+	DstBlock		"Mux1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pulse\nGenerator1"
+      SrcPort		      1
+      Points		      [35, 0]
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "RST_AW_Controller2"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	DstBlock		"Motor Sim Model1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Scope1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Motor Sim Model1"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	Points			[0, 65; -380, 0; 0, -45]
+	DstBlock		"RST_AW_Controller2"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"Mux1"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Scope1"
+      DstPort		      2
+    }
+    Line {
+      Labels		      [2, 0]
+      SrcBlock		      "Sum4"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	Points			[0, 95; 400, 0; 0, -50]
+	DstBlock		"Mux3"
+	DstPort			2
+      }
+      Branch {
+	DstBlock		"RST_AW_Controller3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant4"
+      SrcPort		      1
+      DstBlock		      "Sum4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Pulse\nGenerator3"
+      SrcPort		      1
+      Points		      [35, 0]
+      DstBlock		      "Sum4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "RST_AW_Controller3"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	Points			[0, -30]
+	DstBlock		"Scope3"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Motor Sim Model3"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Motor Sim Model3"
+      SrcPort		      1
+      Points		      [0, 0; 20, 0]
+      Branch {
+	DstBlock		"Mux3"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 65; -380, 0; 0, -45]
+	DstBlock		"RST_AW_Controller3"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Mux3"
+      SrcPort		      1
+      DstBlock		      "Scope3"
+      DstPort		      2
+    }
+  }
+}

@@ -1,0 +1,295 @@
+Library {
+  Name			  "ScienceStimHasomed"
+  Version		  6.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Jul 20 07:45:35 2006"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "saunders"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Jul 20 12:44:54 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:3>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Inport
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    8
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "ScienceStimHasomed"
+    Location		    [643, 153, 1223, 446]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulator Interface"
+      Ports		      [3, 1]
+      Position		      [175, 64, 390, 226]
+      ForegroundColor	      "white"
+      FontSize		      12
+      FontWeight	      "bold"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "Stimulator Interface (RehaStim - Hasomed GmbH)"
+      MaskDescription	      "Communication to the 8-channel RehaStim Stimula"
+"tor (HASOMED GmbH) through the serial port.\n\nSample Time:	  The samp"
+"le time of the block (not neccessarily of the stimulation).\nSerial Port:"
+"	  The serial port connected to the stimulator.\nChannels:	  An"
+" array of channel numbers to be used (e.g. [1 2 5]).\nMain Time:	  The"
+" stimulation period (set this to 0 for external triggering).\nGroup Time:"
+"	  The time between pulses in a group (doublet or triplet).\nLow Freq "
+"Ch:	  A sub-set of the channels selected for low frequency.\nLow Freq "
+"Fc:	  Stimulation is only every n times (n=factor).\n"
+      MaskHelp		      "eval('open(''SciencStimHasomed_Help.html'')')"
+      MaskPromptString	      "Sample Time:|Serial Port:|Channels to be Stimul"
+"ated:|Main Time in ms (only in steps of 0.5 ms):|Group Time in ms (only in st"
+"eps of 0.5 ms):|Low Frequency Channels:|Low Frequency Factor:"
+      MaskStyleString	      "edit,popup(COM1|COM2|COM3|COM4|COM5),edit,edit,"
+"edit,edit,edit"
+      MaskTunableValueString  "on,off,on,on,on,on,on"
+      MaskCallbackString      "||||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,"
+      MaskVariables	      "Ts=@1;com_port=@2;channelstim=@3;tsone=@4;tstwo"
+"=@5;channellf=@6;nfactor=@7;"
+      MaskDisplay	      "image(imread('RehaStim_bg.jpg'), [0.05 0.15 0.9"
+" 0.6]);\nimage(imread('sciencestim_logo.png'), [0.95-0.4 0.03 0.4 0.15]);\nim"
+"age(imread('Hasomed_logo.bmp'), [0.95-0.6 0.95-0.2 0.6 0.2]);\nport_label('in"
+"put', 1, 'current');\nport_label('input', 2, 'pulsewidth');\nport_label('inpu"
+"t', 3, 'mode');\nport_label('output', 1, 'mute period [ms]');\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "0.05|COM2|[1 2]|0|5|[]|[]"
+      MaskTabNameString	      ",,,,,,"
+      System {
+	Name			"Stimulator Interface"
+	Location		[198, 287, 796, 646]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "current"
+	  Position		  [180, 118, 210, 132]
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pulsewidth"
+	  Position		  [115, 158, 145, 172]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "mode"
+	  Position		  [180, 198, 210, 212]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-Function"
+	  Ports			  [3, 1]
+	  Position		  [255, 106, 330, 224]
+	  FunctionName		  "sfc_clm"
+	  Parameters		  "Ts,com_port,channelstim,tsone,tstwo,0,chann"
+"ellf,nfactor"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "mute period [ms]"
+	  Position		  [420, 158, 450, 172]
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "S-Function"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "mute period [ms]"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "mode"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "S-Function"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "pulsewidth"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "S-Function"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "current"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "S-Function"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

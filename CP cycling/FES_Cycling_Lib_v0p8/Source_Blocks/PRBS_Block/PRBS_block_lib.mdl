@@ -1,0 +1,236 @@
+Library {
+  Name			  "PRBS_block_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:58:43 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jan 11 14:59:01 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:1>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "PRBS_block_lib"
+    Location		    [224, 208, 724, 501]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "PRBS_Block_1"
+      Ports		      [0, 1]
+      Position		      [185, 101, 290, 149]
+      BackgroundColor	      "magenta"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "PRBS_Block"
+      MaskDescription	      "Creates a PRBS using idinput funcion in a looku"
+"p table."
+      MaskPromptString	      "output limits [min max]|Min length of time the "
+"same|Use model stop time|Total time|Add a ramp to begining of PRBS|Slope of i"
+"nitial ramp|Sample Time"
+      MaskStyleString	      "edit,edit,checkbox,edit,checkbox,edit,edit"
+      MaskTunableValueString  "on,on,on,on,on,on,on"
+      MaskCallbackString      "|| mv = get_param(gcb, 'MaskValues'); \n if str"
+"cmp(mv{3}, 'on') a = 'on'; b = 'off'; \n else a = 'off'; b = 'on'; \n end; \n"
+" me = get_param(gcb, 'MaskEnables'); \n me{4} = b; \n set_param(gcb, 'MaskEna"
+"bles', me); \n||||"
+      MaskEnableString	      "on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on,on,on"
+      MaskVariables	      "lim_out=@1;mT=@2;useMdlTt=@3;tT_in=@4;use_ramp="
+"@5;ramp_slope=@6;sT=@7;"
+      MaskInitialization      "subSysIndx = find(gcs == '/');\nif isempty(subS"
+"ysIndx)\n    rootsys = gcs;\nelse\n    sys = gcs;\n    rootsys = sys(1:subSys"
+"Indx-1);\nend\nstoptime = str2num(get_param(rootsys,'stoptime'));\n\nif useMd"
+"lTt  tT = stoptime;\nelse             tT = tT_in;\nend;\n\nif use_ramp\n   ra"
+"mp_tT = floor(lim_out(1) / ramp_slope);\n   if ramp_tT > (0.5 * tT)\n      er"
+"ror('Slope variable is too small');\n   end\n   ramp_sT = [0:ramp_tT];\n   ra"
+"mpOut = ramp_slope * ramp_sT;\nelse\n   ramp_tT = 0;\n   ramp_sT = [];\n   ra"
+"mpOut = [];\nend\n\nlu_t = [ramp_sT [ramp_tT:tT]];\nlu_o = [rampOut idinput(t"
+"T-ramp_tT+1, 'prbs', [0 1/mT], lim_out)'];\n\niconT = ((lu_t ./ tT) .* 0.8) +"
+" 0.1;\niconOut = ((lu_o ./ max(lu_o)) .* 0.6) + 0.1;\n"
+      MaskDisplay	      "text(0.5, 0.85, ['PRBS'], 'HorizontalAlignment'"
+", 'center', 'VerticalAlignment', 'middle');\n\nplot(iconT, iconOut);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "[1 2]|2|off|60|on|0.3|-1"
+      MaskVariableAliases     ",,,,,,"
+      System {
+	Name			"PRBS_Block_1"
+	Location		[591, 562, 1068, 880]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Clock
+	  Name			  "Clock"
+	  Position		  [55, 220, 75, 240]
+	  DisplayTime		  off
+	  Decimation		  "10"
+	}
+	Block {
+	  BlockType		  Lookup
+	  Name			  "Look-Up\nTable"
+	  Position		  [130, 204, 180, 256]
+	  InputValues		  "lu_t"
+	  OutputValues		  "lu_o"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "PRBS Output"
+	  Position		  [405, 223, 435, 237]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Look-Up\nTable"
+	  SrcPort		  1
+	  DstBlock		  "PRBS Output"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Clock"
+	  SrcPort		  1
+	  DstBlock		  "Look-Up\nTable"
+	  DstPort		  1
+	}
+	Annotation {
+	  Position		  [264, 119]
+	  HorizontalAlignment	  "left"
+	  Text			  "The PRBS block provides an\ninput to excite"
+" a system.  The\nPRBS excites all frequencies\nwithin its bandwidth and thus"
+"\nprovides a varied response from\nthe system.  The PRBS should\nbe designed "
+"to provide steps\naround the normal opperating\nlevel.  The more steps the\nb"
+"etter however the steps should\nbe long enough for the system\nto respond ade"
+"quatly (ie start to\nlevel out)"
+	}
+	Annotation {
+	  Position		  [13, 99]
+	  HorizontalAlignment	  "left"
+	  Text			  "This block pre generates a\nPRBS (Pseudo Ra"
+"ndom\nBinary Signal) in its mask\nand then uses a look-up\ntable with a clock"
+" to\ngenerate its output"
+	  FontName		  "Arial"
+	  FontSize		  12
+	}
+	Annotation {
+	  Position		  [13, 30]
+	  HorizontalAlignment	  "left"
+	  Text			  "PRBS"
+	  FontSize		  36
+	}
+      }
+    }
+  }
+}

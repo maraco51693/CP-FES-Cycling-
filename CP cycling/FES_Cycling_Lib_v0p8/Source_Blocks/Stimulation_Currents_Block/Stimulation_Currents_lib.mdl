@@ -1,0 +1,495 @@
+Library {
+  Name			  "Stimulation_Currents_lib"
+  Version		  6.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:59:44 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Aug 10 09:26:31 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  StrictBusMsg		  "None"
+  ProdHWDeviceType	  "32-bit Generic"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "Stimulation_Currents_lib"
+    Location		    [69, 588, 569, 881]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Stimulation_Currents_1"
+      Ports		      [0, 1]
+      Position		      [165, 78, 320, 192]
+      BackgroundColor	      "green"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      MaskType		      "StimCurrentInput"
+      MaskDescription	      "Use this block to input the stimulation current"
+"s.  Currents should be in mA.  Output is an 8 element bus vector."
+      MaskPromptString	      "Quad. Right|Ham. Right|Glut. Right|Calf Right|F"
+"orce left leg to use the same current as the right leg|Quad. Left|Ham. Left|G"
+"lut. Left|Calf Left"
+      MaskStyleString	      "edit,edit,edit,edit,checkbox,edit,edit,edit,edi"
+"t"
+      MaskTunableValueString  "on,on,on,on,on,on,on,on,on"
+      MaskCallbackString      "||||if strcmp(get_param(gcb,'ExactOpp'),'on') "
+"\nset_param(gcb,'MaskVisibilities', {'on', 'on', 'on', 'on', 'on', 'off', 'of"
+"f', 'off', 'off'});\nelse \nset_param(gcb,'MaskVisibilities', {'on', 'on', 'o"
+"n', 'on', 'on', 'on', 'on', 'on', 'on'});\nend \n||||"
+      MaskEnableString	      "on,on,on,on,on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on,off,off,off,off"
+      MaskToolTipString	      "on,on,on,on,on,on,on,on,on"
+      MaskVarAliasString      ",,,,,,,,"
+      MaskVariables	      "Quad_R=@1;Ham_R=@2;Glut_R=@3;Calf_R=@4;ExactOpp"
+"=@5;Quad_L=@6;Ham_L=@7;Glut_L=@8;Calf_L=@9;"
+      MaskInitialization      "if ExactOpp\n  Quad_L = Quad_R;\n  set_param(gc"
+"b, 'Quad_L', ['[',num2str(Quad_L),']']);\n\n  Ham_L = Ham_R;\n  set_param(gcb"
+", 'Ham_L', ['[',num2str(Ham_L),']']);\n\n  Glut_L = Glut_R;\n  set_param(gcb,"
+" 'Glut_L', ['[',num2str(Glut_L),']']);\n\n  Calf_L = Calf_R;\n  set_param(gcb"
+", 'Calf_L', ['[',num2str(Calf_L),']']);\nend\n"
+      MaskDisplay	      "text(0.5, 0.9, 'Stimulation Current', 'Horizont"
+"alAlignment', 'center', 'VerticalAlignment', 'middle');\n\nplot([0.05 0.95], "
+"[0.65 0.65]);\nplot([0.35 0.35], [0.8 0.2]);\nplot([0.65 0.65], [0.8 0.2]);\n"
+"\ntext(0.2, 0.7, 'Muscle', 'HorizontalAlignment', 'center', 'VerticalAlignmen"
+"t', 'middle');\ntext(0.5, 0.7, 'Right', 'HorizontalAlignment', 'center', 'Ver"
+"ticalAlignment', 'middle');\ntext(0.8, 0.7, 'Left', 'HorizontalAlignment', 'c"
+"enter', 'VerticalAlignment', 'middle');\n\ntext(0.2, 0.55, 'Q', 'HorizontalAl"
+"ignment', 'center', 'VerticalAlignment', 'middle');\ntext(0.5, 0.55, num2str("
+"Quad_R), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\nte"
+"xt(0.8, 0.55, num2str(Quad_L), 'HorizontalAlignment', 'center', 'VerticalAlig"
+"nment', 'middle');\n\ntext(0.2, 0.45, 'H', 'HorizontalAlignment', 'center', '"
+"VerticalAlignment', 'middle');\ntext(0.5, 0.45, num2str(Ham_R), 'HorizontalAl"
+"ignment', 'center', 'VerticalAlignment', 'middle');\ntext(0.8, 0.45, num2str("
+"Ham_L), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\n\nt"
+"ext(0.2, 0.35, 'G', 'HorizontalAlignment', 'center', 'VerticalAlignment', 'mi"
+"ddle');\ntext(0.5, 0.35, num2str(Glut_R), 'HorizontalAlignment', 'center', 'V"
+"erticalAlignment', 'middle');\ntext(0.8, 0.35, num2str(Glut_L), 'HorizontalAl"
+"ignment', 'center', 'VerticalAlignment', 'middle');\n\ntext(0.2, 0.25, 'C', '"
+"HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\ntext(0.5, 0."
+"25, num2str(Calf_R), 'HorizontalAlignment', 'center', 'VerticalAlignment', 'm"
+"iddle');\ntext(0.8, 0.25, num2str(Calf_L), 'HorizontalAlignment', 'center', '"
+"VerticalAlignment', 'middle');\n\n\n\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "110|80|80|0|on|[110]|[80]|[80]|[0]"
+      MaskTabNameString	      ",,,,,,,,"
+      System {
+	Name			"Stimulation_Currents_1"
+	Location		[385, 99, 887, 569]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator1"
+	  Ports			  [4, 1]
+	  Position		  [180, 23, 185, 217]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "R"
+	    PropagatedSignals	    "Quad, Ham, Glut, Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator2"
+	  Ports			  [2, 1]
+	  Position		  [250, 20, 255, 420]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Stimulation Currents"
+	    PropagatedSignals	    "R, L"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator7"
+	  Ports			  [4, 1]
+	  Position		  [180, 223, 185, 417]
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	  Port {
+	    PortNumber		    1
+	    Name		    "L"
+	    PropagatedSignals	    "Quad, Ham, Glut, Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  Position		  [50, 30, 105, 60]
+	  ShowName		  off
+	  Value			  "Quad_R"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Quad"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  Position		  [50, 80, 105, 110]
+	  ShowName		  off
+	  Value			  "Ham_R"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Ham"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [50, 130, 105, 160]
+	  ShowName		  off
+	  Value			  "Glut_R"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Glut"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant3"
+	  Position		  [50, 180, 105, 210]
+	  ShowName		  off
+	  Value			  "Calf_R"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant4"
+	  Position		  [50, 230, 105, 260]
+	  ShowName		  off
+	  Value			  "Quad_L"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Quad"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant5"
+	  Position		  [50, 280, 105, 310]
+	  ShowName		  off
+	  Value			  "Ham_L"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Ham"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant6"
+	  Position		  [50, 330, 105, 360]
+	  ShowName		  off
+	  Value			  "Glut_L"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Glut"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  Position		  [50, 380, 105, 410]
+	  ShowName		  off
+	  Value			  "Calf_L"
+	  Port {
+	    PortNumber		    1
+	    Name		    "Calf"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Stimulation Currents"
+	  Position		  [395, 213, 425, 227]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Name			  "Calf"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "Glut"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant6"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Ham"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant5"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Quad"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant4"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator7"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "Calf"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant3"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "Glut"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "Ham"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Quad"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "R"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator1"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "L"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator7"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator2"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "Stimulation Currents"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator2"
+	  SrcPort		  1
+	  DstBlock		  "Stimulation Currents"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

@@ -1,0 +1,327 @@
+Library {
+  Name			  "controller_design_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:43:09 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Aug 27 16:09:15 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:7>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "controller_design_lib"
+    Location		    [174, 363, 674, 656]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Controller_Design_1"
+      Ports		      [2]
+      Position		      [170, 88, 315, 172]
+      BackgroundColor	      "orange"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Controller Design Block"
+      MaskDescription	      "This block doesnt do much until the end of the "
+"simulation.  During simulation termination this block calls a set of m-file f"
+"unctions that perform identification and controller synthesis.  The results o"
+"f which are saved on to the base workspace.  If everything is successful then"
+" the results are also saved to a mat file with the name selected in this mask"
+"."
+      MaskPromptString	      "Controller Order [na nb nc nk]|Controller obser"
+"ver dynamics [rise_Time_o damping_o]|Reference model dynamics  [rise_Time_m d"
+"amping_m]|Sample time"
+      MaskStyleString	      "edit,edit,edit,edit"
+      MaskTunableValueString  "on,on,on,on"
+      MaskCallbackString      "|||"
+      MaskEnableString	      "on,on,on,on"
+      MaskVisibilityString    "on,on,on,on"
+      MaskToolTipString	      "on,on,on,on"
+      MaskVariables	      "cntr_orders=@1;ctrObs_dyn=@2;refMdl_dyn=@3;Ts=@"
+"4;"
+      MaskDisplay	      "port_label('input', 1, 'P In');\nport_label('in"
+"put', 2, 'P Out');\n\nplot([0.0 0.1 0.1 0.0; 0.1 0.1 0.0 0.0].*0.5+0.3, [0.0 "
+"0.0 0.1 0.1; 0.0 0.1 0.1 0.0]+0.15);\nplot([0.0 0.1 0.1 0.0; 0.1 0.1 0.0 0.0]"
+".*0.5+0.3, [0.0 0.0 0.1 0.1; 0.0 0.1 0.1 0.0]+0.45);\nplot([0.0 0.1 0.1 0.0; "
+"0.1 0.1 0.0 0.0].*0.5+0.3, [0.0 0.0 0.1 0.1; 0.0 0.1 0.1 0.0]+0.75);\n\nplot("
+"[0.00 0.16 0.20; 0.20 0.20 0.20].*0.5+0.4, [0.00 0.20 0.20; 0.20 0.20 0.15]+0"
+".20);\nplot([0.00 0.17 0.17; 0.20 0.20 0.20].*0.5+0.4, [0.10 0.13 0.07; 0.10 "
+"0.10 0.10]+0.40);\nplot([0.00 0.16 0.20; 0.20 0.20 0.20].*0.5+0.4, [0.20 0.00"
+" 0.00; 0.00 0.00 0.05]+0.60);\n\nplot([0.0 0.4 0.4 0.0; 0.4 0.4 0.0 0.0].*0.5"
+"+0.55, [0.0 0.0 0.4 0.4; 0.0 0.4 0.4 0.0]+0.3);\nplot((sin([-pi:pi/90:0])).*0"
+".1+0.7, (0.5+0.5.*cos([0:pi/90:pi])).*0.2+0.4);\n\nplot([0.00 0.17 0.17; 0.20"
+" 0.20 0.20].*0.5+0.75, [0.10 0.13 0.07; 0.10 0.10 0.10]+0.40);\nplot([0.0 0.1"
+" 0.1 0.0; 0.1 0.1 0.0 0.0]+0.85, [0.0 0.0 0.1 0.1; 0.0 0.1 0.1 0.0]+0.45);\np"
+"lot([0.10 0.07 0.13; 0.10 0.10 0.10].*0.5+0.6, [0.00 0.07 0.07; 0.10 0.10 0.1"
+"0]+0.2);\nplot([0.00 0.25; 0.25 0.25]+0.65, [0.00 0.00; 0.00 0.25]+0.2);\n\nt"
+"ext(0.7, 0.85, 'Controller Design', 'VerticalAlignment', 'middle', 'Horizonta"
+"lAlignment', 'center');\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "[4 4 2 3]|[3 0.9]|[3 0.9]|0.05"
+      MaskVariableAliases     ",,,"
+      System {
+	Name			"Controller_Design_1"
+	Location		[814, 553, 1210, 728]
+	Open			on
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Ident Referrence"
+	  Position		  [60, 63, 90, 77]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Plant Responce"
+	  Position		  [60, 98, 90, 112]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [160, 53, 165, 122]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  DiscretePulseGenerator
+	  Name			  "Pulse\nGenerator"
+	  Position		  [185, 18, 230, 52]
+	  PulseType		  "Time-based"
+	  Amplitude		  "1"
+	  Period		  "2*Ts"
+	  PulseWidth		  "50"
+	  PhaseDelay		  "0"
+	  SampleTime		  "1"
+	  VectorParams1D	  on
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Triggered\nSubsystem"
+	  Ports			  [1, 0, 0, 1]
+	  Position		  [265, 67, 360, 113]
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  on
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	  System {
+	    Name		    "Triggered\nSubsystem"
+	    Location		    [77, 580, 471, 775]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "in"
+	      Position		      [55, 108, 85, 122]
+	      Port		      "1"
+	      LatchInput	      off
+	      Interpolate	      on
+	    }
+	    Block {
+	      BlockType		      TriggerPort
+	      Name		      "Trigger"
+	      Ports		      []
+	      Position		      [185, 30, 205, 50]
+	      TriggerType	      "either"
+	      ShowOutputPort	      off
+	      OutputDataType	      "auto"
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      "Controller_sFcn"
+	      Ports		      [1]
+	      Position		      [230, 95, 355, 135]
+	      FunctionName	      "ControllerDesign_sFcn"
+	      Parameters	      "cntr_orders, ctrObs_dyn, refMdl_dyn, Ts"
+	      PortCounts	      "[]"
+	      SFunctionModules	      "''"
+	    }
+	    Line {
+	      SrcBlock		      "in"
+	      SrcPort		      1
+	      DstBlock		      "Controller_sFcn"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold1"
+	  Position		  [125, 94, 135, 116]
+	  ShowName		  off
+	  SampleTime		  "Ts"
+	}
+	Block {
+	  BlockType		  ZeroOrderHold
+	  Name			  "Zero-Order\nHold4"
+	  Position		  [125, 59, 135, 81]
+	  ShowName		  off
+	  SampleTime		  "Ts"
+	}
+	Line {
+	  SrcBlock		  "Plant Responce"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Ident Referrence"
+	  SrcPort		  1
+	  DstBlock		  "Zero-Order\nHold4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Triggered\nSubsystem"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pulse\nGenerator"
+	  SrcPort		  1
+	  Points		  [75, 0]
+	  DstBlock		  "Triggered\nSubsystem"
+	  DstPort		  trigger
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold4"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Zero-Order\nHold1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+  }
+}

@@ -1,0 +1,167 @@
+Library {
+  Name			  "DAQ_read_lib"
+  Version		  4.00
+  LibraryLinkDisplay	  "none"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  off
+  StatusBar		  off
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sun Jan 11 14:49:46 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "bsaunder"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jan 11 14:50:21 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:2>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWRetainRTWFile	  off
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "DAQ_read_lib"
+    Location		    [480, 93, 980, 386]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      "S-Function"
+      Name		      "DAQ AI"
+      Ports		      [0, 1]
+      Position		      [185, 94, 305, 146]
+      BackgroundColor	      "magenta"
+      FunctionName	      "DAQ_Drivers_Read_sFcn"
+      Parameters	      "Ts, (inputmode-1), (polarity-1), gain, (channel"
+"s-1)"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+      MaskType		      "DAQ_AI"
+      MaskDescription	      "This is the DAQ Driver Analogue Input (AI) bloc"
+"k for use with both the DAQ-1200 and the DAQ-6024E devices.  Please input a v"
+"ector of channels that this block should read from the AD card and additional"
+" AD card information."
+      MaskPromptString	      "Channels|Gain|Polarity|Input Mode|Sample time"
+      MaskStyleString	      "edit,popup( 0.5 (DAQ-6024E) | 1 (Both) | 2 (DAQ"
+"-1200) | 5 (DAQ-1200) | 10 (Both) | 20 (DAQ-1200) | 50 (DAQ-1200) | 100 (Both"
+") ),popup( bipolar (Both) | unipolar (DAQ-1200) ),popup(differential|RSE|NRSE"
+"),edit"
+      MaskTunableValueString  "on,on,on,on,on"
+      MaskCallbackString      "||||"
+      MaskEnableString	      "on,on,on,on,on"
+      MaskVisibilityString    "on,on,on,on,on"
+      MaskToolTipString	      "on,on,on,on,on"
+      MaskVariables	      "channels=@1;gain_chbx=@2;polarity=@3;inputmode="
+"@4;Ts=@5;"
+      MaskInitialization      "switch (gain_chbx)\n  case 1, gain = -1;\n  cas"
+"e 2, gain = 1;\n  case 3, gain = 2;\n  case 4, gain = 5;\n  case 5, gain = 10"
+";\n  case 6, gain = 20;\n  case 7, gain = 50;\n  case 8, gain = 100;\n  other"
+"wise, gain = 1;\nend\ngain_str = num2str(gain);\nif gain == -1 gain_str = '0."
+"5'; end;\n\nif polarity == 1 lowsign = '-';\nelse lowsign = '0';\nend"
+      MaskDisplay	      "text(0.5, 0.85, 'Analogue Inputs', 'HorizontalA"
+"lignment', 'center', 'VerticalAlignment', 'middle');\n\nplot([0.1 0.15 0.15; "
+"0.15 0.15 0.1], [0.6 0.6 0.4; 0.6 0.4 0.4]);\nplot([0.15 0.2 0.23; 0.23 0.23 "
+"0.2], [0.5 0.47 0.5; 0.5 0.5 0.53]);\n\nplot([0.25:0.002:0.45], 0.1.*(-sin(70"
+".*[0.2:0.001:0.3]+0.5)+sin(200.*[0.2:0.001:0.3]-1.2))+0.5);\n\nplot([0.47 0.5"
+" 0.5; 0.5 0.47 0.55], [0.47 0.5 0.5; 0.5 0.53 0.5]);\n\ntext(0.07, 0.6, '+', "
+"'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\ntext(0.07, "
+"0.4, lowsign, 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle')"
+";\n\ntext(0.8, 0.5, ['Gain=', gain_str], 'HorizontalAlignment', 'center', 'Ve"
+"rticalAlignment', 'middle');\n\ntext(0.5, 0.15, ['Channels ', num2str(channel"
+"s)], 'HorizontalAlignment', 'center', 'VerticalAlignment', 'middle');\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      MaskValueString	      "[1 2 3 4]| 1 (Both) | bipolar (Both) |RSE|0.05"
+      MaskVariableAliases     ",,,,"
+    }
+  }
+}
