@@ -1,0 +1,7 @@
+Software Requirements:
+
+Purpose
+Develop a LabView interface which interacts with the Simulink code to input/output data. The purpose of the existing code is to provide an accurate measurement of work efficiency, stimulation pulsewidth, power output, cadence, motor contribution, and torque, during a FES cycling test, as well as the ability to control the stimulator. 
+
+Scope
+Current Matlab code provides an interface and automatic loading of parameters to be passed to Simulink files. We wish to develop a similar program with a more streamlined and flexible process in LabView. This may include integrating/converting Simulink code to LabView or another language (C, C++). This program will also allow for the use of different algorithms for use of calculations of input and output variables.
