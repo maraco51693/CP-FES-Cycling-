@@ -22,7 +22,7 @@ function varargout = select_test(varargin)
 
 % Edit the above text to modify the response to help select_test
 
-% Last Modified by GUIDE v2.5 07-Mar-2017 14:14:14
+% Last Modified by GUIDE v2.5 07-Mar-2017 17:49:15
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -71,3 +71,13 @@ function varargout = select_test_OutputFcn(hObject, eventdata, handles)
 
 % Get default command line output from handles structure
 varargout{1} = handles.output;
+
+
+% --- Executes on key press with focus on pushbutton5 and none of its controls.
+function pushbutton5_KeyPressFcn(hObject, eventdata, handles)
+% hObject    handle to pushbutton5 (see GCBO)
+% eventdata  structure with the following fields (see MATLAB.UI.CONTROL.UICONTROL)
+%	Key: name of the key that was pressed, in lower case
+%	Character: character interpretation of the key(s) that was pressed
+%	Modifier: name(s) of the modifier key(s) (i.e., control, shift) pressed
+% handles    structure with handles and user data (see GUIDATA)

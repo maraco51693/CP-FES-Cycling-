@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.445"
+    ComputedModelVersion    "1.448"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [58.0, 52.0, 936.0, 844.0]
+      Location		      [-7.0, -7.0, 1550.0, 838.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -50,7 +50,7 @@ Model {
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
-	Filter			[8]
+	Filter			[9]
       }
       Object {
 	$PropName		"ExplorerBarInfo"
@@ -58,16 +58,91 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"1"
-	Extents			[1111.0, 847.0]
-	ZoomFactor		[1.0]
-	Offset			[0.0, 0.0]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		9
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "51"
+	  Extents		  [1879.0, 833.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "98"
+	  Extents		  [1879.0, 833.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [61.0, -1.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1879.0, 833.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-21.5, 0.0]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "199"
+	  Extents		  [1879.0, 833.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, -2.0]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "1"
+	  Extents		  [1879.0, 833.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  10
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "41"
+	  Extents		  [1878.0, 832.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  11
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "258"
+	  Extents		  [1878.0, 832.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  12
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "52"
+	  Extents		  [1879.0, 833.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-1.0, -6.0]
+	}
+	Object {
+	  $ObjectID		  13
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "55"
+	  Extents		  [1879.0, 833.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, -11.0]
+	}
+	PropName		"EditorsInfo"
       }
     }
   }
@@ -75,11 +150,11 @@ Model {
   Creator		  "research"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "jfalesi"
+  LastModifiedBy	  "Tedis"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Feb 02 19:39:53 2017"
-  RTWModifiedTimeStamp	  407963591
-  ModelVersionFormat	  "1.%<AutoIncrement:445>"
+  LastModifiedDate	  "Tue Apr 11 14:47:42 2017"
+  RTWModifiedTimeStamp	  413819334
+  ModelVersionFormat	  "1.%<AutoIncrement:448>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -113,7 +188,7 @@ Model {
   FunctionConnectors	  off
   BrowserLookUnderMasks	  off
   SimulationMode	  "normal"
-  PauseTimes		  "5"
+  PauseTimes		  "15"
   NumberOfSteps		  1
   SnapshotBufferSize	  10
   SnapshotInterval	  10
@@ -127,7 +202,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    6
+    $ObjectID		    14
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Constant_Load_NoStim"
     Array {
@@ -170,13 +245,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      7
+      $ObjectID		      15
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  8
+	  $ObjectID		  16
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
@@ -213,7 +288,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  9
+	  $ObjectID		  17
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -251,7 +326,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  10
+	  $ObjectID		  18
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -304,7 +379,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  11
+	  $ObjectID		  19
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -377,7 +452,7 @@ Model {
 	  SimStateInterfaceChecksumMismatchMsg "warning"
 	  SimStateOlderReleaseMsg "error"
 	  InitInArrayFormatMsg	  "warning"
-	  StrictBusMsg		  "None"
+	  StrictBusMsg		  "ErrorLevel1"
 	  BusNameAdapt		  "WarnAndRepair"
 	  NonBusSignalsTreatedAsBus "none"
 	  SymbolicDimMinMaxWarning "warning"
@@ -399,7 +474,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  12
+	  $ObjectID		  20
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -441,7 +516,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  13
+	  $ObjectID		  21
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -457,7 +532,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  14
+	  $ObjectID		  22
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -469,7 +544,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  15
+	  $ObjectID		  23
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -527,7 +602,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      16
+	      $ObjectID		      24
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -591,7 +666,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      17
+	      $ObjectID		      25
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -674,7 +749,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  18
+	  $ObjectID		  26
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -709,18 +784,18 @@ Model {
 	PropName		"Components"
       }
       Name		      "Configuration"
-      CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 564, 256, 1484, 896 ] 
+      CurrentDlgPage	      "Diagnostics/Connectivity"
+      ConfigPrmDlgPosition     [ 544, 152, 1464, 792 ] 
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    7
+    $ObjectID		    15
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    19
+    $ObjectID		    27
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -914,6 +989,15 @@ Model {
       BlockType		      Fcn
       Expr		      "sin(u[1])"
       SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      OutDataTypeStr	      "Inherit: auto"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
     }
     Block {
       BlockType		      Gain
@@ -1172,8 +1256,8 @@ Model {
   }
   System {
     Name		    "Constant_Load_NoStim"
-    Location		    [357, 107, 1417, 936]
-    Open		    off
+    Location		    [-7, -7, 1543, 831]
+    Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
@@ -1186,7 +1270,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "440"
+    SIDHighWatermark	    "442"
     Block {
       BlockType		      SubSystem
       Name		      "Animation"
@@ -1198,7 +1282,7 @@ Model {
       Variant		      off
       System {
 	Name			"Animation"
-	Location		[58, 52, 994, 896]
+	Location		[-7, -7, 1543, 831]
 	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -1274,13 +1358,13 @@ Model {
 	  Name			  "Highlighting"
 	  SID			  "7"
 	  Ports			  [2, 1]
-	  Position		  [380, 108, 500, 257]
+	  Position		  [385, 108, 505, 257]
 	  ZOrder		  -6
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "Highlighting"
-	    Location		    [16, 52, 1034, 786]
+	    Location		    [-7, 0, 1542, 837]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -1779,6 +1863,48 @@ Model {
 	      SrcPort		      1
 	      Points		      [20, 0]
 	      Branch {
+		ZOrder			47
+		Points			[0, 5]
+		Branch {
+		  ZOrder		  20
+		  Points		  [0, 50]
+		  Branch {
+		    ZOrder		    21
+		    Points		    [0, 55]
+		    Branch {
+		    ZOrder		    22
+		    DstBlock		    "Bus\nSelector"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    23
+		    Points		    [0, 40]
+		    Branch {
+		    ZOrder		    24
+		    DstBlock		    "Bus\nSelector4"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    25
+		    Points		    [0, 50]
+		    DstBlock		    "Bus\nSelector1"
+		    DstPort		    1
+		    }
+		    }
+		  }
+		  Branch {
+		    ZOrder		    26
+		    DstBlock		    "Bus\nSelector5"
+		    DstPort		    1
+		  }
+		}
+		Branch {
+		  ZOrder		  27
+		  DstBlock		  "Bus\nSelector8"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
 		ZOrder			13
 		Points			[0, -45]
 		Branch {
@@ -1810,45 +1936,6 @@ Model {
 		    }
 		  }
 		}
-	      }
-	      Branch {
-		ZOrder			20
-		Points			[0, 55]
-		Branch {
-		  ZOrder		  21
-		  Points		  [0, 55]
-		  Branch {
-		    ZOrder		    22
-		    DstBlock		    "Bus\nSelector"
-		    DstPort		    1
-		  }
-		  Branch {
-		    ZOrder		    23
-		    Points		    [0, 40]
-		    Branch {
-		    ZOrder		    24
-		    DstBlock		    "Bus\nSelector4"
-		    DstPort		    1
-		    }
-		    Branch {
-		    ZOrder		    25
-		    Points		    [0, 50]
-		    DstBlock		    "Bus\nSelector1"
-		    DstPort		    1
-		    }
-		  }
-		}
-		Branch {
-		  ZOrder		  26
-		  DstBlock		  "Bus\nSelector5"
-		  DstPort		  1
-		}
-	      }
-	      Branch {
-		ZOrder			27
-		Points			[0, 5]
-		DstBlock		"Bus\nSelector8"
-		DstPort			1
 	      }
 	    }
 	    Line {
@@ -2097,7 +2184,7 @@ Model {
 	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    20
+	    $ObjectID		    28
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Simulation Animation"
 	    Help		    "cal2_test.mat"
@@ -2105,8 +2192,8 @@ Model {
 	  }
 	  System {
 	    Name		    "SimAnim"
-	    Location		    [187, 74, 440, 339]
-	    Open		    off
+	    Location		    [-7, 0, 1542, 837]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2142,6 +2229,7 @@ Model {
 	      Position		      [70, 25, 120, 45]
 	      ZOrder		      -3
 	      ShowName		      off
+	      Commented		      "on"
 	      CopyFcn		      "ansim([],[],[],'CopyBlock');"
 	      DeleteFcn		      "ansim([],[],[],'DeleteBlock');"
 	      LoadFcn		      "ansim([],[],[],'LoadBlock');"
@@ -2197,7 +2285,7 @@ Model {
 	  Value			  "cad_ref"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    21
+	    $ObjectID		    29
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "text(0.5,0.5,'bla_name.bla', 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'centre')"
 	  }
@@ -2233,7 +2321,7 @@ Model {
 	  ZOrder		  5
 	  SrcBlock		  "Highlighting"
 	  SrcPort		  1
-	  Points		  [35, 0; 0, -90]
+	  Points		  [30, 0; 0, -90]
 	  DstBlock		  "Mux1"
 	  DstPort		  3
 	}
@@ -2407,21 +2495,20 @@ Model {
       Name		      "DAQ_System_GUbox"
       SID		      "51"
       Ports		      [0, 1]
-      Position		      [15, 248, 90, 352]
+      Position		      [5, 243, 80, 347]
       ZOrder		      -5
       RequestExecContextInheritance off
       Variant		      off
       Port {
 	PortNumber		1
-	PropagatedSignals	"Angle_deg, Vel_rpm, Throttle_%, srm"
 	ShowPropagatedSignals	"on"
 	RTWStorageClass		"Auto"
 	DataLoggingNameMode	"SignalName"
       }
       System {
 	Name			"DAQ_System_GUbox"
-	Location		[16, 140, 1064, 733]
-	Open			off
+	Location		[-7, -7, 1543, 831]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2450,8 +2537,8 @@ Model {
 	  }
 	  System {
 	    Name		    "Angle Conversion"
-	    Location		    [357, 107, 1417, 936]
-	    Open		    off
+	    Location		    [-7, -7, 1543, 831]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2490,7 +2577,7 @@ Model {
 	      Variant		      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		22
+		$ObjectID		30
 		$ClassName		"Simulink.Mask"
 		Type			"AngleDer"
 		Description		"This block calculates the angular velocity from the angle measuremet.  If the input angle is in degree"
@@ -2501,14 +2588,14 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  2
 		  Object {
-		    $ObjectID		    23
+		    $ObjectID		    31
 		    Type		    "edit"
 		    Name		    "Tdf"
 		    Prompt		    "Filter constant"
 		    Value		    "0.5"
 		  }
 		  Object {
-		    $ObjectID		    24
+		    $ObjectID		    32
 		    Type		    "edit"
 		    Name		    "Ts"
 		    Prompt		    "Sampling Time"
@@ -2519,8 +2606,8 @@ Model {
 	      }
 	      System {
 		Name			"Angle Derivative"
-		Location		[357, 107, 1837, 936]
-		Open			off
+		Location		[-7, -7, 1543, 831]
+		Open			on
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -3070,7 +3157,7 @@ Model {
 		Annotation {
 		  SID			  "84"
 		  Name			  "Angle Derivative"
-		  Position		  [28, 3, 285, 47]
+		  Position		  [28, 3, 287, 47]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -3214,7 +3301,7 @@ Model {
 	    Annotation {
 	      SID		      "93"
 	      Name		      "Angle Conversion"
-	      Position		      [13, 8, 292, 52]
+	      Position		      [13, 8, 294, 52]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -3307,8 +3394,8 @@ Model {
 	  }
 	  System {
 	    Name		    "Hardware Interface via GU box"
-	    Location		    [16, 52, 1088, 808]
-	    Open		    off
+	    Location		    [-7, -7, 1543, 831]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3336,12 +3423,12 @@ Model {
 	      BlockType		      Demux
 	      Name		      "Demux1"
 	      SID		      "100"
-	      Ports		      [1, 6]
+	      Ports		      [1, 5]
 	      Position		      [210, 56, 220, 474]
 	      ZOrder		      -2
 	      BackgroundColor	      "black"
 	      ShowName		      off
-	      Outputs		      "6"
+	      Outputs		      "5"
 	      Port {
 		PortNumber		1
 		Name			"shaft_encoder_validity"
@@ -3374,16 +3461,43 @@ Model {
 	      }
 	    }
 	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From\nWorkspace"
+	      SID		      "441"
+	      Position		      [90, 253, 155, 277]
+	      ZOrder		      1
+	      VariableName	      "[t,shaft_encoder_validity,shaft_encoder_raw,throttle_validity, throttle_raw,srm_raw]"
+	      SampleTime	      "5"
+	      ZeroCross		      on
+	    }
+	    Block {
 	      BlockType		      Scope
 	      Name		      "Metab Sync"
 	      SID		      "101"
 	      Ports		      [1]
 	      Position		      [300, 459, 330, 491]
 	      ZOrder		      -3
-	      ScopeSpecificationString "C++SS(StrPVP('Location','[363, 256, 1240, 749]'),StrPVP('Open','off'),MxPVP('AxesTitl"
-	      "es',24,'struct(''axes1'',''%<SignalLabel>'')'),StrPVP('TimeRange','1000'),StrPVP('YMin','0'),StrPVP('SaveName',"
-	      "'ScopeData10'),StrPVP('DataFormat','StructureWithTime'),StrPVP('BlockParamSampleTime','0'),StrPVP('LimitDataPoi"
-	      "nts','on'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+	      Commented		      "on"
+	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
+	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
+	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData10','DataLoggingSaveFormat','StructureWithTi"
+	      "me','DataLoggingLimitDataPoints',true,'DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Config"
+	      "uration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','0','MaxYLimReal','10','YLabelR"
+	      "eal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',fa"
+	      "lse,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1"
+	      " 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686274"
+	      "5098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745"
+	      "098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{"
+	      "{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLi"
+	      "mReal','0','MaxYLimReal','10','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGri"
+	      "d',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803"
+	      "922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470"
+	      "5882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27450980392"
+	      "1569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesC"
+	      "ache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'Ti"
+	      "meRangeSamples','1000','TimeRangeFrames','1000'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtSto"
+	      "p',false),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Location',[36"
+	      "3.4 255.8 1240.2 749.4])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -3457,6 +3571,7 @@ Model {
 	      ZOrder		      -9
 	      BackgroundColor	      "yellow"
 	      ShowName		      off
+	      Commented		      "on"
 	      VariableName	      "Metabolic_Sync"
 	      MaxDataPoints	      "inf"
 	      SampleTime	      "-1"
@@ -3466,8 +3581,11 @@ Model {
 	      Name		      "USB 6009 AI"
 	      SID		      "108"
 	      Ports		      [0, 1]
-	      Position		      [90, 245, 170, 285]
+	      Position		      [75, 110, 155, 150]
 	      ZOrder		      -10
+	      ForegroundColor	      "red"
+	      BackgroundColor	      "yellow"
+	      Commented		      "on"
 	      SourceBlock	      "ni_lib/USB 6009 AI"
 	      SourceType	      ""
 	      channels		      "[5 3 4 2 1 6]"
@@ -3507,17 +3625,17 @@ Model {
 	      Labels		      [0, 0]
 	      SrcBlock		      "Demux1"
 	      SrcPort		      3
-	      Points		      [0, 25]
+	      Points		      [0, -10]
 	      DstBlock		      "Bus\nCreator"
 	      DstPort		      3
 	    }
 	    Line {
 	      Name		      "shaft_encoder_out"
 	      ZOrder		      3
-	      Labels		      [2, 1]
+	      Labels		      [1, 1]
 	      SrcBlock		      "Demux1"
 	      SrcPort		      2
-	      Points		      [0, 20; 395, 0]
+	      Points		      [395, 0]
 	      Branch {
 		ZOrder			4
 		Points			[0, 35]
@@ -3546,7 +3664,7 @@ Model {
 	      Labels		      [2, 0]
 	      SrcBlock		      "Demux1"
 	      SrcPort		      5
-	      Points		      [0, 10; 245, 0]
+	      Points		      [0, -55; 245, 0]
 	      Branch {
 		ZOrder			9
 		Points			[150, 0; 0, 20]
@@ -3571,19 +3689,12 @@ Model {
 	      }
 	    }
 	    Line {
-	      ZOrder		      13
-	      SrcBlock		      "USB 6009 AI"
-	      SrcPort		      1
-	      DstBlock		      "Demux1"
-	      DstPort		      1
-	    }
-	    Line {
 	      Name		      "shaft_encoder_validity"
 	      ZOrder		      14
 	      Labels		      [2, 1]
 	      SrcBlock		      "Demux1"
 	      SrcPort		      1
-	      Points		      [0, -5]
+	      Points		      [0, -10]
 	      DstBlock		      "Bus\nCreator"
 	      DstPort		      1
 	    }
@@ -3593,7 +3704,7 @@ Model {
 	      Labels		      [2, 0]
 	      SrcBlock		      "Demux1"
 	      SrcPort		      4
-	      Points		      [0, 10; 390, 0]
+	      Points		      [0, -40; 390, 0]
 	      Branch {
 		ZOrder			16
 		Points			[265, 0]
@@ -3608,27 +3719,16 @@ Model {
 	      }
 	    }
 	    Line {
-	      ZOrder		      18
-	      SrcBlock		      "Demux1"
-	      SrcPort		      6
-	      Points		      [30, 0]
-	      Branch {
-		ZOrder			19
-		Points			[0, -10]
-		DstBlock		"To Workspace4"
-		DstPort			1
-	      }
-	      Branch {
-		ZOrder			20
-		Points			[0, 35]
-		DstBlock		"Metab Sync"
-		DstPort			1
-	      }
+	      ZOrder		      36
+	      SrcBlock		      "From\nWorkspace"
+	      SrcPort		      1
+	      DstBlock		      "Demux1"
+	      DstPort		      1
 	    }
 	    Annotation {
 	      SID		      "111"
 	      Name		      "Hardware Interface (via USB-6009)"
-	      Position		      [133, 13, 692, 57]
+	      Position		      [133, 13, 697, 57]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -4056,7 +4156,7 @@ Model {
 	    Annotation {
 	      SID		      "136"
 	      Name		      "Throttle Valuation"
-	      Position		      [3, 40, 3, 40]
+	      Position		      [3, 40, 280, 84]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -4070,7 +4170,7 @@ Model {
 	      "to 100).  Since\nthe throttle does not always\nshow 0 when let go, it is\nforced to 0 using the validity\nsigna"
 	      "l. This is a safty\nconsideration.  Note that\nwhen the throttle switch is on\nthen the validity signal still\n"
 	      "goes to 0 when the throttle\nhas been let go."
-	      Position		      [8, 164, 8, 164]
+	      Position		      [8, 164, 168, 361]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -4287,7 +4387,7 @@ Model {
       Variant		      off
       System {
 	Name			"Motor Control"
-	Location		[16, 52, 1058, 734]
+	Location		[-7, -7, 1543, 831]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -4309,7 +4409,6 @@ Model {
 	  IconDisplay		  "Port number"
 	  Port {
 	    PortNumber		    1
-	    PropagatedSignals	    "Angle_deg, Vel_rpm, Throttle_%, srm"
 	    ShowPropagatedSignals   "on"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
@@ -4374,7 +4473,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Cadence Control"
-	    Location		    [16, 52, 816, 483]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -4417,7 +4516,7 @@ Model {
 	      BlockType		      Gain
 	      Name		      "Gain2"
 	      SID		      "153"
-	      Position		      [225, 89, 260, 121]
+	      Position		      [220, 89, 255, 121]
 	      ZOrder		      -4
 	      ShowName		      off
 	      Gain		      "6"
@@ -4451,7 +4550,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"rstcon\nantireset2"
-		Location		[22, 52, 853, 511]
+		Location		[-7, -7, 1543, 831]
 		Open			off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -4926,6 +5025,7 @@ Model {
 	  Ports			  [1]
 	  Position		  [875, 240, 955, 280]
 	  ZOrder		  -20
+	  Commented		  "on"
 	  SourceBlock		  "ni_lib/USB 6009 AO"
 	  SourceType		  "Unknown"
 	  channels		  "[1 2]"
@@ -5134,7 +5234,7 @@ Model {
 	  Name			  "Both motor speed, and voltage safetybox logic conditions are set here.\nThe voltage safety box ensures 6V"
 	  " is passed to the motor input when\nzero velocity is required (0V induces max speed). For this a logic circuit, \nd"
 	  "ictated by the conditions set here, ensures a 0V output is not passed\nduring initialisation. "
-	  Position		  [190, 63, 190, 63]
+	  Position		  [190, 63, 530, 130]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -5179,13 +5279,6 @@ Model {
       ZOrder		      -9
       ShowName		      off
       OutPortSampleTime	      "parameters.model.sample_time"
-      Port {
-	PortNumber		1
-	PropagatedSignals	"Vel_rpm"
-	ShowPropagatedSignals	"on"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
-      }
     }
     Block {
       BlockType		      RateTransition
@@ -5195,13 +5288,6 @@ Model {
       ZOrder		      -10
       ShowName		      off
       OutPortSampleTime	      "parameters.model.sample_time"
-      Port {
-	PortNumber		1
-	PropagatedSignals	"Angle_deg"
-	ShowPropagatedSignals	"on"
-	RTWStorageClass		"Auto"
-	DataLoggingNameMode	"SignalName"
-      }
     }
     Block {
       BlockType		      RateTransition
@@ -5230,6 +5316,7 @@ Model {
       Position		      [320, 276, 395, 394]
       ZOrder		      -13
       BackgroundColor	      "magenta"
+      Commented		      "on"
       FunctionName	      "sf_rtsync_cont"
       Parameters	      "1"
       SFunctionDeploymentMode off
@@ -5268,11 +5355,12 @@ Model {
       Ports		      [3]
       Position		      [670, 226, 770, 544]
       ZOrder		      -15
+      Commented		      "on"
       RequestExecContextInheritance off
       Variant		      off
       System {
 	Name			"Stimulation_System"
-	Location		[16, 52, 468, 432]
+	Location		[-7, -7, 1543, 831]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -5322,8 +5410,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Serial_Stimulation_System"
-	    Location		    [16, 52, 1054, 850]
-	    Open		    off
+	    Location		    [-7, -7, 1543, 831]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -5394,7 +5482,6 @@ Model {
 	      Port {
 		PortNumber		1
 		Name			"frequency"
-		PropagatedSignals	"c, v"
 		RTWStorageClass		"Auto"
 		DataLoggingNameMode	"SignalName"
 	      }
@@ -5404,9 +5491,10 @@ Model {
 	      Name		      "Bus\nSelector1"
 	      SID		      "205"
 	      Ports		      [1, 1]
-	      Position		      [775, 178, 780, 252]
+	      Position		      [780, 178, 785, 252]
 	      ZOrder		      -6
 	      ShowName		      off
+	      Commented		      "on"
 	      OutputSignals	      "R.Quad,R.Ham,R.Glut,L.Quad,L.Ham,L.Glut"
 	      OutputAsBus	      on
 	    }
@@ -5467,7 +5555,6 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "R"
-		    PropagatedSignals	    "Quad_r, Ham_r, Glut_r, Calf_r"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		  }
@@ -5486,7 +5573,6 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "pulsewidth"
-		    PropagatedSignals	    "R, L"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		  }
@@ -5505,7 +5591,6 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "L"
-		    PropagatedSignals	    "Quad_l, Ham_l, Glut_l, Calf_l"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		  }
@@ -6087,7 +6172,7 @@ Model {
 		  SID			  "227"
 		  Name			  "Activation/Pulsewidth signals on each channel are multiplied\nby the appropriate frequency to create the"
 		  " final pulse make up. "
-		  Position		  [405, 58, 405, 58]
+		  Position		  [405, 58, 705, 86]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -6136,7 +6221,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"Pulsewidth Generator"
-		Location		[16, 52, 1023, 847]
+		Location		[-7, -7, 1543, 831]
 		Open			off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -6180,7 +6265,6 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "R"
-		    PropagatedSignals	    "Quad, Ham, Glut, Calf"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		  }
@@ -6199,7 +6283,6 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "pulsewidth"
-		    PropagatedSignals	    "R, L"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		  }
@@ -6218,7 +6301,6 @@ Model {
 		  Port {
 		    PortNumber		    1
 		    Name		    "L"
-		    PropagatedSignals	    "Quad, Ham, Glut, Calf"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		  }
@@ -6233,12 +6315,6 @@ Model {
 		  ShowName		  off
 		  OutputSignals		  "R.Ham,R.Glut,R.Calf,L.Ham,L.Glut,L.Calf"
 		  OutputAsBus		  on
-		  Port {
-		    PortNumber		    1
-		    ShowPropagatedSignals   "on"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -6332,7 +6408,7 @@ Model {
 		  Variant		  off
 		  System {
 		    Name		    "Intensity Modulation"
-		    Location		    [124, 113, 916, 678]
+		    Location		    [-7, -7, 1543, 831]
 		    Open		    off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
@@ -6553,7 +6629,6 @@ Model {
 		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nCreator1"
 		  SrcPort		  1
-		  Points		  [0, 0]
 		  DstBlock		  "Bus\nCreator2"
 		  DstPort		  1
 		}
@@ -6577,7 +6652,6 @@ Model {
 		}
 		Line {
 		  ZOrder		  7
-		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector1"
 		  SrcPort		  1
 		  Points		  [225, 0]
@@ -6711,7 +6785,7 @@ Model {
 		Annotation {
 		  SID			  "252"
 		  Name			  "Pulsewidth Generator"
-		  Position		  [18, 35, 18, 35]
+		  Position		  [18, 35, 362, 79]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -6722,7 +6796,7 @@ Model {
 		Annotation {
 		  SID			  "253"
 		  Name			  "This subsystem is used to change\nan activation into a pulsewidth for\neach stimulation channel."
-		  Position		  [23, 79, 23, 79]
+		  Position		  [23, 79, 214, 126]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -6735,7 +6809,7 @@ Model {
 		  Name			  "Note: the following multiplication\nblock should work with a bus input\nfrom the stimulation activation."
 		  "\nHowever the bus needs to be\nre-constructed after.  Thus to\navoid modelling errors the bus is\nde-constructed f"
 		  "irst anyway."
-		  Position		  [48, 554, 48, 554]
+		  Position		  [48, 554, 208, 647]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -6746,7 +6820,7 @@ Model {
 		  SID			  "255"
 		  Name			  "The pulsewidth for each\nmucle group is then\nmultiplied to the stimulation\nactivation value which\nsho"
 		  "uld only be either 1 or 0."
-		  Position		  [388, 559, 388, 559]
+		  Position		  [388, 559, 523, 626]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -6756,7 +6830,7 @@ Model {
 		Annotation {
 		  SID			  "256"
 		  Name			  "Use a bus to structure the\ntransfer between subsystems"
-		  Position		  [613, 70, 613, 70]
+		  Position		  [613, 70, 746, 98]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -6792,8 +6866,8 @@ Model {
 	      }
 	      System {
 		Name			"Stimulation Activation"
-		Location		[16, 52, 1067, 856]
-		Open			off
+		Location		[-7, 0, 1542, 837]
+		Open			on
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
@@ -7556,7 +7630,7 @@ Model {
 		    Name		    "This subsystem is used to check\nthe test angle to determine if it is\nbetween a set of  start and st"
 		    "op\nangles.  If start > stop then the\ntrue condition should span the\njump from 360 degrees back to\nzero degre"
 		    "es."
-		    Position		    [23, 114, 23, 114]
+		    Position		    [23, 114, 205, 221]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -7567,7 +7641,7 @@ Model {
 		    Annotation {
 		    SID			    "299"
 		    Name		    "Angle Check"
-		    Position		    [18, 30, 18, 30]
+		    Position		    [18, 30, 223, 74]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -7578,7 +7652,7 @@ Model {
 		    Annotation {
 		    SID			    "300"
 		    Name		    "OR"
-		    Position		    [458, 128, 458, 128]
+		    Position		    [458, 128, 475, 143]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -7587,7 +7661,7 @@ Model {
 		    Annotation {
 		    SID			    "301"
 		    Name		    "if\n  test > start\n  or\n  test < stop\nand\n  start > stop"
-		    Position		    [473, 125, 473, 125]
+		    Position		    [473, 125, 531, 205]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -7597,7 +7671,7 @@ Model {
 		    Annotation {
 		    SID			    "302"
 		    Name		    "Ensure that the angles are\nbetween 0 and 360"
-		    Position		    [122, 347, 122, 347]
+		    Position		    [122, 347, 247, 375]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -7607,7 +7681,7 @@ Model {
 		    Annotation {
 		    SID			    "303"
 		    Name		    "If\n  test > start\nand\n  test < stop\nand\n  start < stop"
-		    Position		    [383, 125, 383, 125]
+		    Position		    [383, 125, 441, 205]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8339,7 +8413,7 @@ Model {
 		    Annotation {
 		    SID			    "340"
 		    Name		    "If\n  test > start\nand\n  test < stop\nand\n  start < stop"
-		    Position		    [383, 125, 383, 125]
+		    Position		    [383, 125, 441, 205]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8349,7 +8423,7 @@ Model {
 		    Annotation {
 		    SID			    "341"
 		    Name		    "Ensure that the angles are\nbetween 0 and 360"
-		    Position		    [122, 347, 122, 347]
+		    Position		    [122, 347, 247, 375]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8359,7 +8433,7 @@ Model {
 		    Annotation {
 		    SID			    "342"
 		    Name		    "if\n  test > start\n  or\n  test < stop\nand\n  start > stop"
-		    Position		    [473, 125, 473, 125]
+		    Position		    [473, 125, 531, 205]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8369,7 +8443,7 @@ Model {
 		    Annotation {
 		    SID			    "343"
 		    Name		    "OR"
-		    Position		    [458, 128, 458, 128]
+		    Position		    [458, 128, 475, 143]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8378,7 +8452,7 @@ Model {
 		    Annotation {
 		    SID			    "344"
 		    Name		    "Angle Check"
-		    Position		    [18, 30, 18, 30]
+		    Position		    [18, 30, 223, 74]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8391,7 +8465,7 @@ Model {
 		    Name		    "This subsystem is used to check\nthe test angle to determine if it is\nbetween a set of  start and st"
 		    "op\nangles.  If start > stop then the\ntrue condition should span the\njump from 360 degrees back to\nzero degre"
 		    "es."
-		    Position		    [23, 114, 23, 114]
+		    Position		    [23, 114, 205, 221]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8412,12 +8486,6 @@ Model {
 		  OutputSignals		  "R.Quad.start,R.Ham.start,R.Glut.start,R.Calf.start,L.Quad.start,L.Ham.start,L.Glut.start,L.Calf."
 		  "start"
 		  OutputAsBus		  on
-		  Port {
-		    PortNumber		    1
-		    ShowPropagatedSignals   "on"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -8429,12 +8497,6 @@ Model {
 		  ShowName		  off
 		  OutputSignals		  "R.Quad.stop,R.Ham.stop,R.Glut.stop,R.Calf.stop,L.Quad.stop,L.Ham.stop,L.Glut.stop,L.Calf.stop"
 		  OutputAsBus		  on
-		  Port {
-		    PortNumber		    1
-		    ShowPropagatedSignals   "on"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -8447,12 +8509,6 @@ Model {
 		  OutputSignals		  "R.Quad.start,R.Ham.start,R.Glut.start,R.Calf.start,L.Quad.start,L.Ham.start,L.Glut.start,L.Calf."
 		  "start"
 		  OutputAsBus		  on
-		  Port {
-		    PortNumber		    1
-		    ShowPropagatedSignals   "on"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
 		}
 		Block {
 		  BlockType		  BusSelector
@@ -8464,12 +8520,6 @@ Model {
 		  ShowName		  off
 		  OutputSignals		  "R.Quad.stop,R.Ham.stop,R.Glut.stop,R.Calf.stop,L.Quad.stop,L.Ham.stop,L.Glut.stop,L.Calf.stop"
 		  OutputAsBus		  on
-		  Port {
-		    PortNumber		    1
-		    ShowPropagatedSignals   "on"
-		    RTWStorageClass	    "Auto"
-		    DataLoggingNameMode	    "SignalName"
-		  }
 		}
 		Block {
 		  BlockType		  SubSystem
@@ -8517,7 +8567,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "R"
-		    PropagatedSignals	    "Quad, Ham, Glut, Calf"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		    }
@@ -8536,7 +8585,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stimulation Activation"
-		    PropagatedSignals	    "R, L"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		    }
@@ -8555,7 +8603,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "L"
-		    PropagatedSignals	    "Quad, Ham, Glut, Calf"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		    }
@@ -8736,7 +8783,7 @@ Model {
 		    Annotation {
 		    SID			    "357"
 		    Name		    "Use a bus to structure the\ntransfer between subsystems"
-		    Position		    [18, 75, 18, 75]
+		    Position		    [18, 75, 151, 103]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8746,7 +8793,7 @@ Model {
 		    Annotation {
 		    SID			    "358"
 		    Name		    "Bus Constructor (StimActivation)"
-		    Position		    [13, 35, 13, 35]
+		    Position		    [13, 35, 531, 79]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -8802,7 +8849,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "R"
-		    PropagatedSignals	    "Quad, Ham, Glut, Calf"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		    }
@@ -8821,7 +8867,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "Stimulation Activation"
-		    PropagatedSignals	    "R, L"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		    }
@@ -8840,7 +8885,6 @@ Model {
 		    Port {
 		    PortNumber		    1
 		    Name		    "L"
-		    PropagatedSignals	    "Quad, Ham, Glut, Calf"
 		    RTWStorageClass	    "Auto"
 		    DataLoggingNameMode	    "SignalName"
 		    }
@@ -9021,7 +9065,7 @@ Model {
 		    Annotation {
 		    SID			    "366"
 		    Name		    "Bus Constructor (StimActivation)"
-		    Position		    [13, 35, 13, 35]
+		    Position		    [13, 35, 531, 79]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -9032,7 +9076,7 @@ Model {
 		    Annotation {
 		    SID			    "367"
 		    Name		    "Use a bus to structure the\ntransfer between subsystems"
-		    Position		    [18, 75, 18, 75]
+		    Position		    [18, 75, 151, 103]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -9217,7 +9261,7 @@ Model {
 		  ZOrder		  13
 		  SrcBlock		  "Bus Constructor\nand save block\n(StimActivation)"
 		  SrcPort		  1
-		  Points		  [0, 0; 10, 0]
+		  Points		  [10, 0]
 		  Branch {
 		    ZOrder		    14
 		    DstBlock		    "Stimulation\n Activation Mod"
@@ -9252,7 +9296,6 @@ Model {
 		}
 		Line {
 		  ZOrder		  19
-		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector1"
 		  SrcPort		  1
 		  DstBlock		  "Sum1"
@@ -9260,7 +9303,6 @@ Model {
 		}
 		Line {
 		  ZOrder		  20
-		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector2"
 		  SrcPort		  1
 		  DstBlock		  "Sum2"
@@ -9298,7 +9340,6 @@ Model {
 		}
 		Line {
 		  ZOrder		  26
-		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector3"
 		  SrcPort		  1
 		  DstBlock		  "Angle Check1"
@@ -9306,7 +9347,6 @@ Model {
 		}
 		Line {
 		  ZOrder		  27
-		  Labels		  [0, 0]
 		  SrcBlock		  "Bus\nSelector4"
 		  SrcPort		  1
 		  DstBlock		  "Angle Check1"
@@ -9336,7 +9376,7 @@ Model {
 		Annotation {
 		  SID			  "378"
 		  Name			  "Stimulation Activation"
-		  Position		  [23, 35, 23, 35]
+		  Position		  [23, 35, 360, 79]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -9348,7 +9388,7 @@ Model {
 		  SID			  "379"
 		  Name			  "This subsystem is used to\ndetermine the active stimulation\npattern.  By checking whether the\ncurrent "
 		  "angle lies between the modifyed\nstart angle and stop angle."
-		  Position		  [23, 99, 23, 99]
+		  Position		  [23, 99, 243, 176]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -9359,7 +9399,7 @@ Model {
 		Annotation {
 		  SID			  "380"
 		  Name			  "Subtract the Modifyer\nfrom the angles"
-		  Position		  [463, 335, 463, 335]
+		  Position		  [463, 335, 566, 363]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -9371,7 +9411,7 @@ Model {
 		  Name			  "The modification to the static stimulation\npattern is proportional to the angular\nvelocity (deg per se"
 		  "cond).  Where the\nmodifyer is the latency delay in muscle\nactivation after the start of a pulse.  This\nmethod a"
 		  "ssumes that this latency is\nconstant."
-		  Position		  [213, 475, 213, 475]
+		  Position		  [213, 475, 408, 568]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -9381,7 +9421,7 @@ Model {
 		Annotation {
 		  SID			  "382"
 		  Name			  "Use a bus to structure the\ntransfer between subsystems"
-		  Position		  [823, 425, 823, 425]
+		  Position		  [823, 425, 956, 453]
 		  InternalMargins	  [0, 0, 0, 0]
 		  FixedHeight		  off
 		  FixedWidth		  off
@@ -9398,6 +9438,7 @@ Model {
 	      Position		      [635, 163, 745, 267]
 	      ZOrder		      -14
 	      BackgroundColor	      "green"
+	      Commented		      "on"
 	      SourceBlock	      "Stimulation_Currents_lib/Stimulation_Currents_1"
 	      SourceType	      "StimCurrentInput"
 	      ShowPortLabels	      "FromPortIcon"
@@ -9425,6 +9466,7 @@ Model {
 	      Ports		      [0, 1]
 	      Position		      [20, 298, 155, 432]
 	      ZOrder		      -15
+	      Commented		      "on"
 	      SourceBlock	      "stimulation_staticAngles_lib/Stimulation_Pattern_1"
 	      SourceType	      "StimAnglesInput"
 	      ShowPortLabels	      "FromPortIcon"
@@ -9457,7 +9499,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"Stimulator"
-		Location		[16, 52, 1000, 859]
+		Location		[-7, -7, 1543, 831]
 		Open			off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -9597,6 +9639,7 @@ Model {
 	    Line {
 	      Name		      "Stimulation_Activation"
 	      ZOrder		      1
+	      Labels		      [0, 0]
 	      SrcBlock		      "Stimulation Activation"
 	      SrcPort		      1
 	      Points		      [0, -30]
@@ -9760,7 +9803,7 @@ Model {
       Variant		      off
       System {
 	Name			"Target Power Profile"
-	Location		[192, 52, 722, 570]
+	Location		[-7, -7, 1543, 831]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -9814,13 +9857,12 @@ Model {
       Port {
 	PortNumber		1
 	Name			"PW_ref"
-	PropagatedSignals	"pw_h_g, pw_h_g"
 	RTWStorageClass		"Auto"
 	DataLoggingNameMode	"SignalName"
       }
       System {
 	Name			"Throttle2PW"
-	Location		[16, 52, 986, 546]
+	Location		[-7, -7, 1543, 831]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -10042,7 +10084,7 @@ Model {
       Variant		      off
       System {
 	Name			"Torque_Conversion"
-	Location		[258, 104, 1318, 933]
+	Location		[-7, 0, 1542, 837]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -10354,7 +10396,7 @@ Model {
 	    Annotation {
 	      SID		      "430"
 	      Name		      "SRM Frequency to Voltage"
-	      Position		      [18, 13, 445, 57]
+	      Position		      [18, 13, 450, 57]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -10531,7 +10573,7 @@ Model {
       Value		      "0.01"
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		25
+	$ObjectID		33
 	$ClassName		"Simulink.Mask"
 	Type			"text(0.5,0.5,'bla_name.bla', 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'centre')"
       }
@@ -10580,10 +10622,10 @@ Model {
       Labels		      [0, 0]
       SrcBlock		      "DAQ_System_GUbox"
       SrcPort		      1
-      Points		      [20, 0]
+      Points		      [30, 0]
       Branch {
-	ZOrder			5
-	Points			[0, 190]
+	ZOrder			40
+	Points			[0, 195]
 	Branch {
 	  ZOrder		  6
 	  DstBlock		  "Bus\nSelector1"
@@ -10607,7 +10649,7 @@ Model {
       }
       Branch {
 	ZOrder			10
-	Points			[0, -70]
+	Points			[0, -65]
 	Branch {
 	  ZOrder		  11
 	  Points		  [0, -145]
@@ -10623,7 +10665,6 @@ Model {
     }
     Line {
       ZOrder		      13
-      Labels		      [0, 0]
       SrcBlock		      "Rate Transition1"
       SrcPort		      1
       Points		      [205, 0]
@@ -10642,7 +10683,6 @@ Model {
     }
     Line {
       ZOrder		      16
-      Labels		      [0, 0]
       SrcBlock		      "Rate Transition2"
       SrcPort		      1
       Points		      [205, 0; 0, -85]
