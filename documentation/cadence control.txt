@@ -1,0 +1,30 @@
+Cadence control
+
+takes two inputs:
+throttle_%
+vel_rpm
+
+if (throttle_% >= 40)
+ pass cad_ref , a constant value = 30
+else 
+approximate the throttle_%, upper bounded by 30
+label this val as cad_ref
+
+vel_rpm = cad
+
+Multiple every element in cad_ref and cad by 6
+
+perform a discrete filter on cad_ref using the values in t_mat as numerator
+perform a discrete filter on cad using the values in s_mat as a numerator
+
+Sum1 = cad_ref - cad
+
+LOOP {
+Sum2 = Sum1 + discrete filter (sum(2))
+Sum2 = discrete filter(sum2, denominator phio_mat)
+Bound Sum2 by  1 }
+Delay by 1/ts (ts = 20)
+
+return as Vm_ref
+
+Vmotor = element wise matrix multiplication Vm_ref.* 5
