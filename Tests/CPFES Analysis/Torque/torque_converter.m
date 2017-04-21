@@ -10,7 +10,7 @@
 %the following are user specified parameters:
 %ZOPM - Zero Offset of the Power Meter
 %sample time - Will store values every time the sample time has elapsed
-
+%run the sections separately
 load('FESCycling_30_PRE_CONST_loaded_12Aug2014_085817.mat', 'srm_raw', 'Torque','parameters');
 parameters.sample_time = 1;
 model_sample_time = 1;

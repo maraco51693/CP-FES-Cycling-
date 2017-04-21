@@ -1,2 +1,2 @@
 clc;
-select_test;g
+select_test;
