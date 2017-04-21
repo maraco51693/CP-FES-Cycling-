@@ -7,7 +7,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.450"
+    ComputedModelVersion    "1.465"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, 0.0, 1549.0, 837.0]
+      Location		      [-7.0, -7.0, 1550.0, 838.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -60,48 +60,48 @@ Model {
       }
       Array {
 	Type			"Simulink.EditorInfo"
-	Dimension		9
+	Dimension		12
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "51"
-	  Extents		  [2349.0, 1041.0]
+	  LoadSaveID		  "112"
+	  Extents		  [2933.0, 1299.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  6
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "98"
+	  LoadSaveID		  "7"
 	  Extents		  [1878.0, 832.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [61.0, -1.0]
+	  Offset		  [0.0, 0.0]
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1878.0, 832.0]
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "98"
+	  Extents		  [1879.0, 833.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-21.5, 0.0]
+	  Offset		  [42.599999999999795, -1.0]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "199"
-	  Extents		  [2936.0, 1301.0]
+	  Extents		  [42726.0, 18935.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, -2.0]
 	}
 	Object {
 	  $ObjectID		  9
 	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1"
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
 	  Extents		  [1878.0, 832.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
@@ -111,7 +111,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "41"
-	  Extents		  [2935.0, 1300.0]
+	  Extents		  [83438.0, 36960.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -120,7 +120,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "258"
-	  Extents		  [2935.0, 1300.0]
+	  Extents		  [83438.0, 36960.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, 0.0]
 	}
@@ -129,7 +129,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "52"
-	  Extents		  [2936.0, 1301.0]
+	  Extents		  [83450.0, 36983.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [-1.0, -6.0]
 	}
@@ -138,9 +138,36 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "55"
-	  Extents		  [2936.0, 1301.0]
+	  Extents		  [83450.0, 36983.0]
 	  ZoomFactor		  [1.0]
 	  Offset		  [0.0, -11.0]
+	}
+	Object {
+	  $ObjectID		  14
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "398"
+	  Extents		  [3669.0, 1625.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  15
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "411"
+	  Extents		  [3669.0, 1625.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  16
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "416"
+	  Extents		  [3669.0, 1625.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, -1.0]
 	}
 	PropName		"EditorsInfo"
       }
@@ -152,9 +179,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Tedis"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Apr 14 12:27:04 2017"
-  RTWModifiedTimeStamp	  414071989
-  ModelVersionFormat	  "1.%<AutoIncrement:450>"
+  LastModifiedDate	  "Fri Apr 21 11:26:37 2017"
+  RTWModifiedTimeStamp	  414674767
+  ModelVersionFormat	  "1.%<AutoIncrement:465>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -202,7 +229,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    14
+    $ObjectID		    17
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Constant_Load_NoStim"
     Array {
@@ -245,13 +272,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      15
+      $ObjectID		      18
       Version		      "1.16.2"
       Array {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  16
+	  $ObjectID		  19
 	  Version		  "1.16.2"
 	  StartTime		  "0.0"
 	  StopTime		  "inf"
@@ -288,7 +315,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  17
+	  $ObjectID		  20
 	  Version		  "1.16.2"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -326,7 +353,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  18
+	  $ObjectID		  21
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -379,7 +406,7 @@ Model {
 	  AccelVerboseBuild	  off
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  19
+	  $ObjectID		  22
 	  Version		  "1.16.2"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -474,7 +501,7 @@ Model {
 	  AllowAutomaticUnitConversions	on
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  20
+	  $ObjectID		  23
 	  Version		  "1.16.2"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -516,7 +543,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  21
+	  $ObjectID		  24
 	  Version		  "1.16.2"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  EnableRefExpFcnMdlSchedulingChecks on
@@ -532,7 +559,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  22
+	  $ObjectID		  25
 	  Version		  "1.16.2"
 	  SFSimEcho		  on
 	  SimCtrlC		  on
@@ -544,7 +571,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  23
+	  $ObjectID		  26
 	  Version		  "1.16.2"
 	  Array {
 	    Type		    "Cell"
@@ -602,7 +629,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      24
+	      $ObjectID		      27
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -666,7 +693,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      25
+	      $ObjectID		      28
 	      Version		      "1.16.2"
 	      Array {
 		Type			"Cell"
@@ -749,7 +776,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  26
+	  $ObjectID		  29
 	  Version		  "1.16.2"
 	  Description		  "Simulink Coverage Configuration Component"
 	  Name			  "Simulink Coverage"
@@ -791,11 +818,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    15
+    $ObjectID		    18
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    27
+    $ObjectID		    30
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1270,7 +1297,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "444"
+    SIDHighWatermark	    "448"
     Block {
       BlockType		      SubSystem
       Name		      "Animation"
@@ -1283,7 +1310,7 @@ Model {
       System {
 	Name			"Animation"
 	Location		[-7, 0, 1542, 837]
-	Open			on
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -1365,7 +1392,7 @@ Model {
 	  System {
 	    Name		    "Highlighting"
 	    Location		    [-7, 0, 1542, 837]
-	    Open		    off
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -2184,7 +2211,7 @@ Model {
 	  Variant		  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    28
+	    $ObjectID		    31
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Simulation Animation"
 	    Help		    "cal2_test.mat"
@@ -2285,7 +2312,7 @@ Model {
 	  Value			  "cad_ref"
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    29
+	    $ObjectID		    32
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "text(0.5,0.5,'bla_name.bla', 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'centre')"
 	  }
@@ -2507,8 +2534,8 @@ Model {
       }
       System {
 	Name			"DAQ_System_GUbox"
-	Location		[-6, 0, 1543, 837]
-	Open			on
+	Location		[-7, 0, 1542, 837]
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -2577,7 +2604,7 @@ Model {
 	      Variant		      off
 	      Object {
 		$PropName		"MaskObject"
-		$ObjectID		30
+		$ObjectID		33
 		$ClassName		"Simulink.Mask"
 		Type			"AngleDer"
 		Description		"This block calculates the angular velocity from the angle measuremet.  If the input angle is in degree"
@@ -2588,14 +2615,14 @@ Model {
 		  Type			  "Simulink.MaskParameter"
 		  Dimension		  2
 		  Object {
-		    $ObjectID		    31
+		    $ObjectID		    34
 		    Type		    "edit"
 		    Name		    "Tdf"
 		    Prompt		    "Filter constant"
 		    Value		    "0.5"
 		  }
 		  Object {
-		    $ObjectID		    32
+		    $ObjectID		    35
 		    Type		    "edit"
 		    Name		    "Ts"
 		    Prompt		    "Sampling Time"
@@ -3331,10 +3358,10 @@ Model {
 	  Position		  [275, 117, 280, 163]
 	  ZOrder		  -3
 	  ShowName		  off
-	  OutputSignals		  "shaft_encoder_out"
+	  OutputSignals		  "shaft_encoder_raw"
 	  Port {
 	    PortNumber		    1
-	    Name		    "<shaft_encoder_out>"
+	    Name		    "<shaft_encoder_raw>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
@@ -3347,10 +3374,10 @@ Model {
 	  Position		  [275, 240, 280, 315]
 	  ZOrder		  -4
 	  ShowName		  off
-	  OutputSignals		  "throttle_output,throttle_validity"
+	  OutputSignals		  "throttle_raw,throttle_validity"
 	  Port {
 	    PortNumber		    1
-	    Name		    "<throttle_output>"
+	    Name		    "<throttle_raw>"
 	    RTWStorageClass	    "Auto"
 	    DataLoggingNameMode	    "SignalName"
 	  }
@@ -3394,7 +3421,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Hardware Interface via GU box"
-	    Location		    [-7, 0, 1542, 837]
+	    Location		    [-7, -7, 1543, 831]
 	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -3412,7 +3439,7 @@ Model {
 	      Name		      "Bus\nCreator"
 	      SID		      "99"
 	      Ports		      [4, 1]
-	      Position		      [895, 44, 900, 381]
+	      Position		      [895, 44, 900, 406]
 	      ZOrder		      -1
 	      ShowName		      off
 	      Inputs		      "4"
@@ -3438,34 +3465,91 @@ Model {
 	      }
 	    }
 	    Block {
-	      BlockType		      Demux
-	      Name		      "Demux2"
-	      SID		      "444"
-	      Ports		      [1, 1]
-	      Position		      [380, 86, 385, 124]
-	      ZOrder		      3
-	      BackgroundColor	      "black"
-	      ShowName		      off
-	      Commented		      "on"
-	      Outputs		      "1"
-	      BusSelectionMode	      on
-	    }
-	    Block {
 	      BlockType		      FromWorkspace
 	      Name		      "From\nWorkspace"
 	      SID		      "441"
-	      Position		      [265, 93, 330, 117]
+	      Position		      [265, 78, 330, 102]
 	      ZOrder		      1
 	      VariableName	      "[time,shaft_encoder_validity]"
-	      SampleTime	      "0.05"
+	      SampleTime	      "5"
 	      ZeroCross		      on
+	      Port {
+		PortNumber		1
+		Name			"shaft_encoder_validity"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From\nWorkspace1"
+	      SID		      "445"
+	      Position		      [265, 178, 330, 202]
+	      ZOrder		      4
+	      VariableName	      "[time,shaft_encoder_raw]"
+	      SampleTime	      "5"
+	      ZeroCross		      on
+	      Port {
+		PortNumber		1
+		Name			"shaft_encoder_raw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From\nWorkspace2"
+	      SID		      "446"
+	      Position		      [265, 243, 330, 267]
+	      ZOrder		      5
+	      VariableName	      "[time,throttle_validity]"
+	      SampleTime	      "5"
+	      ZeroCross		      on
+	      Port {
+		PortNumber		1
+		Name			"throttle_validity"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From\nWorkspace3"
+	      SID		      "447"
+	      Position		      [265, 308, 330, 332]
+	      ZOrder		      6
+	      VariableName	      "[time,throttle_raw]"
+	      SampleTime	      "5"
+	      ZeroCross		      on
+	      Port {
+		PortNumber		1
+		Name			"throttle_raw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      FromWorkspace
+	      Name		      "From\nWorkspace4"
+	      SID		      "448"
+	      Position		      [265, 378, 330, 402]
+	      ZOrder		      7
+	      VariableName	      "[time,srm]"
+	      SampleTime	      "5"
+	      ZeroCross		      on
+	      Port {
+		PortNumber		1
+		Name			"srm_raw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
 	    }
 	    Block {
 	      BlockType		      Scope
 	      Name		      "Metab Sync"
 	      SID		      "101"
 	      Ports		      [1]
-	      Position		      [300, 459, 330, 491]
+	      Position		      [295, 574, 325, 606]
 	      ZOrder		      -3
 	      Commented		      "on"
 	      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(ext"
@@ -3500,22 +3584,21 @@ Model {
 	      "mgr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration("
 	      "'Sources','WiredSimulink',true,'DataLoggingVariableName','ScopeData9','DataLoggingSaveFormat','StructureWithTim"
 	      "e','DataLoggingLimitDataPoints',true,'DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configu"
-	      "ration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','0','MaxYLimReal','10000000','YL"
-	      "abelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhas"
-	      "e',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrde"
-	      "r',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156"
-	      "862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0"
-	      ".0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNam"
-	      "es',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('M"
-	      "inYLimReal','0','MaxYLimReal','10000000','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility',"
-	      "'Off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6"
-	      "86274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1"
-	      " 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0."
-	      "274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','Line"
-	      "PropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placem"
-	      "ent',1),'TimeRangeSamples','1000','TimeRangeFrames','1000'),extmgr.Configuration('Tools','Plot Navigation',true"
-	      ",'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2016a')),'Version','2016a','Lo"
-	      "cation',[363.4 255.8 1240.2 749.4])"
+	      "ration('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','0','MaxYLimReal','0.1','YLabelR"
+	      "eal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',fa"
+	      "lse,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1"
+	      " 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686274"
+	      "5098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745"
+	      "098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{"
+	      "{}},'NumLines',1,'LineNames',{{'srm_raw'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct("
+	      "'MinYLimReal','0','MaxYLimReal','0.1','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Of"
+	      "f','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862"
+	      "74509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0."
+	      "411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274"
+	      "509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePro"
+	      "pertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement"
+	      "',1)),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Mea"
+	      "surements',true,'Version','2016a')),'Version','2016a','Location',[505.8 233.4 1382.6 727])"
 	    }
 	    Block {
 	      BlockType		      Scope
@@ -3563,7 +3646,7 @@ Model {
 	      Name		      "To Workspace2"
 	      SID		      "105"
 	      Ports		      [1]
-	      Position		      [680, 421, 795, 439]
+	      Position		      [675, 421, 790, 439]
 	      ZOrder		      -7
 	      BackgroundColor	      "yellow"
 	      ShowName		      off
@@ -3589,7 +3672,7 @@ Model {
 	      Name		      "To Workspace4"
 	      SID		      "107"
 	      Ports		      [1]
-	      Position		      [300, 420, 420, 440]
+	      Position		      [295, 535, 415, 555]
 	      ZOrder		      -9
 	      BackgroundColor	      "yellow"
 	      ShowName		      off
@@ -3637,113 +3720,103 @@ Model {
 	      ZOrder		      1
 	      SrcBlock		      "Bus\nCreator"
 	      SrcPort		      1
-	      Points		      [0, 10]
 	      DstBlock		      "Hardware_Out_1"
 	      DstPort		      1
 	    }
 	    Line {
-	      Name		      "throttle_validity"
-	      ZOrder		      2
+	      Name		      "shaft_encoder_raw"
+	      ZOrder		      55
 	      Labels		      [0, 0]
-	      Points		      [220, 265; 5, 0; 0, -10]
-	      DstBlock		      "Bus\nCreator"
-	      DstPort		      3
-	    }
-	    Line {
-	      Name		      "shaft_encoder_out"
-	      ZOrder		      3
-	      Labels		      [1, 1]
-	      Points		      [220, 180; 400, 0]
+	      SrcBlock		      "From\nWorkspace1"
+	      SrcPort		      1
+	      Points		      [369, 0]
 	      Branch {
-		ZOrder			4
-		Points			[0, 35]
+		ZOrder			60
+		Points			[0, -40]
+		DstBlock		"Scope"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			59
+		Points			[0, 25]
 		DstBlock		"To Workspace1"
 		DstPort			1
 	      }
 	      Branch {
-		ZOrder			5
-		Points			[100, 0]
-		Branch {
-		  ZOrder		  21
-		  Points		  [160, 0]
-		  DstBlock		  "Bus\nCreator"
-		  DstPort		  2
-		}
-		Branch {
-		  ZOrder		  7
-		  DstBlock		  "Scope"
-		  DstPort		  1
-		}
+		ZOrder			58
+		Points			[124, 0; 0, -10]
+		DstBlock		"Bus\nCreator"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      Name		      "shaft_encoder_validity"
+	      ZOrder		      62
+	      Labels		      [0, 0]
+	      SrcBlock		      "From\nWorkspace"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "throttle_validity"
+	      ZOrder		      63
+	      Labels		      [0, 0]
+	      SrcBlock		      "From\nWorkspace2"
+	      SrcPort		      1
+	      Points		      [273, 0; 0, 15]
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "throttle_raw"
+	      ZOrder		      64
+	      Labels		      [0, 0]
+	      SrcBlock		      "From\nWorkspace3"
+	      SrcPort		      1
+	      Points		      [319, 0]
+	      Branch {
+		ZOrder			66
+		Points			[0, 15]
+		DstBlock		"To Workspace3"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			65
+		Points			[184, 0; 0, 40]
+		DstBlock		"Bus\nCreator"
+		DstPort			4
 	      }
 	    }
 	    Line {
 	      Name		      "srm_raw"
-	      ZOrder		      8
-	      Labels		      [2, 0]
-	      Points		      [220, 435; 5, 0; 0, -55; 245, 0]
+	      ZOrder		      67
+	      Labels		      [0, 0]
+	      SrcBlock		      "From\nWorkspace4"
+	      SrcPort		      1
+	      Points		      [78, 0]
 	      Branch {
-		ZOrder			9
-		Points			[150, 0; 0, 20]
+		ZOrder			82
+		Points			[0, 24]
 		Branch {
-		  ZOrder		  10
-		  Points		  [310, 0]
+		  ZOrder		  81
+		  Points		  [500, 0; 0, 21]
 		  DstBlock		  "Hardware_Out_2"
 		  DstPort		  1
 		}
 		Branch {
-		  ZOrder		  11
-		  Points		  [0, 30]
+		  ZOrder		  69
+		  Points		  [0, 16]
 		  DstBlock		  "To Workspace2"
 		  DstPort		  1
 		}
 	      }
 	      Branch {
-		ZOrder			12
-		Points			[0, -30]
+		ZOrder			70
+		Points			[0, -40]
 		DstBlock		"SRM"
 		DstPort			1
 	      }
-	    }
-	    Line {
-	      Name		      "shaft_encoder_validity"
-	      ZOrder		      14
-	      Labels		      [2, 1]
-	      SrcBlock		      "Demux1"
-	      SrcPort		      1
-	      Points		      [0, -180]
-	      DstBlock		      "Bus\nCreator"
-	      DstPort		      1
-	    }
-	    Line {
-	      Name		      "throttle_output"
-	      ZOrder		      45
-	      Labels		      [0, 1]
-	      Points		      [215, 350; 0, -40; 400, 0]
-	      Branch {
-		ZOrder			16
-		Points			[265, 0]
-		DstBlock		"Bus\nCreator"
-		DstPort			4
-	      }
-	      Branch {
-		ZOrder			17
-		Points			[0, 25]
-		DstBlock		"To Workspace3"
-		DstPort			1
-	      }
-	    }
-	    Line {
-	      ZOrder		      49
-	      SrcBlock		      "From\nWorkspace"
-	      SrcPort		      1
-	      DstBlock		      "Demux2"
-	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      52
-	      SrcBlock		      "Demux2"
-	      SrcPort		      1
-	      Points		      [250, 0; 0, -20; 251, 0]
 	    }
 	    Annotation {
 	      SID		      "111"
@@ -3769,8 +3842,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Output Signal Conversion"
-	    Location		    [531, 148, 993, 501]
-	    Open		    off
+	    Location		    [-6, 0, 1543, 837]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -3972,7 +4045,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Throttle Valuation"
-	    Location		    [16, 52, 957, 599]
+	    Location		    [-7, 0, 1541, 836]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -4284,7 +4357,7 @@ Model {
 	  DstPort		  2
 	}
 	Line {
-	  Name			  "<shaft_encoder_out>"
+	  Name			  "<shaft_encoder_raw>"
 	  ZOrder		  8
 	  Labels		  [0, 1]
 	  SrcBlock		  "Bus\nSelector1"
@@ -4293,7 +4366,7 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  Name			  "<throttle_output>"
+	  Name			  "<throttle_raw>"
 	  ZOrder		  9
 	  Labels		  [0, 1]
 	  SrcBlock		  "Bus\nSelector3"
@@ -9882,8 +9955,8 @@ Model {
       }
       System {
 	Name			"Throttle2PW"
-	Location		[-7, -7, 1543, 831]
-	Open			off
+	Location		[-6, 0, 1543, 837]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -10104,8 +10177,8 @@ Model {
       Variant		      off
       System {
 	Name			"Torque_Conversion"
-	Location		[-7, 0, 1542, 837]
-	Open			off
+	Location		[-6, 0, 1543, 837]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -10179,8 +10252,8 @@ Model {
 	  }
 	  System {
 	    Name		    "SRM frequency - Voltage1"
-	    Location		    [258, 104, 1318, 933]
-	    Open		    off
+	    Location		    [-6, 0, 1543, 837]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
@@ -10593,7 +10666,7 @@ Model {
       Value		      "0.01"
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		33
+	$ObjectID		36
 	$ClassName		"Simulink.Mask"
 	Type			"text(0.5,0.5,'bla_name.bla', 'VerticalAlignment', 'middle', 'HorizontalAlignment', 'centre')"
       }
