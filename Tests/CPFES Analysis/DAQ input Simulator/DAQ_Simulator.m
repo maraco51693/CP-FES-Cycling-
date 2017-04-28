@@ -2,6 +2,7 @@
 % Simulates reading input from hardware by reading it from file instead
 % converts shaft encoder to cadence angle and cadence rpm
 % evaluates throttle percent according to the throttle output and validity
+% Run the code by section to simulate the various parts of the CPFES system
 
 load('FESCycling_30_PRE_CONST_loaded_12Aug2014_085817.mat', ...
      'shaft_encoder_raw','throttle_raw', 'srm_raw', 'parameters', 'Metabolic_Sync', ... %known input
@@ -46,5 +47,16 @@ figure(5)
 plot(t, calculated_throttle_percent(1:14819,1));
 title('calculated throttle percent')
 
+%% Simulate Power
+sim('DAQ_Input_Simulation');
+plot(t, Power(2:14820,1));
+title('simulated Power ')
 
+%% Simulate Cadence Control / Vmotor
+sim('Vmotor_cadence_control');
+plot(t, Vmotor(2:14820,1));
+title('Vmotor output')
+
+%% Animation, missing library for the actual Animation block
+sim('Animation.slx');
 
