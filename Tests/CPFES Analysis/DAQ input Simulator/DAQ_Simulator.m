@@ -49,7 +49,7 @@ title('calculated throttle percent')
 
 %% Simulate Power
 sim('DAQ_Input_Simulation');
-plot(t, Power(2:14820,1));
+plot(t, Power_rel(2:14820,1));
 title('simulated Power ')
 
 %% Simulate Cadence Control / Vmotor
