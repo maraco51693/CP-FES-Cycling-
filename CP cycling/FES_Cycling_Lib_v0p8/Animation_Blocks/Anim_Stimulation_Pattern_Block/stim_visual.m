@@ -1,4 +1,4 @@
-function varargout = Stim_Visual(varargin)
+function varargout = tim_Visual(varargin)
 % STIM_VISUAL Application M-file for Stim_Visual.fig
 %    FIG = STIM_VISUAL launch Stim_Visual GUI.
 %    STIM_VISUAL('callback_name', ...) invoke the named callback.

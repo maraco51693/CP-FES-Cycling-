@@ -84,3 +84,23 @@ figure(3)
 plot(t, Torque_filtered(2:14820,1));
 axis([0 14819 -30 0])
 title('simulated filtered torque')
+%%
+for i=1:14819
+    gain(i, 1) = Torque(i, 1) / Torque_filtered(i,1);
+    diff(i, 1) = abs(Torque(i, 1) - Torque_filtered(i,1));
+end
+%%
+figure;
+plot(t, gain);
+title('Gain')
+figure;
+plot(t,diff);
+title('difference')
+%%
+p = polyfit(Torque(21:14819,1), Torque_filtered(21:14819,1), 2);
+result = polyval(p, Torque(21:14819,1));
+%%
+figure;
+plt = plot(t(21:14819,1), result, t(21:14819,1), Torque_filtered(21:14819,1));
+plt(1).Color = 'red';
+plt(2).Color = 'blue';
